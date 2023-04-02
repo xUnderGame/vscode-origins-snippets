@@ -1,0 +1,26 @@
+{
+	"name": "vscode-origins-snippets",
+	"displayName": "Vscode Origins Snippets",
+	"description": "placeholder description",
+	"publisher": "UnderGame",
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.77.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/xUnderGame/vscode-origins-snippets"
+	},
+	"icon": "icon.png",
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "json",
+				"path": "./snippets/snippets.code-snippets"
+			}
+		]
+	}
+}
