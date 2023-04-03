@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="../../../img/favicon.ico" />
+		<title>
+			Attribute Modify Transfer (Power Type) - Origins Documentation
+		</title>
+		<link rel="stylesheet" href="../../../css/theme.css" />
+		<link rel="stylesheet" href="../../../css/theme_extra.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css"
+		/>
+		<link href="../../../stylesheets/extra.css" rel="stylesheet" />
+		<link href="/_/static/css/badge_only.css" rel="stylesheet" />
+		<link href="/_/static/css/readthedocs-doc-embed.css" rel="stylesheet" />
+
+		<script>
+			// Current page data
+			var mkdocs_page_name = "Attribute Modify Transfer (Power Type)";
+			var mkdocs_page_input_path =
+				"types/power_types/attribute_modify_transfer.md";
+			var mkdocs_page_url = null;
+		</script>
+
+		<script src="../../../js/jquery-3.6.0.min.js" defer></script>
+		<!--[if lt IE 9]>
+			<script src="../../../js/html5shiv.min.js"></script>
+		<![endif]-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+		<script>
+			hljs.initHighlightingOnLoad();
+		</script>
+	</head>
+
+	<body class="wy-body-for-nav" role="document">
+		<div class="wy-grid-for-nav">
+			<nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+				<div class="wy-side-scroll">
+					<div class="wy-side-nav-search">
+						<a href="../../.." class="icon icon-home">
+							Origins Documentation
+						</a>
+						<div role="search">
+							<form
+								id="rtd-search-form"
+								class="wy-form"
+								action="../../../search.html"
+								method="get"
+							>
+								<input
+									type="text"
+									name="q"
+									placeholder="Search docs"
+									title="Type search term here"
+								/>
+							</form>
+						</div>
+					</div>
+
+					<div
+						class="wy-menu wy-menu-vertical"
+						data-spy="affix"
+						role="navigation"
+						aria-label="Navigation menu"
+					>
+						<ul>
+							<li class="toctree-l1">
+								<a class="reference internal" href="../../.."
+									>Home</a
+								>
+							</li>
+						</ul>
+						<p class="caption">
+							<span class="caption-text">Datapack Guides</span>
+						</p>
+						<ul>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../guides/data/define_origin/"
+									>Defining an Origin</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../guides/data/define_power/"
+									>Defining a Power</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../guides/data/origin_conditions_in_layers/"
+									>Origin conditions in layers</a
+								>
+							</li>
+						</ul>
+						<p class="caption">
+							<span class="caption-text">Add-on Guides</span>
+						</p>
+						<ul>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../guides/addon/workspace_setup/"
+									>Workspace Setup</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../guides/addon/dependencies/"
+									>Dependencies Explained</a
+								>
+							</li>
+						</ul>
+						<p class="caption">
+							<span class="caption-text">JSON</span>
+						</p>
+						<ul>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../json/badge/"
+									>Badge JSON</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../json/origin/"
+									>Origin JSON</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../json/origin_layer/"
+									>Origin Layer JSON</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../json/power/"
+									>Power JSON</a
+								>
+							</li>
+						</ul>
+						<p class="caption">
+							<span class="caption-text">General Types</span>
+						</p>
+						<ul>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../badge_types/"
+									>Badge Types</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../data_types/"
+									>Data Types</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a class="reference internal" href="../"
+									>Power Types</a
+								>
+							</li>
+						</ul>
+						<p class="caption">
+							<span class="caption-text">Action Types</span>
+						</p>
+						<ul>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../bientity_action_types/"
+									>Bi-entity Action Types</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../block_action_types/"
+									>Block Action Types</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../entity_action_types/"
+									>Entity Action Types</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../item_action_types/"
+									>Item Action Types</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../meta_action_types/"
+									>Meta Action Types</a
+								>
+							</li>
+						</ul>
+						<p class="caption">
+							<span class="caption-text">Condition Types</span>
+						</p>
+						<ul>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../bientity_condition_types/"
+									>Bi-entity Condition Types</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../biome_condition_types/"
+									>Biome Condition Types</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../block_condition_types/"
+									>Block Condition Types</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../damage_condition_types/"
+									>Damage Condition Types</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../entity_condition_types/"
+									>Entity Condition Types</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../fluid_condition_types/"
+									>Fluid Condition Types</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../item_condition_types/"
+									>Item Condition Types</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../meta_condition_types/"
+									>Meta Condition Types</a
+								>
+							</li>
+						</ul>
+						<p class="caption">
+							<span class="caption-text">Miscellaneous</span>
+						</p>
+						<ul>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/advancement_triggers/"
+									>Advancement Triggers</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/base_contents/"
+									>Base Contents</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/commands/"
+									>Commands</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/item_modifiers/"
+									>Item Modifiers</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/items/"
+									>Items</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/predicates/"
+									>Predicates</a
+								>
+							</li>
+						</ul>
+						<p class="caption">
+							<span class="caption-text">Extras</span>
+						</p>
+						<ul>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/extras/action_results/"
+									>Action Results</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/extras/biome_categories/"
+									>Biome Categories</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/extras/damage_source_names/"
+									>Damage Source Names</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/extras/container_type/"
+									>Container Type</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/extras/destruction_types/"
+									>Destruction Types</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/extras/feature_renderers/"
+									>Feature Renderers</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/extras/inventory_type/"
+									>Inventory Type</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/extras/fluid_handling/"
+									>Fluid Handling</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/extras/keybindings/"
+									>Keybindings</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/extras/materials/"
+									>Materials</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/extras/player_abilities/"
+									>Player Abilities</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/extras/positioned_item_stack_slots/"
+									>Positioned Item Stack Slots</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/extras/shape_types/"
+									>Shape Types</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/extras/space/"
+									>Space</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/extras/sprites/"
+									>Sprites</a
+								>
+							</li>
+							<li class="toctree-l1">
+								<a
+									class="reference internal"
+									href="../../../misc/extras/value_modifying_power_classes/"
+									>Value Modifying Power Classes</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+				<nav
+					class="wy-nav-top"
+					role="navigation"
+					aria-label="Mobile navigation menu"
+				>
+					<i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+					<a href="../../..">Origins Documentation</a>
+				</nav>
+				<div class="wy-nav-content">
+					<div class="rst-content">
+						<div
+							role="navigation"
+							aria-label="breadcrumbs navigation"
+						>
+							<ul class="wy-breadcrumbs">
+								<li>
+									<a
+										href="../../.."
+										class="icon icon-home"
+										alt="Docs"
+									></a>
+									&raquo;
+								</li>
+								<li>Attribute Modify Transfer (Power Type)</li>
+								<li class="wy-breadcrumbs-aside"></li>
+							</ul>
+							<hr />
+						</div>
+						<div
+							role="main"
+							class="document"
+							itemscope="itemscope"
+							itemtype="http://schema.org/Article"
+						>
+							<div class="section" itemprop="articleBody">
+								<h1 id="attribute_modify_transfer">
+									Attribute Modify Transfer
+								</h1>
+								<p><a href="../">Power Type</a></p>
+								<p>
+									Transfers the value of an attribute modifier
+									from a specified attribute to a specified
+									power class that extends the
+									<a
+										href="https://github.com/apace100/apoli/blob/master/src/main/java/io/github/apace100/apoli/power/ValueModifyingPower.java"
+										><code>ValueModifyingPower</code></a
+									>
+									super-class.
+								</p>
+								<p>
+									Type ID:
+									<code
+										>origins:attribute_modify_transfer</code
+									>
+								</p>
+								<div class="admonition note">
+									<p class="admonition-title">Note</p>
+									<p>
+										Refer to the
+										<a
+											href="https://minecraft.fandom.com/wiki/Attribute"
+											>Minecraft Fandom Wiki: Attribute</a
+										>
+										page for a list of
+										<strong>vanilla</strong> attributes that
+										you can get the value from.
+									</p>
+								</div>
+								<h3 id="fields">Fields</h3>
+								<table>
+									<thead>
+										<tr>
+											<th>Field</th>
+											<th>Type</th>
+											<th>Default</th>
+											<th>Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>class</code></td>
+											<td>
+												<a
+													href="../../data_types/identifier/"
+													>Identifier</a
+												>
+											</td>
+											<td></td>
+											<td>
+												The ID of the class to transfer
+												the value of an attribute
+												modifier to. See
+												<a
+													href="../../../misc/extras/value_modifying_power_classes/"
+													>Value Modifying Power
+													Classes</a
+												>
+												for possible values.
+											</td>
+										</tr>
+										<tr>
+											<td><code>attribute</code></td>
+											<td>
+												<a
+													href="../../data_types/identifier/"
+													>Identifier</a
+												>
+											</td>
+											<td></td>
+											<td>
+												The namespace and ID of the
+												attribute to get the value from.
+											</td>
+										</tr>
+										<tr>
+											<td><code>multiplier</code></td>
+											<td>
+												<a
+													href="../../data_types/float/"
+													>Float</a
+												>
+											</td>
+											<td><code>1.0</code></td>
+											<td>
+												Determines the multiplier for
+												the value.
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<h3 id="examples">Examples</h3>
+								<pre><code class="language-json">{
+    &quot;type&quot;: &quot;origins:attribute_modify_transfer&quot;,
+    &quot;class&quot;: &quot;modify_break_speed&quot;,
+    &quot;attribute&quot;: &quot;minecraft:generic.movement_speed&quot;,
+    &quot;multiplier&quot;: 1.25
+}
+</code></pre>
+								<p>
+									This example will transfer the value of the
+									attribute modifier for the
+									<code
+										>minecraft:generic.movement_speed</code
+									>
+									attribute to the
+									<code>modify_break_speed</code>
+									(<code>io.github.apace100.apoli.power.ModifyBreakSpeedPower</code>)
+									class, essentially giving the player mining
+									speed boost if the player's movement speed
+									is quite high.
+								</p>
+							</div>
+						</div>
+						<footer>
+							<hr />
+
+							<div role="contentinfo">
+								<!-- Copyright etc -->
+							</div>
+
+							Built with
+							<a href="https://www.mkdocs.org/">MkDocs</a> using a
+							<a
+								href="https://github.com/readthedocs/sphinx_rtd_theme"
+								>theme</a
+							>
+							provided by
+							<a href="https://readthedocs.org">Read the Docs</a>.
+						</footer>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="rst-versions" role="note" aria-label="Versions">
+			<span class="rst-current-version" data-toggle="rst-current-version">
+			</span>
+		</div>
+		<script>
+			var base_url = "../../..";
+		</script>
+		<script src="../../../js/theme_extra.js" defer></script>
+		<script src="../../../js/theme.js" defer></script>
+		<script src="../../../readthedocs-data.js" defer></script>
+		<script src="/_/static/core/js/readthedocs-doc-embed.js" defer></script>
+		<script
+			src="/_/static/javascript/readthedocs-analytics.js"
+			defer
+		></script>
+		<script src="../../../search/main.js" defer></script>
+		<script defer>
+			window.onload = function () {
+				SphinxRtdTheme.Navigation.enable(true);
+			};
+		</script>
+	</body>
+</html>
