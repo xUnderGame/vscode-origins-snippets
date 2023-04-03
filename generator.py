@@ -16,11 +16,20 @@ def filterWeb(htmlSpoon):
 
 # Gets the information from the website.
 def scrapeResults(htmlSpoon):
-    # gets the description
-    spoonedDiv = htmlSpoon.find("div", attrs={'itemprop': 'articleBody', 'class': 'section'})
-    spoonedDiv = htmlSpoon.find_all("p", attrs={'class': None}, limit=2)
-    print(str(spoonedDiv[1].text)+"\n") 
+    # Gets the description
+    desc = htmlSpoon.find_all("p", attrs={'class': None}, limit=2)
+    print(str(desc[1].text)+"\n") 
 
+    # Gets the attibutes.
+    attrList = []
+    attrs = htmlSpoon.select('table > tbody > tr')
+    
+    # Cleans and adds attributes to a list.
+    for attr in attrs:
+        buildStr = str(attr.select("td > code")).replace("<code>", "").replace("</code>", "").replace("[", "").replace("]", "").split(",")[0]
+        attrList.append(buildStr)
+        
+    print(attrList)
 
 # Main program (recursivity, woo...)
 mainWeb = "https://origins.readthedocs.io/en/latest/types/power_types/"
@@ -32,6 +41,7 @@ for tag in filterWeb(requestWeb(mainWeb)):
     if reg:
         if reg.group(1) and reg.group(2):
             # Scrape web if not an h3
+            print(reg.group(1))
             scrapeResults(requestWeb(f"{mainWeb}{reg.group(1)}"))
             break # leave this here for now, we dont want to clog the terminal.
 
