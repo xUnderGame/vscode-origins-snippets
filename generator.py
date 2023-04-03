@@ -9,29 +9,59 @@ def requestWeb(website):
     return BeautifulSoup(request.text, 'html.parser')
 
 # Gets the links
-def filterWeb(htmlSpoon):
-    spoonedDiv = htmlSpoon.find_all(["ul", "h3"], attrs={'class': None})
-    spoonedDiv = htmlSpoon.find_all(["a", "h3"], attrs={'class': None})
+def filterWeb(soup):
+    spoonedDiv = soup.find_all(["ul", "h3"], attrs={'class': None})
+    spoonedDiv = soup.find_all(["a", "h3"], attrs={'class': None})
     return spoonedDiv
 
 # Gets the information from the website.
-def scrapeResults(htmlSpoon):
+def scrapeResults(soup):
     # Gets the description
-    desc = htmlSpoon.find_all("p", attrs={'class': None}, limit=2)
-    print(str(desc[1].text)+"\n") 
+    desc = soup.find_all("p", attrs={'class': None}, limit=2)
+    desc = str(desc[1].text)
 
     # Gets the attibutes.
     attrList = []
-    attrs = htmlSpoon.select('table > tbody > tr')
+    attrs = soup.select('table > tbody > tr')
     
     # Cleans and adds attributes to a list.
     for attr in attrs:
         buildStr = str(attr.select("td > code")).replace("<code>", "").replace("</code>", "").replace("[", "").replace("]", "").split(",")[0]
         attrList.append(buildStr)
-        
-    print(attrList)
 
-# Main program (recursivity, woo...)
+    return desc, attrList
+
+def buildSnippet(soup, name, desc, attrList):
+    # Build the skeleton... (SANS UNDERTALE???)
+    build = [f'"{name}": {{']
+    build.append(f'\t"prefix": "{name}",')
+    build.append('\t"scope": "json",')
+    build.append('\t"body": [')
+
+    for attr in attrList: # Attributes
+        buildStr = ""
+        buildStr += f'\t\t"{attr}": ""'
+        if attr != attrList[len(attrList) - 1]:
+            buildStr += ","
+        build.append(buildStr)
+
+    build.append('\t],')
+    build.append(f'\t"description": "{desc}"')
+    build.append("}")
+
+    for ele in build: print(ele)
+
+# "placeholder": {
+#     "prefix": "placeholder",
+#     "scope": "json",
+#     "body": [
+#         "placeholder",
+#     ],
+#     "description": "(Power Type)"
+# }
+
+
+# Main program (woo...)
 mainWeb = "https://origins.readthedocs.io/en/latest/types/power_types/"
 
 for tag in filterWeb(requestWeb(mainWeb)):
@@ -41,16 +71,7 @@ for tag in filterWeb(requestWeb(mainWeb)):
     if reg:
         if reg.group(1) and reg.group(2):
             # Scrape web if not an h3
-            print(reg.group(1))
-            scrapeResults(requestWeb(f"{mainWeb}{reg.group(1)}"))
+            newWeb = requestWeb(f"{mainWeb}{reg.group(1)}")
+            desc, attrs = scrapeResults(newWeb) # Gets the data we want.
+            buildSnippet(newWeb, reg.group(1)[:-1], desc, attrs) # Builds the snippet.
             break # leave this here for now, we dont want to clog the terminal.
-
-
-# "placeholder" : {
-#     "prefix": "placeholder",
-#     "scope": "json",
-#     "body": [
-#         "placeholder",
-#     ],
-#     "description": "(Power Type)"
-# }
