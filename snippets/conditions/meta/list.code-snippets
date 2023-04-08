@@ -3,7 +3,7 @@
         "prefix": "meta:and",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:and\"",
+            "\"type\": \"origins:and\",",
             "\"conditions\": [${1}]",
         ],
         "description": "Checks whether all of the provided conditions are fulfilled."
@@ -12,7 +12,7 @@
         "prefix": "meta:constant",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:constant\"",
+            "\"type\": \"origins:constant\",",
             "\"value\": ${1|true,false|}",
         ],
         "description": "Provides a constant state where it's either true or false. Mainly added as a backup case in case a condition is required in some power/action/condition types."
@@ -21,7 +21,7 @@
         "prefix": "meta:not",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:not\"",
+            "\"type\": \"origins:not\",",
             "\"inverted\": ${1|true,false|}",
         ],
         "description": "There is no meta condition to invert the results of another condition. However, every condition supports the following field, which can be used to achieve the same:"
@@ -30,7 +30,7 @@
         "prefix": "meta:or",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:or\"",
+            "\"type\": \"origins:or\",",
             "\"conditions\": [${1}]",
         ],
         "description": "Checks whether any (one or more) of the provided conditions are fulfilled."

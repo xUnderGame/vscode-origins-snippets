@@ -3,7 +3,7 @@
         "prefix": "crafting_recipe",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:crafting_recipe\"",
+            "\"type\": \"origins:crafting_recipe\",",
             "\"sprite\": \"${1}\",",
             "\"recipe\": {$2},",
             "\"suffix\": {$3},",
@@ -15,7 +15,7 @@
         "prefix": "keybind",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:keybind\"",
+            "\"type\": \"origins:keybind\",",
             "\"sprite\": \"${1}\",",
             "\"text\": \"${2}\"",
         ],
@@ -25,7 +25,7 @@
         "prefix": "sprite",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:sprite\"",
+            "\"type\": \"origins:sprite\",",
             "\"sprite\": \"${1}\"",
         ],
         "description": "Displays a texture next to the name of the power."
@@ -34,7 +34,7 @@
         "prefix": "tooltip",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:tooltip\"",
+            "\"type\": \"origins:tooltip\",",
             "\"sprite\": \"${1}\",",
             "\"text\": {$2}",
         ],

@@ -3,7 +3,7 @@
         "prefix": "modify_air_speed",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_air_speed\"",
+            "\"type\": \"origins:modify_air_speed\",",
             "\"modifier\": {$1},",
             "\"modifiers\": [${2}]",
         ],
@@ -13,7 +13,7 @@
         "prefix": "modify_attribute",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_attribute\"",
+            "\"type\": \"origins:modify_attribute\",",
             "\"attribute\": \"${1}\",",
             "\"modifier\": {$2},",
             "\"modifiers\": [${3}]",
@@ -24,7 +24,7 @@
         "prefix": "modify_block_render",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_block_render\"",
+            "\"type\": \"origins:modify_block_render\",",
             "\"block_condition\": {$1},",
             "\"block\": \"${2}\"",
         ],
@@ -34,7 +34,7 @@
         "prefix": "modify_break_speed",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_break_speed\"",
+            "\"type\": \"origins:modify_break_speed\",",
             "\"block_condition\": {$1},",
             "\"modifier\": {$2},",
             "\"modifiers\": [${3}]",
@@ -45,7 +45,7 @@
         "prefix": "modify_camera_submersion",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_camera_submersion\"",
+            "\"type\": \"origins:modify_camera_submersion\",",
             "\"from\": \"${1}\",",
             "\"to\": \"${2}\"",
         ],
@@ -55,7 +55,7 @@
         "prefix": "modify_crafting",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_crafting\"",
+            "\"type\": \"origins:modify_crafting\",",
             "\"recipe\": \"${1}\",",
             "\"item_action\": {$2},",
             "\"item_action_after_crafting\": {$3},",
@@ -70,7 +70,7 @@
         "prefix": "modify_damage_dealt",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_damage_dealt\"",
+            "\"type\": \"origins:modify_damage_dealt\",",
             "\"bientity_action\": {$1},",
             "\"self_action\": {$2},",
             "\"target_action\": {$3},",
@@ -86,7 +86,7 @@
         "prefix": "modify_damage_taken",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_damage_taken\"",
+            "\"type\": \"origins:modify_damage_taken\",",
             "\"bientity_action\": {$1},",
             "\"self_action\": {$2},",
             "\"attacker_action\": {$3},",
@@ -103,7 +103,7 @@
         "prefix": "modify_exhaustion",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_exhaustion\"",
+            "\"type\": \"origins:modify_exhaustion\",",
             "\"modifier\": {$1},",
             "\"modifiers\": [${2}]",
         ],
@@ -113,7 +113,7 @@
         "prefix": "modify_falling",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_falling\"",
+            "\"type\": \"origins:modify_falling\",",
             "\"velocity\": ${1:1.0},",
             "\"take_fall_damage\": ${2|true,false|}",
         ],
@@ -123,7 +123,7 @@
         "prefix": "modify_fluid_render",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_fluid_render\"",
+            "\"type\": \"origins:modify_fluid_render\",",
             "\"block_condition\": {$1},",
             "\"fluid_condition\": {$2},",
             "\"fluid\": \"${3}\"",
@@ -134,7 +134,7 @@
         "prefix": "modify_food",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_food\"",
+            "\"type\": \"origins:modify_food\",",
             "\"item_condition\": {$1},",
             "\"item_action\": {$2},",
             "\"replace_stack\": {$3},",
@@ -152,7 +152,7 @@
         "prefix": "modify_grindstone",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_grindstone\"",
+            "\"type\": \"origins:modify_grindstone\",",
             "\"result_type\": \"${1}\",",
             "\"entity_action\": {$2},",
             "\"block_action\": {$3},",
@@ -170,7 +170,7 @@
         "prefix": "modify_harvest",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_harvest\"",
+            "\"type\": \"origins:modify_harvest\",",
             "\"block_condition\": {$1},",
             "\"allow\": ${2|true,false|}",
         ],
@@ -180,7 +180,7 @@
         "prefix": "modify_healing",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_healing\"",
+            "\"type\": \"origins:modify_healing\",",
             "\"modifier\": {$1},",
             "\"modifiers\": [${2}]",
         ],
@@ -190,7 +190,7 @@
         "prefix": "modify_insomnia_ticks",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_insomnia_ticks\"",
+            "\"type\": \"origins:modify_insomnia_ticks\",",
             "\"modifier\": {$1},",
             "\"modifiers\": [${2}]",
         ],
@@ -200,7 +200,7 @@
         "prefix": "modify_jump",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_jump\"",
+            "\"type\": \"origins:modify_jump\",",
             "\"modifier\": {$1},",
             "\"modifiers\": [${2}],",
             "\"entity_action\": {$3}",
@@ -211,7 +211,7 @@
         "prefix": "modify_lava_speed",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_lava_speed\"",
+            "\"type\": \"origins:modify_lava_speed\",",
             "\"modifier\": {$1},",
             "\"modifiers\": [${2}]",
         ],
@@ -221,7 +221,7 @@
         "prefix": "modify_player_spawn",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_player_spawn\"",
+            "\"type\": \"origins:modify_player_spawn\",",
             "\"dimension\": \"${1}\",",
             "\"biome\": \"${2}\",",
             "\"structure\": \"${3}\",",
@@ -234,7 +234,7 @@
         "prefix": "modify_projectile_damage",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_projectile_damage\"",
+            "\"type\": \"origins:modify_projectile_damage\",",
             "\"damage_condition\": {$1},",
             "\"modifier\": {$2},",
             "\"modifiers\": [${3}],",
@@ -248,7 +248,7 @@
         "prefix": "modify_slipperiness",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_slipperiness\"",
+            "\"type\": \"origins:modify_slipperiness\",",
             "\"block_condition\": {$1},",
             "\"modifier\": {$2},",
             "\"modifiers\": [${3}]",
@@ -259,7 +259,7 @@
         "prefix": "modify_status_effect_amplifier",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_status_effect_amplifier\"",
+            "\"type\": \"origins:modify_status_effect_amplifier\",",
             "\"status_effect\": \"${1}\",",
             "\"status_effects\": [${2}],",
             "\"modifier\": {$3},",
@@ -271,7 +271,7 @@
         "prefix": "modify_status_effect_duration",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_status_effect_duration\"",
+            "\"type\": \"origins:modify_status_effect_duration\",",
             "\"status_effect\": \"${1}\",",
             "\"status_effects\": [${2}],",
             "\"modifier\": {$3},",
@@ -283,7 +283,7 @@
         "prefix": "modify_swim_speed",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_swim_speed\"",
+            "\"type\": \"origins:modify_swim_speed\",",
             "\"modifier\": {$1},",
             "\"modifiers\": [${2}]",
         ],
@@ -293,7 +293,7 @@
         "prefix": "modify_velocity",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_velocity\"",
+            "\"type\": \"origins:modify_velocity\",",
             "\"axes\": {$1},",
             "\"modifier\": {$2},",
             "\"modifiers\": [${3}]",
@@ -304,7 +304,7 @@
         "prefix": "modify_xp_gain",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_xp_gain\"",
+            "\"type\": \"origins:modify_xp_gain\",",
             "\"modifier\": {$1},",
             "\"modifiers\": [${2}]",
         ],

@@ -3,7 +3,7 @@
         "prefix": "attribute_modify_transfer",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:attribute_modify_transfer\"",
+            "\"type\": \"origins:attribute_modify_transfer\",",
             "\"class\": \"${1}\",",
             "\"attribute\": \"${2}\",",
             "\"multiplier\": ${3:1.0}",
@@ -14,7 +14,7 @@
         "prefix": "attribute",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:attribute\"",
+            "\"type\": \"origins:attribute\",",
             "\"modifier\": {$1},",
             "\"modifiers\": [${2}],",
             "\"update_health\": ${3|true,false|}",
@@ -25,7 +25,7 @@
         "prefix": "burn",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:burn\"",
+            "\"type\": \"origins:burn\",",
             "\"interval\": ${1:1},",
             "\"burn_duration\": ${2:1}",
         ],
@@ -35,7 +35,7 @@
         "prefix": "climbing",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:climbing\"",
+            "\"type\": \"origins:climbing\",",
             "\"allow_holding\": ${1|true,false|},",
             "\"hold_condition\": {$2}",
         ],
@@ -45,7 +45,7 @@
         "prefix": "conditioned_attribute",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:conditioned_attribute\"",
+            "\"type\": \"origins:conditioned_attribute\",",
             "\"modifier\": {$1},",
             "\"modifiers\": [${2}],",
             "\"tick_rate\": ${3:1},",
@@ -57,7 +57,7 @@
         "prefix": "conditioned_restrict_armor",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:conditioned_restrict_armor\"",
+            "\"type\": \"origins:conditioned_restrict_armor\",",
             "\"head\": {$1},",
             "\"chest\": {$2},",
             "\"legs\": {$3},",
@@ -70,7 +70,7 @@
         "prefix": "cooldown",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:cooldown\"",
+            "\"type\": \"origins:cooldown\",",
             "\"cooldown\": ${1:1},",
             "\"hud_render\": {$2}",
         ],
@@ -80,7 +80,7 @@
         "prefix": "creative_flight",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:creative_flight\"",
+            "\"type\": \"origins:creative_flight\",",
         ],
         "description": "Allows the players to fly as if they were in Creative Mode."
     },
@@ -88,7 +88,7 @@
         "prefix": "damage_over_time",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:damage_over_time\"",
+            "\"type\": \"origins:damage_over_time\",",
             "\"interval\": ${1:1},",
             "\"onset_delay\": ${2:1},",
             "\"damage\": ${3:1.0},",
@@ -103,7 +103,7 @@
         "prefix": "disable_regen",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:disable_regen\"",
+            "\"type\": \"origins:disable_regen\",",
         ],
         "description": "Disables the natural health regeneration when on full hunger."
     },
@@ -111,7 +111,7 @@
         "prefix": "effect_immunity",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:effect_immunity\"",
+            "\"type\": \"origins:effect_immunity\",",
             "\"effect\": \"${1}\",",
             "\"effects\": [${2}],",
             "\"inverted\": ${3|true,false|}",
@@ -122,7 +122,7 @@
         "prefix": "elytra_flight",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:elytra_flight\"",
+            "\"type\": \"origins:elytra_flight\",",
             "\"render_elytra\": ${1|true,false|},",
             "\"texture_location\": \"${2}\"",
         ],
@@ -132,7 +132,7 @@
         "prefix": "entity_glow",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:entity_glow\"",
+            "\"type\": \"origins:entity_glow\",",
             "\"entity_condition\": {$1},",
             "\"bientity_condition\": {$2},",
             "\"use_teams\": ${3|true,false|},",
@@ -146,7 +146,7 @@
         "prefix": "entity_group",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:entity_group\"",
+            "\"type\": \"origins:entity_group\",",
             "\"group\": \"${1}\"",
         ],
         "description": "Defines the entity group of the entity that has the power."
@@ -155,7 +155,7 @@
         "prefix": "exhaust",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:exhaust\"",
+            "\"type\": \"origins:exhaust\",",
             "\"interval\": ${1:1},",
             "\"exhaustion\": ${2:1.0}",
         ],
@@ -165,7 +165,7 @@
         "prefix": "fire_immunity",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:fire_immunity\"",
+            "\"type\": \"origins:fire_immunity\",",
         ],
         "description": "Grants full fire immunity (meaning not only do you take no damage from fire sources, you also can not be set on fire)."
     },
@@ -173,7 +173,7 @@
         "prefix": "fire_projectile",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:fire_projectile\"",
+            "\"type\": \"origins:fire_projectile\",",
             "\"entity_type\": \"${1}\",",
             "\"cooldown\": ${2:1},",
             "\"hud_render\": {$3},",
@@ -192,7 +192,7 @@
         "prefix": "freeze",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:freeze\"",
+            "\"type\": \"origins:freeze\",",
         ],
         "description": "Freezes the entity that has the power, as if they're in a Powder Snow block."
     },
@@ -200,7 +200,7 @@
         "prefix": "ignore_water",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:ignore_water\"",
+            "\"type\": \"origins:ignore_water\",",
         ],
         "description": "Prevents the movement of the entity that has the power from being affected by water."
     },
@@ -208,7 +208,7 @@
         "prefix": "inventory",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:inventory\"",
+            "\"type\": \"origins:inventory\",",
             "\"title\": \"${1}\",",
             "\"container_type\": ${2|true,false|},",
             "\"drop_on_death\": {$3},",
@@ -221,7 +221,7 @@
         "prefix": "invisibility",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:invisibility\"",
+            "\"type\": \"origins:invisibility\",",
             "\"render_armor\": ${1|true,false|},",
             "\"render_outline\": ${2|true,false|}",
         ],
@@ -231,7 +231,7 @@
         "prefix": "invulnerability",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:invulnerability\"",
+            "\"type\": \"origins:invulnerability\",",
             "\"damage_condition\": {$1}",
         ],
         "description": "Provides damage immunity to specific damage sources."
@@ -240,7 +240,7 @@
         "prefix": "item_on_item",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:item_on_item\"",
+            "\"type\": \"origins:item_on_item\",",
             "\"using_item_condition\": {$1},",
             "\"on_item_condition\": {$2},",
             "\"result\": {$3},",
@@ -256,7 +256,7 @@
         "prefix": "keep_inventory",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:keep_inventory\"",
+            "\"type\": \"origins:keep_inventory\",",
             "\"item_condition\": {$1},",
             "\"slots\": [${2}]",
         ],
@@ -266,7 +266,7 @@
         "prefix": "launch",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:launch\"",
+            "\"type\": \"origins:launch\",",
             "\"cooldown\": ${1:1},",
             "\"speed\": ${2:1.0},",
             "\"hud_render\": {$3},",
@@ -279,7 +279,7 @@
         "prefix": "lava_vision",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:lava_vision\"",
+            "\"type\": \"origins:lava_vision\",",
             "\"s\": ${1:1.0},",
             "\"v\": ${2:1.0}",
         ],
@@ -289,7 +289,7 @@
         "prefix": "model_color",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:model_color\"",
+            "\"type\": \"origins:model_color\",",
             "\"red\": ${1:1.0},",
             "\"green\": ${2:1.0},",
             "\"blue\": ${3:1.0},",
@@ -301,7 +301,7 @@
         "prefix": "multiple",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:multiple\"",
+            "\"type\": \"origins:multiple\",",
         ],
         "description": "Allows for defining more than one power in a single file."
     },
@@ -309,7 +309,7 @@
         "prefix": "night_vision",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:night_vision\"",
+            "\"type\": \"origins:night_vision\",",
             "\"strength\": ${1:1.0}",
         ],
         "description": "Grants night vision to the player without the Night Vision status effect."
@@ -318,7 +318,7 @@
         "prefix": "overlay",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:overlay\"",
+            "\"type\": \"origins:overlay\",",
             "\"texture\": \"${1}\",",
             "\"strength\": ${2:1.0},",
             "\"red\": ${3:1.0},",
@@ -335,7 +335,7 @@
         "prefix": "particle",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:particle\"",
+            "\"type\": \"origins:particle\",",
             "\"particle\": {$1},",
             "\"frequency\": ${2:1},",
             "\"count\": ${3:1},",
@@ -351,7 +351,7 @@
         "prefix": "phasing",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:phasing\"",
+            "\"type\": \"origins:phasing\",",
             "\"blacklist\": ${1|true,false|},",
             "\"block_condition\": {$2},",
             "\"render_type\": \"${3}\",",
@@ -364,7 +364,7 @@
         "prefix": "recipe",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:recipe\"",
+            "\"type\": \"origins:recipe\",",
             "\"recipe\": {$1}",
         ],
         "description": "Allows a player with this power to craft the defined crafting recipe."
@@ -373,7 +373,7 @@
         "prefix": "replace_loot_table",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:replace_loot_table\"",
+            "\"type\": \"origins:replace_loot_table\",",
         ],
         "description": "Replaces a loot table with another loot table."
     },
@@ -381,7 +381,7 @@
         "prefix": "resource",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:resource\"",
+            "\"type\": \"origins:resource\",",
             "\"min\": ${1:1},",
             "\"max\": ${2:1},",
             "\"hud_render\": {$3},",
@@ -395,7 +395,7 @@
         "prefix": "restrict_armor",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:restrict_armor\"",
+            "\"type\": \"origins:restrict_armor\",",
             "\"head\": {$1},",
             "\"chest\": {$2},",
             "\"legs\": {$3},",
@@ -407,7 +407,7 @@
         "prefix": "self_glow",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:self_glow\"",
+            "\"type\": \"origins:self_glow\",",
             "\"entity_condition\": {$1},",
             "\"bientity_condition\": {$2},",
             "\"use_teams\": ${3|true,false|},",
@@ -421,7 +421,7 @@
         "prefix": "shader",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:shader\"",
+            "\"type\": \"origins:shader\",",
             "\"shader\": \"${1}\",",
             "\"toggleable\": ${2|true,false|}",
         ],
@@ -431,7 +431,7 @@
         "prefix": "shaking",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:shaking\"",
+            "\"type\": \"origins:shaking\",",
         ],
         "description": "Makes the entity that has the power shake, similar to a Strider out of lava or a Zombie undergoing conversion."
     },
@@ -439,7 +439,7 @@
         "prefix": "simple",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:simple\"",
+            "\"type\": \"origins:simple\",",
         ],
         "description": "Does nothing."
     },
@@ -447,7 +447,7 @@
         "prefix": "stacking_status_effect",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:stacking_status_effect\"",
+            "\"type\": \"origins:stacking_status_effect\",",
             "\"min_stacks\": ${1:1},",
             "\"max_stacks\": ${2:1},",
             "\"duration_per_stack\": ${3:1},",
@@ -461,7 +461,7 @@
         "prefix": "starting_equipment",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:starting_equipment\"",
+            "\"type\": \"origins:starting_equipment\",",
             "\"stack\": {$1},",
             "\"stacks\": [${2}],",
             "\"recurrent\": ${3|true,false|}",
@@ -472,7 +472,7 @@
         "prefix": "status_bar_texture",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:status_bar_texture\"",
+            "\"type\": \"origins:status_bar_texture\",",
             "\"texture\": \"${1}\"",
         ],
         "description": "Replaces the status bar textures (health, hunger, air, experience, etc.) with a specified sprite sheet."
@@ -481,7 +481,7 @@
         "prefix": "swimming",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:swimming\"",
+            "\"type\": \"origins:swimming\",",
         ],
         "description": "Allows the player to swim (outside of water!)."
     },
@@ -489,7 +489,7 @@
         "prefix": "toggle_night_vision",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:toggle_night_vision\"",
+            "\"type\": \"origins:toggle_night_vision\",",
             "\"active_by_default\": ${1|true,false|},",
             "\"strength\": ${2:1.0},",
             "\"key\": {$3}",
@@ -500,7 +500,7 @@
         "prefix": "toggle",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:toggle\"",
+            "\"type\": \"origins:toggle\",",
             "\"active_by_default\": ${1|true,false|},",
             "\"key\": {$2},",
             "\"retain_state\": ${3|true,false|}",
@@ -511,7 +511,7 @@
         "prefix": "tooltip",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:tooltip\"",
+            "\"type\": \"origins:tooltip\",",
             "\"item_condition\": {$1},",
             "\"text\": {$2},",
             "\"texts\": [${3}],",
@@ -523,7 +523,7 @@
         "prefix": "walk_on_fluid",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:walk_on_fluid\"",
+            "\"type\": \"origins:walk_on_fluid\",",
             "\"fluid\": \"${1}\"",
         ],
         "description": "Allows the entity that has the power to walk on fluid."

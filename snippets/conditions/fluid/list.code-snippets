@@ -3,7 +3,7 @@
         "prefix": "fluid:empty",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:empty\"",
+            "\"type\": \"origins:empty\",",
         ],
         "description": "Checks whether there is no fluid in this state."
     },
@@ -11,7 +11,7 @@
         "prefix": "fluid:in_tag",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:in_tag\"",
+            "\"type\": \"origins:in_tag\",",
             "\"tag\": \"${1}\"",
         ],
         "description": "Checks whether the fluid is in a specified tag."
@@ -20,7 +20,7 @@
         "prefix": "fluid:still",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:still\"",
+            "\"type\": \"origins:still\",",
         ],
         "description": "Checks whether this state describes a still (i.e. not flowing, i.e. source) fluid."
     }

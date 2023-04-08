@@ -3,7 +3,7 @@
         "prefix": "block:add_block",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:add_block\"",
+            "\"type\": \"origins:add_block\",",
             "\"block\": \"${1}\"",
         ],
         "description": "Adds a block at the specified action position. Adding means setting the block at the position, offset by the direction of the action."
@@ -12,7 +12,7 @@
         "prefix": "block:bonemeal",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:bonemeal\"",
+            "\"type\": \"origins:bonemeal\",",
             "\"effects\": ${1|true,false|}",
         ],
         "description": "Applies bone meal to the target block as if a dispenser or a player used a Bone Meal item to it."
@@ -21,7 +21,7 @@
         "prefix": "block:execute_command",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:execute_command\"",
+            "\"type\": \"origins:execute_command\",",
             "\"command\": \"${1}\"",
         ],
         "description": "Executes a command at the position of the block."
@@ -30,7 +30,7 @@
         "prefix": "block:explode",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:explode\"",
+            "\"type\": \"origins:explode\",",
             "\"power\": ${1:1.0},",
             "\"destruction_type\": {$2},",
             "\"indestructible\": {$3},",
@@ -42,7 +42,7 @@
         "prefix": "block:modify_block_state",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_block_state\"",
+            "\"type\": \"origins:modify_block_state\",",
             "\"property\": \"${1}\",",
             "\"operation\": \"${2}\",",
             "\"change\": ${3:1},",
@@ -56,7 +56,7 @@
         "prefix": "block:set_block",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:set_block\"",
+            "\"type\": \"origins:set_block\",",
             "\"block\": \"${1}\"",
         ],
         "description": "Overwrites the block at the targeted position with the default state of another one."

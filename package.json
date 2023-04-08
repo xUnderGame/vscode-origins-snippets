@@ -1,7 +1,7 @@
 {
 	"name": "vscode-origins-snippets",
 	"displayName": "Vscode Origins Snippets",
-	"description": "placeholder description",
+	"description": "A collection of snippets from the Minecraft Origins mod.",
 	"publisher": "UnderGame",
 	"version": "1.0.0",
 	"engines": {
@@ -68,6 +68,42 @@
 			{
 				"language": "json",
 				"path": "./snippets/actions/meta/list.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/conditions/bientity/list.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/conditions/bientity/meta.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/conditions/biome/list.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/conditions/block/list.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/conditions/block/meta.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/conditions/damage/list.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/conditions/fluid/list.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/conditions/item/list.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/conditions/meta/list.code-snippets"
 			}
 		]
 	}

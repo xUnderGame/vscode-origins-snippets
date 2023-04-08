@@ -3,7 +3,7 @@
         "prefix": "entity:add_velocity",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:add_velocity\"",
+            "\"type\": \"origins:add_velocity\",",
             "\"x\": ${1:1.0},",
             "\"y\": ${2:1.0},",
             "\"z\": ${3:1.0},",
@@ -18,7 +18,7 @@
         "prefix": "entity:add_xp",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:add_xp\"",
+            "\"type\": \"origins:add_xp\",",
             "\"points\": ${1:1},",
             "\"levels\": ${2:1}",
         ],
@@ -28,7 +28,7 @@
         "prefix": "entity:apply_effect",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:apply_effect\"",
+            "\"type\": \"origins:apply_effect\",",
             "\"effect\": {$1},",
             "\"effects\": [${2}]",
         ],
@@ -38,7 +38,7 @@
         "prefix": "entity:area_of_effect",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:area_of_effect\"",
+            "\"type\": \"origins:area_of_effect\",",
             "\"radius\": ${1:1.0},",
             "\"bientity_action\": {$2},",
             "\"bientity_condition\": {$3},",
@@ -50,7 +50,7 @@
         "prefix": "entity:block_action_at",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:block_action_at\"",
+            "\"type\": \"origins:block_action_at\",",
             "\"block_action\": {$1}",
         ],
         "description": "Executes a Block Action Type at the position of the entity."
@@ -59,7 +59,7 @@
         "prefix": "entity:change_resource",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:change_resource\"",
+            "\"type\": \"origins:change_resource\",",
             "\"resource\": \"${1}\",",
             "\"change\": ${2:1},",
             "\"operation\": \"${3}\"",
@@ -70,7 +70,7 @@
         "prefix": "entity:clear_effect",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:clear_effect\"",
+            "\"type\": \"origins:clear_effect\",",
             "\"effect\": \"${1}\"",
         ],
         "description": "Removes one specific type of status effect, or all status effects, from a living entity."
@@ -79,7 +79,7 @@
         "prefix": "entity:crafting_table",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:crafting_table\"",
+            "\"type\": \"origins:crafting_table\",",
         ],
         "description": "Brings up the Crafting Table GUI as if the player has interacted with one."
     },
@@ -87,7 +87,7 @@
         "prefix": "entity:damage",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:damage\"",
+            "\"type\": \"origins:damage\",",
             "\"amount\": ${1:1.0},",
             "\"source\": {$2}",
         ],
@@ -97,7 +97,7 @@
         "prefix": "entity:dismount",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:dismount\"",
+            "\"type\": \"origins:dismount\",",
         ],
         "description": "Dismounts the entity from their vehicle."
     },
@@ -105,7 +105,7 @@
         "prefix": "entity:drop_inventory",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:drop_inventory\"",
+            "\"type\": \"origins:drop_inventory\",",
             "\"inventory_type\": {$1},",
             "\"entity_action\": {$2},",
             "\"item_action\": {$3},",
@@ -122,7 +122,7 @@
         "prefix": "entity:emit_game_event",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:emit_game_event\"",
+            "\"type\": \"origins:emit_game_event\",",
             "\"event\": \"${1}\"",
         ],
         "description": "Emits a 'game event' at the entity's position."
@@ -131,7 +131,7 @@
         "prefix": "entity:ender_chest",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:ender_chest\"",
+            "\"type\": \"origins:ender_chest\",",
         ],
         "description": "Brings up the Ender Chest GUI as if the player has interacted with one."
     },
@@ -139,7 +139,7 @@
         "prefix": "entity:equipped_item_action",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:equipped_item_action\"",
+            "\"type\": \"origins:equipped_item_action\",",
             "\"equipment_slot\": \"${1}\",",
             "\"action\": {$2}",
         ],
@@ -149,7 +149,7 @@
         "prefix": "entity:execute_command",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:execute_command\"",
+            "\"type\": \"origins:execute_command\",",
             "\"command\": \"${1}\"",
         ],
         "description": "Executes a command with the entity as the source (i.e. @s will select the entity itself)."
@@ -158,7 +158,7 @@
         "prefix": "entity:exhaust",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:exhaust\"",
+            "\"type\": \"origins:exhaust\",",
             "\"amount\": ${1:1.0}",
         ],
         "description": "Applies exhaustion to the entity, reducing saturation and hunger."
@@ -167,7 +167,7 @@
         "prefix": "entity:explode",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:explode\"",
+            "\"type\": \"origins:explode\",",
             "\"power\": ${1:1.0},",
             "\"destruction_type\": ${2|true,false|},",
             "\"damage_self\": {$3},",
@@ -180,7 +180,7 @@
         "prefix": "entity:extinguish",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:extinguish\"",
+            "\"type\": \"origins:extinguish\",",
         ],
         "description": "Extinguishes the fire from the entity, removing the burning effect."
     },
@@ -188,7 +188,7 @@
         "prefix": "entity:feed",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:feed\"",
+            "\"type\": \"origins:feed\",",
             "\"food\": ${1:1},",
             "\"saturation\": ${2:1.0}",
         ],
@@ -198,7 +198,7 @@
         "prefix": "entity:gain_air",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:gain_air\"",
+            "\"type\": \"origins:gain_air\",",
             "\"value\": ${1:1}",
         ],
         "description": "Restores breath (bubbles!) to a living entity."
@@ -207,7 +207,7 @@
         "prefix": "entity:give",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:give\"",
+            "\"type\": \"origins:give\",",
             "\"stack\": {$1},",
             "\"item_action\": {$2},",
             "\"preferred_slot\": \"${3}\"",
@@ -218,7 +218,7 @@
         "prefix": "entity:grant_power",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:grant_power\"",
+            "\"type\": \"origins:grant_power\",",
             "\"power\": \"${1}\",",
             "\"source\": \"${2}\"",
         ],
@@ -228,7 +228,7 @@
         "prefix": "entity:heal",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:heal\"",
+            "\"type\": \"origins:heal\",",
             "\"amount\": ${1:1.0}",
         ],
         "description": "Restores a specified amount of health to the entity."
@@ -237,7 +237,7 @@
         "prefix": "entity:modify_death_ticks",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_death_ticks\"",
+            "\"type\": \"origins:modify_death_ticks\",",
             "\"modifier\": {$1}",
         ],
         "description": "Modifies how long the entity has been dead for."
@@ -246,7 +246,7 @@
         "prefix": "entity:modify_inventory",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_inventory\"",
+            "\"type\": \"origins:modify_inventory\",",
             "\"inventory_type\": {$1},",
             "\"entity_action\": {$2},",
             "\"item_action\": {$3},",
@@ -260,7 +260,7 @@
         "prefix": "entity:modify_resource",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_resource\"",
+            "\"type\": \"origins:modify_resource\",",
             "\"modifier\": {$1},",
             "\"resource\": \"${2}\"",
         ],
@@ -270,7 +270,7 @@
         "prefix": "entity:modify_stat",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify_stat\"",
+            "\"type\": \"origins:modify_stat\",",
             "\"stat\": {$1},",
             "\"modifier\": {$2}",
         ],
@@ -280,7 +280,7 @@
         "prefix": "entity:passenger_action",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:passenger_action\"",
+            "\"type\": \"origins:passenger_action\",",
             "\"action\": {$1},",
             "\"bientity_action\": {$2},",
             "\"bientity_condition\": {$3},",
@@ -292,7 +292,7 @@
         "prefix": "entity:play_sound",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:play_sound\"",
+            "\"type\": \"origins:play_sound\",",
             "\"sound\": \"${1}\",",
             "\"volume\": ${2:1.0},",
             "\"pitch\": ${3:1.0}",
@@ -303,7 +303,7 @@
         "prefix": "entity:raycast",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:raycast\"",
+            "\"type\": \"origins:raycast\",",
             "\"distance\": ${1:1.0},",
             "\"block\": ${2|true,false|},",
             "\"entity\": ${3|true,false|},",
@@ -325,7 +325,7 @@
         "prefix": "entity:replace_inventory",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:replace_inventory\"",
+            "\"type\": \"origins:replace_inventory\",",
             "\"inventory_type\": {$1},",
             "\"entity_action\": {$2},",
             "\"item_action\": {$3},",
@@ -341,7 +341,7 @@
         "prefix": "entity:revoke_power",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:revoke_power\"",
+            "\"type\": \"origins:revoke_power\",",
             "\"power\": \"${1}\",",
             "\"source\": \"${2}\"",
         ],
@@ -351,7 +351,7 @@
         "prefix": "entity:riding_action",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:riding_action\"",
+            "\"type\": \"origins:riding_action\",",
             "\"action\": {$1},",
             "\"bientity_action\": {$2},",
             "\"bientity_condition\": {$3},",
@@ -363,7 +363,7 @@
         "prefix": "entity:set_fall_distance",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:set_fall_distance\"",
+            "\"type\": \"origins:set_fall_distance\",",
             "\"fall_distance\": ${1:1.0}",
         ],
         "description": "Sets the fall distance of the entity to the specified amount. The fall distance value keeps track of how many blocks the entity has fallen and is used to calculate the amount of fall damage the entity takes. By setting it to 0 while falling, the entity essentially takes fall damage as if it had only fallen from the current position."
@@ -372,7 +372,7 @@
         "prefix": "entity:set_on_fire",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:set_on_fire\"",
+            "\"type\": \"origins:set_on_fire\",",
             "\"duration\": ${1:1}",
         ],
         "description": "Sets the entity on fire for the specified amount of time in seconds."
@@ -381,7 +381,7 @@
         "prefix": "entity:spawn_effect_cloud",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:spawn_effect_cloud\"",
+            "\"type\": \"origins:spawn_effect_cloud\",",
             "\"radius\": ${1:1.0},",
             "\"radius_on_use\": ${2:1.0},",
             "\"wait_time\": ${3:1},",
@@ -394,7 +394,7 @@
         "prefix": "entity:spawn_entity",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:spawn_entity\"",
+            "\"type\": \"origins:spawn_entity\",",
             "\"entity_type\": \"${1}\",",
             "\"tag\": \"${2}\",",
             "\"entity_action\": {$3}",
@@ -405,7 +405,7 @@
         "prefix": "entity:spawn_particles",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:spawn_particles\"",
+            "\"type\": \"origins:spawn_particles\",",
             "\"particle\": {$1},",
             "\"count\": ${2:1},",
             "\"speed\": ${3:1.0},",
@@ -419,7 +419,7 @@
         "prefix": "entity:swing_hand",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:swing_hand\"",
+            "\"type\": \"origins:swing_hand\",",
             "\"hand\": \"${1}\"",
         ],
         "description": "Swings the specified hand."
@@ -428,7 +428,7 @@
         "prefix": "entity:toggle",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:toggle\"",
+            "\"type\": \"origins:toggle\",",
             "\"power\": \"${1}\"",
         ],
         "description": "Toggles the state of a power that uses the Toggle (Power Type)."
@@ -437,7 +437,7 @@
         "prefix": "entity:trigger_cooldown",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:trigger_cooldown\"",
+            "\"type\": \"origins:trigger_cooldown\",",
             "\"power\": \"${1}\"",
         ],
         "description": "Starts the cooldown of a power that uses a Power Type that has a built-in cooldown, as if that power has just been used."

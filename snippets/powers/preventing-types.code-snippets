@@ -3,7 +3,7 @@
         "prefix": "prevent_being_used",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:prevent_being_used\"",
+            "\"type\": \"origins:prevent_being_used\",",
             "\"bientity_action\": {$1},",
             "\"held_item_action\": {$2},",
             "\"result_item_action\": {$3},",
@@ -18,7 +18,7 @@
         "prefix": "prevent_block_selection",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:prevent_block_selection\"",
+            "\"type\": \"origins:prevent_block_selection\",",
             "\"block_condition\": {$1}",
         ],
         "description": "Prevents the selection of blocks for the player that has the power."
@@ -27,7 +27,7 @@
         "prefix": "prevent_block_use",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:prevent_block_use\"",
+            "\"type\": \"origins:prevent_block_use\",",
             "\"block_condition\": {$1}",
         ],
         "description": "Prevents the usage of blocks for the player that has the power."
@@ -36,7 +36,7 @@
         "prefix": "prevent_death",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:prevent_death\"",
+            "\"type\": \"origins:prevent_death\",",
             "\"damage_condition\": {$1},",
             "\"entity_action\": {$2}",
         ],
@@ -46,7 +46,7 @@
         "prefix": "prevent_elytra_flight",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:prevent_elytra_flight\"",
+            "\"type\": \"origins:prevent_elytra_flight\",",
             "\"entity_action\": {$1}",
         ],
         "description": "Prevents the entity that has the power from flying with either an Elytra item or a power that uses the Elytra Flight (Power Type)."
@@ -55,7 +55,7 @@
         "prefix": "prevent_entity_collision",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:prevent_entity_collision\"",
+            "\"type\": \"origins:prevent_entity_collision\",",
             "\"bientity_condition\": {$1}",
         ],
         "description": "Prevents the entity that has the power from colliding with other entities."
@@ -64,7 +64,7 @@
         "prefix": "prevent_entity_render",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:prevent_entity_render\"",
+            "\"type\": \"origins:prevent_entity_render\",",
             "\"entity_condition\": {$1},",
             "\"bientity_condition\": {$2}",
         ],
@@ -74,7 +74,7 @@
         "prefix": "prevent_entity_use",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:prevent_entity_use\"",
+            "\"type\": \"origins:prevent_entity_use\",",
             "\"bientity_action\": {$1},",
             "\"held_item_action\": {$2},",
             "\"result_item_action\": {$3},",
@@ -89,7 +89,7 @@
         "prefix": "prevent_feature_render",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:prevent_feature_render\"",
+            "\"type\": \"origins:prevent_feature_render\",",
         ],
         "description": "Prevents certain Feature Renderers (like the wool coat of a Sheep, the worn armor of a mob, etc.) from rendering on the entity that has the power."
     },
@@ -97,7 +97,7 @@
         "prefix": "prevent_game_event",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:prevent_game_event\"",
+            "\"type\": \"origins:prevent_game_event\",",
             "\"event\": \"${1}\",",
             "\"events\": [${2}],",
             "\"tag\": \"${3}\",",
@@ -109,7 +109,7 @@
         "prefix": "prevent_item_use",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:prevent_item_use\"",
+            "\"type\": \"origins:prevent_item_use\",",
             "\"item_condition\": {$1}",
         ],
         "description": "Prevents the player from using items (right-click action such as eating food or using a shield, placing them as blocks will still work)."
@@ -118,7 +118,7 @@
         "prefix": "prevent_sleep",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:prevent_sleep\"",
+            "\"type\": \"origins:prevent_sleep\",",
             "\"block_condition\": {$1},",
             "\"message\": \"${2}\",",
             "\"set_spawn_point\": ${3|true,false|}",
@@ -129,7 +129,7 @@
         "prefix": "prevent_sprinting",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:prevent_sprinting\"",
+            "\"type\": \"origins:prevent_sprinting\",",
         ],
         "description": "Prevents the player that has the power from sprinting."
     }

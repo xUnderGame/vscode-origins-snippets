@@ -3,7 +3,7 @@
         "prefix": "bientity:actor_condition",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:actor_condition\"",
+            "\"type\": \"origins:actor_condition\",",
             "\"condition\": {$1}",
         ],
         "description": "Checks for an Entity Condition Type on the actor entity."
@@ -12,7 +12,7 @@
         "prefix": "bientity:both",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:both\"",
+            "\"type\": \"origins:both\",",
             "\"condition\": {$1}",
         ],
         "description": "Checks for an entity condition on both the actor and target entities."
@@ -21,7 +21,7 @@
         "prefix": "bientity:either",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:either\"",
+            "\"type\": \"origins:either\",",
             "\"condition\": {$1}",
         ],
         "description": "Checks for an entity condition on either the actor or the target entities."
@@ -30,7 +30,7 @@
         "prefix": "bientity:invert",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:invert\"",
+            "\"type\": \"origins:invert\",",
             "\"condition\": {$1}",
         ],
         "description": "Swaps the context of the target entity and the actor entity."
@@ -39,7 +39,7 @@
         "prefix": "bientity:target_condition",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:target_condition\"",
+            "\"type\": \"origins:target_condition\",",
             "\"condition\": {$1}",
         ],
         "description": "Checks for an Entity Condition Type on the target entity."
@@ -48,7 +48,7 @@
         "prefix": "bientity:undirected",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:undirected\"",
+            "\"type\": \"origins:undirected\",",
             "\"condition\": {$1}",
         ],
         "description": "Checks if the specified bi-entity condition is true before or after swapping the actor and target context."

@@ -3,7 +3,7 @@
         "prefix": "meta:and",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:and\"",
+            "\"type\": \"origins:and\",",
             "\"actions\": [${1}]",
         ],
         "description": "Executes all provided actions in order."
@@ -12,7 +12,7 @@
         "prefix": "meta:chance",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:chance\"",
+            "\"type\": \"origins:chance\",",
             "\"action\": {$1},",
             "\"chance\": ${2:1.0},",
             "\"fail_action\": {$3}",
@@ -23,7 +23,7 @@
         "prefix": "meta:choice",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:choice\"",
+            "\"type\": \"origins:choice\",",
             "\"actions\": [${1}]",
         ],
         "description": "Executes one of the provided actions, choosing randomly based on the assigned weights. The actions with higher weight values are more likely to be chosen."
@@ -32,7 +32,7 @@
         "prefix": "meta:delay",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:delay\"",
+            "\"type\": \"origins:delay\",",
             "\"action\": {$1},",
             "\"ticks\": ${2:1}",
         ],
@@ -42,7 +42,7 @@
         "prefix": "meta:if_else_list",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:if_else_list\"",
+            "\"type\": \"origins:if_else_list\",",
             "\"actions\": [$1]",
         ],
         "description": "Checks a list of actions associated with conditions, and executes the first one in the list for which the condition holds. Basically a less indentation-heavy way to represent a deeply nested If-Else (Meta Action Type)."
@@ -51,7 +51,7 @@
         "prefix": "meta:if_else",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:if_else\"",
+            "\"type\": \"origins:if_else\",",
             "\"condition\": {$1},",
             "\"if_action\": {$2},",
             "\"else_action\": {$3}",
@@ -62,7 +62,7 @@
         "prefix": "meta:nothing",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:nothing\"",
+            "\"type\": \"origins:nothing\",",
         ],
         "description": "Does nothing. Can be used as a backup in case an action is not optional in some place."
     },
@@ -70,7 +70,7 @@
         "prefix": "meta:side",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:side\"",
+            "\"type\": \"origins:side\",",
             "\"action\": {$1},",
             "\"side\": \"${2}\"",
         ],

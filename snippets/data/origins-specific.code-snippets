@@ -3,7 +3,7 @@
         "prefix": "attribute_modifier_operation",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:attribute_modifier_operation\"",
+            "\"type\": \"origins:attribute_modifier_operation\",",
         ],
         "description": "A String used to specify the operation used by Attribute Modifiers."
     },
@@ -11,7 +11,7 @@
         "prefix": "attribute_modifier",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:attribute_modifier\"",
+            "\"type\": \"origins:attribute_modifier\",",
             "\"operation\": {$1},",
             "\"value\": ${2:1.0},",
             "\"resource\": \"${3}\",",
@@ -24,7 +24,7 @@
         "prefix": "attributed_attribute_modifier_operation",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:attributed_attribute_modifier_operation\"",
+            "\"type\": \"origins:attributed_attribute_modifier_operation\",",
         ],
         "description": "A String used to specify the operation used by Attributed Attribute Modifiers."
     },
@@ -32,7 +32,7 @@
         "prefix": "attributed_attribute_modifier",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:attributed_attribute_modifier\"",
+            "\"type\": \"origins:attributed_attribute_modifier\",",
             "\"attribute\": \"${1}\",",
             "\"operation\": {$2},",
             "\"value\": ${3:1.0},",
@@ -44,7 +44,7 @@
         "prefix": "comparison",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:comparison\"",
+            "\"type\": \"origins:comparison\",",
         ],
         "description": "A String which specifies how two numbers should be compared. Usually the first number is provided by whatever condition you are in, and the second is specified in an accompanying compare_to field."
     },
@@ -52,7 +52,7 @@
         "prefix": "damage_source",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:damage_source\"",
+            "\"type\": \"origins:damage_source\",",
             "\"name\": \"${1}\",",
             "\"bypasses_armor\": ${2|true,false|},",
             "\"fire\": ${3|true,false|},",
@@ -66,7 +66,7 @@
         "prefix": "hud_render",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:hud_render\"",
+            "\"type\": \"origins:hud_render\",",
             "\"should_render\": ${1|true,false|},",
             "\"sprite_location\": \"${2}\",",
             "\"bar_index\": ${3:1},",
@@ -79,7 +79,7 @@
         "prefix": "identifier",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:identifier\"",
+            "\"type\": \"origins:identifier\",",
         ],
         "description": "A String which specifies an identifier used in Minecraft. They are used to refer to items, blocks, status effects, locations in data or resource packs, and a lot of other things."
     },
@@ -87,7 +87,7 @@
         "prefix": "ingredient",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:ingredient\"",
+            "\"type\": \"origins:ingredient\",",
             "\"item\": \"${1}\",",
             "\"tag\": \"${2}\"",
         ],
@@ -97,7 +97,7 @@
         "prefix": "item_slot",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:item_slot\"",
+            "\"type\": \"origins:item_slot\",",
         ],
         "description": "A String that represents a slot from an entity or container's inventory."
     },
@@ -105,7 +105,7 @@
         "prefix": "item_stack",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:item_stack\"",
+            "\"type\": \"origins:item_stack\",",
             "\"item\": \"${1}\",",
             "\"amount\": ${2:1},",
             "\"tag\": \"${3}\"",
@@ -116,7 +116,7 @@
         "prefix": "key",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:key\"",
+            "\"type\": \"origins:key\",",
             "\"key\": \"${1}\",",
             "\"continuous\": ${2|true,false|}",
         ],
@@ -126,7 +126,7 @@
         "prefix": "particle_effect",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:particle_effect\"",
+            "\"type\": \"origins:particle_effect\",",
             "\"type\": \"${1}\",",
             "\"params\": \"${2}\"",
         ],
@@ -136,7 +136,7 @@
         "prefix": "positioned_item_stack",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:positioned_item_stack\"",
+            "\"type\": \"origins:positioned_item_stack\",",
             "\"item\": \"${1}\",",
             "\"amount\": ${2:1},",
             "\"tag\": \"${3}\",",
@@ -148,7 +148,7 @@
         "prefix": "stat",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:stat\"",
+            "\"type\": \"origins:stat\",",
             "\"type\": \"${1}\",",
             "\"id\": \"${2}\"",
         ],
@@ -158,7 +158,7 @@
         "prefix": "status_effect_instance",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:status_effect_instance\"",
+            "\"type\": \"origins:status_effect_instance\",",
             "\"effect\": \"${1}\",",
             "\"duration\": ${2:1},",
             "\"amplifier\": ${3:1},",
@@ -172,7 +172,7 @@
         "prefix": "text_component",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:text_component\"",
+            "\"type\": \"origins:text_component\",",
         ],
         "description": "A String or Object used for displaying text with fancy formatting."
     },
@@ -180,7 +180,7 @@
         "prefix": "vector",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:vector\"",
+            "\"type\": \"origins:vector\",",
             "\"x\": ${1:1.0},",
             "\"y\": ${2:1.0},",
             "\"z\": ${3:1.0}",

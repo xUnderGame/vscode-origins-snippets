@@ -3,7 +3,7 @@
         "prefix": "item:consume",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:consume\"",
+            "\"type\": \"origins:consume\",",
             "\"amount\": ${1:1}",
         ],
         "description": "Removes a provided amount of items from the item stack."
@@ -12,7 +12,7 @@
         "prefix": "item:damage",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:damage\"",
+            "\"type\": \"origins:damage\",",
             "\"amount\": ${1:1},",
             "\"ignore_unbreaking\": ${2|true,false|}",
         ],
@@ -22,7 +22,7 @@
         "prefix": "item:merge_nbt",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:merge_nbt\"",
+            "\"type\": \"origins:merge_nbt\",",
             "\"nbt\": \"${1}\"",
         ],
         "description": "Merges the specified NBT to the item's NBT."
@@ -31,7 +31,7 @@
         "prefix": "item:modify",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:modify\"",
+            "\"type\": \"origins:modify\",",
             "\"modifier\": \"${1}\"",
         ],
         "description": "Applies an Item Modifier to the item stack."
@@ -40,7 +40,7 @@
         "prefix": "item:remove_enchantment",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:remove_enchantment\"",
+            "\"type\": \"origins:remove_enchantment\",",
             "\"enchantment\": \"${1}\",",
             "\"enchantments\": [${2}],",
             "\"levels\": ${3:1},",

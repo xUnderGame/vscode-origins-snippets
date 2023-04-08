@@ -1,9 +1,8 @@
-# Change Log
+# Changelog
 
-All notable changes to the "vscode-origins-snippets" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+All notable changes to the extension will be documented in this file.
 
 ## [Unreleased]
 
-- Initial release
+## [v1.0.0] - 2023-04-08
+- Initial release!

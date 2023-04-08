@@ -3,7 +3,7 @@
         "prefix": "block:offset",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:offset\"",
+            "\"type\": \"origins:offset\",",
             "\"condition\": {$1},",
             "\"x\": ${2:1},",
             "\"y\": ${3:1},",

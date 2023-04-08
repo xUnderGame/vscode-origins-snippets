@@ -3,7 +3,7 @@
         "prefix": "biome:category",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:category\"",
+            "\"type\": \"origins:category\",",
         ],
         "description": "(DEPRECATED) Checks for the category of a biome. (DEPRECATED)"
     },
@@ -11,7 +11,7 @@
         "prefix": "biome:high_humidity",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:high_humidity\"",
+            "\"type\": \"origins:high_humidity\",",
         ],
         "description": "Checks whether the biome counts as an area with high humidity."
     },
@@ -19,7 +19,7 @@
         "prefix": "biome:in_tag",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:in_tag\"",
+            "\"type\": \"origins:in_tag\",",
             "\"tag\": \"${1}\"",
         ],
         "description": "Checks whether the biome is in a specified tag."
@@ -28,7 +28,7 @@
         "prefix": "biome:precipitation",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:precipitation\"",
+            "\"type\": \"origins:precipitation\",",
             "\"precipitation\": \"${1}\"",
         ],
         "description": "Checks for the precipitation type of the biome the entity is currently in."
@@ -37,7 +37,7 @@
         "prefix": "biome:temperature",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:temperature\"",
+            "\"type\": \"origins:temperature\",",
             "\"comparison\": {$1},",
             "\"compare_to\": ${2:1.0}",
         ],

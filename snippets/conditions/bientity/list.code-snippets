@@ -3,7 +3,7 @@
         "prefix": "bientity:attack_target",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:attack_target\"",
+            "\"type\": \"origins:attack_target\",",
         ],
         "description": "Checks if the actor entity is currently aggressive to the target entity."
     },
@@ -11,7 +11,7 @@
         "prefix": "bientity:attacker",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:attacker\"",
+            "\"type\": \"origins:attacker\",",
         ],
         "description": "Checks if the actor entity has attacked the target entity within the last 5 seconds, and still exists."
     },
@@ -19,7 +19,7 @@
         "prefix": "bientity:can_see",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:can_see\"",
+            "\"type\": \"origins:can_see\",",
         ],
         "description": "Checks whether the straight path from the actor entity's eyes to the target entity's eyes is unobstructed."
     },
@@ -27,7 +27,7 @@
         "prefix": "bientity:distance",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:distance\"",
+            "\"type\": \"origins:distance\",",
             "\"comparison\": {$1},",
             "\"compare_to\": ${2:1.0}",
         ],
@@ -37,7 +37,7 @@
         "prefix": "bientity:owner",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:owner\"",
+            "\"type\": \"origins:owner\",",
         ],
         "description": "Checks whether the actor entity is the owner of the tamable target entity."
     },
@@ -45,7 +45,7 @@
         "prefix": "bientity:relative_rotation",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:relative_rotation\"",
+            "\"type\": \"origins:relative_rotation\",",
             "\"axes\": [${1}],",
             "\"actor_rotation\": \"${2}\",",
             "\"target_rotation\": \"${3}\",",
@@ -58,7 +58,7 @@
         "prefix": "bientity:riding_recursive",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:riding_recursive\"",
+            "\"type\": \"origins:riding_recursive\",",
         ],
         "description": "Checks if the actor entity is riding the target entity, regardless of where the target entity is in the riding chain. "
     },
@@ -66,7 +66,7 @@
         "prefix": "bientity:riding_root",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:riding_root\"",
+            "\"type\": \"origins:riding_root\",",
         ],
         "description": "Checks if the actor entity is riding the target entity from the very end of the riding chain."
     },
@@ -74,7 +74,7 @@
         "prefix": "bientity:riding",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:riding\"",
+            "\"type\": \"origins:riding\",",
         ],
         "description": "Checks if the actor entity is currently riding the target entity."
     }

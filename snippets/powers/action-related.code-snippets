@@ -3,7 +3,7 @@
         "prefix": "action_on_being_used",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:action_on_being_used\"",
+            "\"type\": \"origins:action_on_being_used\",",
             "\"bientity_action\": {$1},",
             "\"held_item_action\": {$2},",
             "\"result_item_action\": {$3},",
@@ -19,7 +19,7 @@
         "prefix": "action_on_block_break",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:action_on_block_break\"",
+            "\"type\": \"origins:action_on_block_break\",",
             "\"entity_action\": {$1},",
             "\"block_action\": {$2},",
             "\"block_condition\": {$3},",
@@ -31,7 +31,7 @@
         "prefix": "action_on_block_use",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:action_on_block_use\"",
+            "\"type\": \"origins:action_on_block_use\",",
             "\"entity_action\": {$1},",
             "\"block_action\": {$2},",
             "\"block_condition\": {$3},",
@@ -48,7 +48,7 @@
         "prefix": "action_on_callback",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:action_on_callback\"",
+            "\"type\": \"origins:action_on_callback\",",
             "\"entity_action_chosen\": {$1},",
             "\"execute_chosen_when_orb\": ${2|true,false|},",
             "\"entity_action_gained\": {$3},",
@@ -63,7 +63,7 @@
         "prefix": "action_on_entity_use",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:action_on_entity_use\"",
+            "\"type\": \"origins:action_on_entity_use\",",
             "\"bientity_action\": {$1},",
             "\"held_item_action\": {$2},",
             "\"result_item_action\": {$3},",
@@ -79,7 +79,7 @@
         "prefix": "action_on_hit",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:action_on_hit\"",
+            "\"type\": \"origins:action_on_hit\",",
             "\"bientity_action\": {$1},",
             "\"bientity_condition\": {$2},",
             "\"damage_condition\": {$3},",
@@ -92,7 +92,7 @@
         "prefix": "action_on_item_use",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:action_on_item_use\"",
+            "\"type\": \"origins:action_on_item_use\",",
             "\"entity_action\": {$1},",
             "\"item_action\": {$2},",
             "\"item_condition\": {$3}",
@@ -103,7 +103,7 @@
         "prefix": "action_on_land",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:action_on_land\"",
+            "\"type\": \"origins:action_on_land\",",
             "\"entity_action\": {$1}",
         ],
         "description": "Executes an Entity Action Type when the player lands on the ground after being airborne."
@@ -112,7 +112,7 @@
         "prefix": "action_on_wake_up",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:action_on_wake_up\"",
+            "\"type\": \"origins:action_on_wake_up\",",
             "\"entity_action\": {$1},",
             "\"block_action\": {$2},",
             "\"block_condition\": {$3}",
@@ -123,7 +123,7 @@
         "prefix": "action_over_time",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:action_over_time\"",
+            "\"type\": \"origins:action_over_time\",",
             "\"interval\": ${1:1},",
             "\"entity_action\": {$2},",
             "\"rising_action\": {$3},",
@@ -135,7 +135,7 @@
         "prefix": "action_when_damage_taken",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:action_when_damage_taken\"",
+            "\"type\": \"origins:action_when_damage_taken\",",
             "\"entity_action\": {$1},",
             "\"damage_condition\": {$2},",
             "\"cooldown\": ${3:1},",
@@ -147,7 +147,7 @@
         "prefix": "action_when_hit",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:action_when_hit\"",
+            "\"type\": \"origins:action_when_hit\",",
             "\"bientity_action\": {$1},",
             "\"bientity_condition\": {$2},",
             "\"damage_condition\": {$3},",
@@ -160,7 +160,7 @@
         "prefix": "active_self",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:active_self\"",
+            "\"type\": \"origins:active_self\",",
             "\"entity_action\": {$1},",
             "\"cooldown\": ${2:1},",
             "\"hud_render\": {$3},",
@@ -172,7 +172,7 @@
         "prefix": "attacker_action_when_hit",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:attacker_action_when_hit\"",
+            "\"type\": \"origins:attacker_action_when_hit\",",
             "\"entity_action\": {$1},",
             "\"cooldown\": ${2:1},",
             "\"damage_condition\": {$3},",
@@ -184,7 +184,7 @@
         "prefix": "self_action_on_hit",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:self_action_on_hit\"",
+            "\"type\": \"origins:self_action_on_hit\",",
             "\"entity_action\": {$1},",
             "\"cooldown\": ${2:1},",
             "\"hud_render\": {$3},",
@@ -197,7 +197,7 @@
         "prefix": "self_action_on_kill",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:self_action_on_kill\"",
+            "\"type\": \"origins:self_action_on_kill\",",
             "\"entity_action\": {$1},",
             "\"cooldown\": ${2:1},",
             "\"hud_render\": {$3},",
@@ -210,7 +210,7 @@
         "prefix": "self_action_when_hit",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:self_action_when_hit\"",
+            "\"type\": \"origins:self_action_when_hit\",",
             "\"entity_action\": {$1},",
             "\"cooldown\": ${2:1},",
             "\"hud_render\": {$3},",
@@ -222,7 +222,7 @@
         "prefix": "target_action_on_hit",
         "scope": "json",
         "body": [
-            "\"type\": \"origins:target_action_on_hit\"",
+            "\"type\": \"origins:target_action_on_hit\",",
             "\"entity_action\": {$1},",
             "\"cooldown\": ${2:1},",
             "\"hud_render\": {$3},",
