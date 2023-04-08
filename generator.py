@@ -55,16 +55,19 @@ def buildSnippet(soup, name, desc, attrList, valuesList):
     build.append(f'\t"prefix": "{name}",')
     build.append('\t"scope": "json",')
     build.append('\t"body": [')
+    build.append(f'\t\t"\\\"type\\\": \\\"origins:{name}\\\"",')
 
     # Adds the attributes via a for loop.
     i = 0
     for attr in attrList:
         buildStr = ""
         
+        if attr is None: 
+            build[-1].replace(",", "")
+            break
         if i >= len(valuesList): break
 
-        if attr is None: buildStr += f'\t\t"\\\"type\\\": '
-        else: buildStr += f'\t\t\"\\\"{attr}\\\": '
+        buildStr += f'\t\t\"\\\"{attr}\\\": '
 
         # Type of the value
         match valuesList[i]:
@@ -78,8 +81,6 @@ def buildSnippet(soup, name, desc, attrList, valuesList):
                 buildStr += f'\\\"${{{i + 1}}}\\\"'
             case "Array":
                 buildStr += f'[${{{i + 1}}}]'
-            case None:
-                buildStr += f'\\\"origins:{name}\\\"'
             case _:
                 buildStr += f'{{${i + 1}}}'
 
@@ -107,8 +108,8 @@ def buildSnippet(soup, name, desc, attrList, valuesList):
 
 
 # Main program (woo...)
-mainWeb = "https://origins.readthedocs.io/en/latest/types/power_types/"
-folder = "./snippets/powers/"
+mainWeb = "https://origins.readthedocs.io/en/latest/types/badge_types/"
+folder = "./snippets/badges/"
 file = None
 if not os.path.exists(folder): os.mkdir(folder)
 

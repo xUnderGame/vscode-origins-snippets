@@ -19,6 +19,10 @@
 		"snippets": [
 			{
 				"language": "json",
+				"path": "./snippets/badges/list-of-badge-types.code-snippets"
+			},
+			{
+				"language": "json",
 				"path": "./snippets/powers/action-related.code-snippets"
 			},
 			{

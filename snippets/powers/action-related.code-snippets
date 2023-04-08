@@ -1,1 +1,234 @@
-{"action_on_being_used": {	"prefix": "action_on_being_used",	"scope": "json",	"body": [		"\"bientity_action\": {$1},",		"\"held_item_action\": {$2},",		"\"result_item_action\": {$3},",		"\"bientity_condition\": {$4},",		"\"item_condition\": {$5},",		"\"hands\": [${6}],",		"\"result_stack\": {$7},",		"\"action_result\": ${8:1},",	],	"description": "Executes an action when a player \"uses\" (right-clicks) the entity that has the power."},"action_on_block_break": {	"prefix": "action_on_block_break",	"scope": "json",	"body": [		"\"entity_action\": {$1},",		"\"block_action\": {$2},",		"\"block_condition\": {$3},",		"\"only_when_harvested\": ${4|true,false|}",	],	"description": "Executes an Entity Action Type or a Block Action Type when the player breaks a block."},"action_on_block_use": {	"prefix": "action_on_block_use",	"scope": "json",	"body": [		"\"entity_action\": {$1},",		"\"block_action\": {$2},",		"\"block_condition\": {$3},",		"\"item_condition\": {$4},",		"\"directions\": [${5}],",		"\"hands\": [${6}],",		"\"result_stack\": {$7},",		"\"held_item_action\": {$8},",		"\"result_item_action\": {$9},",	],	"description": "Executes a Block Action Type and/or Item Action Types when the player that has the power \"uses\" (right-clicks) a block."},"action_on_callback": {	"prefix": "action_on_callback",	"scope": "json",	"body": [		"\"entity_action_chosen\": {$1},",		"\"execute_chosen_when_orb\": ${2|true,false|},",		"\"entity_action_gained\": {$3},",		"\"entity_action_lost\": {$4},",		"\"entity_action_added\": {$5},",		"\"entity_action_removed\": {$6},",		"\"entity_action_respawned\": {$7}",	],	"description": "Execute Entity Action Types depending on the context."},"action_on_entity_use": {	"prefix": "action_on_entity_use",	"scope": "json",	"body": [		"\"bientity_action\": {$1},",		"\"held_item_action\": {$2},",		"\"result_item_action\": {$3},",		"\"bientity_condition\": {$4},",		"\"item_condition\": {$5},",		"\"hands\": [${6}],",		"\"result_stack\": {$7},",		"\"action_result\": ${8:1},",	],	"description": "Executes an action when the player that has the power \"uses\" (right-clicks) an entity."},"action_on_hit": {	"prefix": "action_on_hit",	"scope": "json",	"body": [		"\"bientity_action\": {$1},",		"\"bientity_condition\": {$2},",		"\"damage_condition\": {$3},",		"\"cooldown\": ${4:1},",		"\"hud_render\": {$5}",	],	"description": "Executes an action when the entity that has the power has hit another entity."},"action_on_item_use": {	"prefix": "action_on_item_use",	"scope": "json",	"body": [		"\"entity_action\": {$1},",		"\"item_action\": {$2},",		"\"item_condition\": {$3}",	],	"description": "Executes an Entity Action Type or an Item Action Type when the player finishes using an item (e.g: eating food or drinking a potion)."},"action_on_land": {	"prefix": "action_on_land",	"scope": "json",	"body": [		"\"entity_action\": {$1}",	],	"description": "Executes an Entity Action Type when the player lands on the ground after being airborne."},"action_on_wake_up": {	"prefix": "action_on_wake_up",	"scope": "json",	"body": [		"\"entity_action\": {$1},",		"\"block_action\": {$2},",		"\"block_condition\": {$3}",	],	"description": "Executes an Entity Action Type or a Block Action type when the player wakes up after sleeping."},"action_over_time": {	"prefix": "action_over_time",	"scope": "json",	"body": [		"\"interval\": ${1:1},",		"\"entity_action\": {$2},",		"\"rising_action\": {$3},",		"\"falling_action\": {$4}",	],	"description": "Executes an Entity Action Type on the entity that has the power within the specified interval."},"action_when_damage_taken": {	"prefix": "action_when_damage_taken",	"scope": "json",	"body": [		"\"entity_action\": {$1},",		"\"damage_condition\": {$2},",		"\"cooldown\": ${3:1},",		"\"hud_render\": {$4}",	],	"description": "Executes an Entity Action Type on the entity that has the power if the entity has taken damage."},"action_when_hit": {	"prefix": "action_when_hit",	"scope": "json",	"body": [		"\"bientity_action\": {$1},",		"\"bientity_condition\": {$2},",		"\"damage_condition\": {$3},",		"\"cooldown\": ${4:1},",		"\"hud_render\": {$5}",	],	"description": "Executes an action if the entity that has the power has been hit by another entity."},"active_self": {	"prefix": "active_self",	"scope": "json",	"body": [		"\"entity_action\": {$1},",		"\"cooldown\": ${2:1},",		"\"hud_render\": {$3},",		"\"key\": {$4}",	],	"description": "Executes an Entity Action Type on the entity that has the power upon pressing the specified Key."},"attacker_action_when_hit": {	"prefix": "attacker_action_when_hit",	"scope": "json",	"body": [		"\"entity_action\": {$1},",		"\"cooldown\": ${2:1},",		"\"damage_condition\": {$3},",		"\"hud_render\": {$4}",	],	"description": "Executes an entity action on the attacker entity when the entity that has the power is hit by another entity."},"self_action_on_hit": {	"prefix": "self_action_on_hit",	"scope": "json",	"body": [		"\"entity_action\": {$1},",		"\"cooldown\": ${2:1},",		"\"hud_render\": {$3},",		"\"damage_condition\": {$4},",		"\"target_condition\": {$5}",	],	"description": "Executes an Entity Action Type on the entity that has the power when the entity hits another entity."},"self_action_on_kill": {	"prefix": "self_action_on_kill",	"scope": "json",	"body": [		"\"entity_action\": {$1},",		"\"cooldown\": ${2:1},",		"\"hud_render\": {$3},",		"\"damage_condition\": {$4},",		"\"target_condition\": {$5}",	],	"description": "Executes an Entity Action Type on the entity that has the power when the entity kills another entity."},"self_action_when_hit": {	"prefix": "self_action_when_hit",	"scope": "json",	"body": [		"\"entity_action\": {$1},",		"\"cooldown\": ${2:1},",		"\"hud_render\": {$3},",		"\"damage_condition\": {$4}",	],	"description": "Executes an Entity Action Type on the entity that has the power when the entity takes damage."},"target_action_on_hit": {	"prefix": "target_action_on_hit",	"scope": "json",	"body": [		"\"entity_action\": {$1},",		"\"cooldown\": ${2:1},",		"\"hud_render\": {$3},",		"\"damage_condition\": {$4},",		"\"target_condition\": {$5}",	],	"description": "Executes an entity action on every entity that is hit by the entity that has the power."},}
+{
+    "action_on_being_used": {
+        "prefix": "action_on_being_used",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:action_on_being_used\"",
+            "\"bientity_action\": {$1},",
+            "\"held_item_action\": {$2},",
+            "\"result_item_action\": {$3},",
+            "\"bientity_condition\": {$4},",
+            "\"item_condition\": {$5},",
+            "\"hands\": [${6}],",
+            "\"result_stack\": {$7},",
+            "\"action_result\": ${8:1},",
+        ],
+        "description": "Executes an action when a player \"uses\" (right-clicks) the entity that has the power."
+    },
+    "action_on_block_break": {
+        "prefix": "action_on_block_break",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:action_on_block_break\"",
+            "\"entity_action\": {$1},",
+            "\"block_action\": {$2},",
+            "\"block_condition\": {$3},",
+            "\"only_when_harvested\": ${4|true,false|}",
+        ],
+        "description": "Executes an Entity Action Type or a Block Action Type when the player breaks a block."
+    },
+    "action_on_block_use": {
+        "prefix": "action_on_block_use",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:action_on_block_use\"",
+            "\"entity_action\": {$1},",
+            "\"block_action\": {$2},",
+            "\"block_condition\": {$3},",
+            "\"item_condition\": {$4},",
+            "\"directions\": [${5}],",
+            "\"hands\": [${6}],",
+            "\"result_stack\": {$7},",
+            "\"held_item_action\": {$8},",
+            "\"result_item_action\": {$9},",
+        ],
+        "description": "Executes a Block Action Type and/or Item Action Types when the player that has the power \"uses\" (right-clicks) a block."
+    },
+    "action_on_callback": {
+        "prefix": "action_on_callback",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:action_on_callback\"",
+            "\"entity_action_chosen\": {$1},",
+            "\"execute_chosen_when_orb\": ${2|true,false|},",
+            "\"entity_action_gained\": {$3},",
+            "\"entity_action_lost\": {$4},",
+            "\"entity_action_added\": {$5},",
+            "\"entity_action_removed\": {$6},",
+            "\"entity_action_respawned\": {$7}",
+        ],
+        "description": "Execute Entity Action Types depending on the context."
+    },
+    "action_on_entity_use": {
+        "prefix": "action_on_entity_use",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:action_on_entity_use\"",
+            "\"bientity_action\": {$1},",
+            "\"held_item_action\": {$2},",
+            "\"result_item_action\": {$3},",
+            "\"bientity_condition\": {$4},",
+            "\"item_condition\": {$5},",
+            "\"hands\": [${6}],",
+            "\"result_stack\": {$7},",
+            "\"action_result\": ${8:1},",
+        ],
+        "description": "Executes an action when the player that has the power \"uses\" (right-clicks) an entity."
+    },
+    "action_on_hit": {
+        "prefix": "action_on_hit",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:action_on_hit\"",
+            "\"bientity_action\": {$1},",
+            "\"bientity_condition\": {$2},",
+            "\"damage_condition\": {$3},",
+            "\"cooldown\": ${4:1},",
+            "\"hud_render\": {$5}",
+        ],
+        "description": "Executes an action when the entity that has the power has hit another entity."
+    },
+    "action_on_item_use": {
+        "prefix": "action_on_item_use",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:action_on_item_use\"",
+            "\"entity_action\": {$1},",
+            "\"item_action\": {$2},",
+            "\"item_condition\": {$3}",
+        ],
+        "description": "Executes an Entity Action Type or an Item Action Type when the player finishes using an item (e.g: eating food or drinking a potion)."
+    },
+    "action_on_land": {
+        "prefix": "action_on_land",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:action_on_land\"",
+            "\"entity_action\": {$1}",
+        ],
+        "description": "Executes an Entity Action Type when the player lands on the ground after being airborne."
+    },
+    "action_on_wake_up": {
+        "prefix": "action_on_wake_up",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:action_on_wake_up\"",
+            "\"entity_action\": {$1},",
+            "\"block_action\": {$2},",
+            "\"block_condition\": {$3}",
+        ],
+        "description": "Executes an Entity Action Type or a Block Action type when the player wakes up after sleeping."
+    },
+    "action_over_time": {
+        "prefix": "action_over_time",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:action_over_time\"",
+            "\"interval\": ${1:1},",
+            "\"entity_action\": {$2},",
+            "\"rising_action\": {$3},",
+            "\"falling_action\": {$4}",
+        ],
+        "description": "Executes an Entity Action Type on the entity that has the power within the specified interval."
+    },
+    "action_when_damage_taken": {
+        "prefix": "action_when_damage_taken",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:action_when_damage_taken\"",
+            "\"entity_action\": {$1},",
+            "\"damage_condition\": {$2},",
+            "\"cooldown\": ${3:1},",
+            "\"hud_render\": {$4}",
+        ],
+        "description": "Executes an Entity Action Type on the entity that has the power if the entity has taken damage."
+    },
+    "action_when_hit": {
+        "prefix": "action_when_hit",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:action_when_hit\"",
+            "\"bientity_action\": {$1},",
+            "\"bientity_condition\": {$2},",
+            "\"damage_condition\": {$3},",
+            "\"cooldown\": ${4:1},",
+            "\"hud_render\": {$5}",
+        ],
+        "description": "Executes an action if the entity that has the power has been hit by another entity."
+    },
+    "active_self": {
+        "prefix": "active_self",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:active_self\"",
+            "\"entity_action\": {$1},",
+            "\"cooldown\": ${2:1},",
+            "\"hud_render\": {$3},",
+            "\"key\": {$4}",
+        ],
+        "description": "Executes an Entity Action Type on the entity that has the power upon pressing the specified Key."
+    },
+    "attacker_action_when_hit": {
+        "prefix": "attacker_action_when_hit",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:attacker_action_when_hit\"",
+            "\"entity_action\": {$1},",
+            "\"cooldown\": ${2:1},",
+            "\"damage_condition\": {$3},",
+            "\"hud_render\": {$4}",
+        ],
+        "description": "Executes an entity action on the attacker entity when the entity that has the power is hit by another entity."
+    },
+    "self_action_on_hit": {
+        "prefix": "self_action_on_hit",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:self_action_on_hit\"",
+            "\"entity_action\": {$1},",
+            "\"cooldown\": ${2:1},",
+            "\"hud_render\": {$3},",
+            "\"damage_condition\": {$4},",
+            "\"target_condition\": {$5}",
+        ],
+        "description": "Executes an Entity Action Type on the entity that has the power when the entity hits another entity."
+    },
+    "self_action_on_kill": {
+        "prefix": "self_action_on_kill",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:self_action_on_kill\"",
+            "\"entity_action\": {$1},",
+            "\"cooldown\": ${2:1},",
+            "\"hud_render\": {$3},",
+            "\"damage_condition\": {$4},",
+            "\"target_condition\": {$5}",
+        ],
+        "description": "Executes an Entity Action Type on the entity that has the power when the entity kills another entity."
+    },
+    "self_action_when_hit": {
+        "prefix": "self_action_when_hit",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:self_action_when_hit\"",
+            "\"entity_action\": {$1},",
+            "\"cooldown\": ${2:1},",
+            "\"hud_render\": {$3},",
+            "\"damage_condition\": {$4}",
+        ],
+        "description": "Executes an Entity Action Type on the entity that has the power when the entity takes damage."
+    },
+    "target_action_on_hit": {
+        "prefix": "target_action_on_hit",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:target_action_on_hit\"",
+            "\"entity_action\": {$1},",
+            "\"cooldown\": ${2:1},",
+            "\"hud_render\": {$3},",
+            "\"damage_condition\": {$4},",
+            "\"target_condition\": {$5}",
+        ],
+        "description": "Executes an entity action on every entity that is hit by the entity that has the power."
+    }
+}

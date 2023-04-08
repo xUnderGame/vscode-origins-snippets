@@ -1,0 +1,43 @@
+{
+    "crafting_recipe": {
+        "prefix": "crafting_recipe",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:crafting_recipe\"",
+            "\"sprite\": \"${1}\",",
+            "\"recipe\": {$2},",
+            "\"suffix\": {$3},",
+            "\"prefix\": {$4}",
+        ],
+        "description": "Displays a tooltip with an image that shows the pattern of a certain recipe upon being hovered with a Mouse cursor."
+    },
+    "keybind": {
+        "prefix": "keybind",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:keybind\"",
+            "\"sprite\": \"${1}\",",
+            "\"text\": \"${2}\"",
+        ],
+        "description": "Displays a texture next to the name of the power and a tooltip with text upon being hovered with a Mouse cursor. %s will be translated to the keybind specified in the power."
+    },
+    "sprite": {
+        "prefix": "sprite",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:sprite\"",
+            "\"sprite\": \"${1}\"",
+        ],
+        "description": "Displays a texture next to the name of the power."
+    },
+    "tooltip": {
+        "prefix": "tooltip",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:tooltip\"",
+            "\"sprite\": \"${1}\",",
+            "\"text\": {$2}",
+        ],
+        "description": "Displays a tooltip with text upon being hovered with a Mouse cursor."
+    }
+}
