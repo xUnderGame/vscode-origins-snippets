@@ -19,11 +19,19 @@
 		"snippets": [
 			{
 				"language": "json",
-				"path": "./snippets/powers/regular-types.code-snippets"
+				"path": "./snippets/powers/action-related.code-snippets"
 			},
 			{
 				"language": "json",
-				"path": "./snippets/test.code-snippets"
+				"path": "./snippets/powers/modifying-types.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/powers/preventing-types.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/powers/regular-types.code-snippets"
 			}
 		]
 	}

@@ -89,9 +89,6 @@ def buildSnippet(soup, name, desc, attrList, valuesList):
     build.append('\t],')
     build.append(f'\t"description": "{desc}"')
     build.append("},")
-
-    # Shows the mess that this is.
-    for ele in build: print(ele)
     return build
 
 # "placeholder": {
@@ -126,5 +123,4 @@ for tag in filterWeb(requestWeb(mainWeb)):
             
             # Updates the file.
             for ele in snippet: file.write(f"{ele}")
-            # break # leave this here for now, we dont want to clog the terminal.
 file.write("}")
