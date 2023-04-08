@@ -1,0 +1,638 @@
+{
+    "ability": {
+        "prefix": "entity:ability",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:ability\"",
+        ],
+        "description": "Checks if the player has the specified ability enabled."
+    },
+    "advancement": {
+        "prefix": "entity:advancement",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:advancement\"",
+            "\"advancement\": \"${1}\"",
+        ],
+        "description": "Checks whether the entity has completed a specified advancement."
+    },
+    "air": {
+        "prefix": "entity:air",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:air\"",
+            "\"comparison\": {$1},",
+            "\"compare_to\": ${2:1}",
+        ],
+        "description": "Checks how much breath / air / bubble the entity has at the moment."
+    },
+    "attribute": {
+        "prefix": "entity:attribute",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:attribute\"",
+            "\"attribute\": \"${1}\",",
+            "\"comparison\": {$2},",
+            "\"compare_to\": ${3:1.0}",
+        ],
+        "description": "Applies a check towards a specific attribute value of the entity."
+    },
+    "biome": {
+        "prefix": "entity:biome",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:biome\"",
+            "\"biome\": \"${1}\",",
+            "\"biomes\": [${2}],",
+            "\"condition\": {$3}",
+        ],
+        "description": "Checks whether the entity is in a specified biome."
+    },
+    "block_collision": {
+        "prefix": "entity:block_collision",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:block_collision\"",
+            "\"block_condition\": {$1},",
+            "\"offset_x\": ${2:1.0},",
+            "\"offset_y\": ${3:1.0},",
+            "\"offset_z\": ${4:1.0}",
+        ],
+        "description": "Checks whether the bounding box of the entity collides with a block."
+    },
+    "block_in_radius": {
+        "prefix": "entity:block_in_radius",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:block_in_radius\"",
+            "\"block_condition\": {$1},",
+            "\"radius\": ${2:1},",
+            "\"shape\": \"${3}\",",
+            "\"comparison\": {$4},",
+            "\"compare_to\": ${5:1}",
+        ],
+        "description": "Checks whether there is a specified number of blocks that fulfills the specified Block Condition Type within a specified radius relative to the entity's feet."
+    },
+    "brightness": {
+        "prefix": "entity:brightness",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:brightness\"",
+        ],
+        "description": "Checks the brightness level at the entity's eyes, which ranges from 0 to 1."
+    },
+    "climbing": {
+        "prefix": "entity:climbing",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:climbing\"",
+        ],
+        "description": "Checks whether the entity is currently climbing."
+    },
+    "collided_horizontally": {
+        "prefix": "entity:collided_horizontally",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:collided_horizontally\"",
+        ],
+        "description": "Checks whether the entity is colliding horizontally (walking against a block)."
+    },
+    "command": {
+        "prefix": "entity:command",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:command\"",
+            "\"command\": \"${1}\",",
+            "\"comparison\": {$2},",
+            "\"compare_to\": ${3:1}",
+        ],
+        "description": "Compares the result of the specified command to the specified value."
+    },
+    "creative_flying": {
+        "prefix": "entity:creative_flying",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:creative_flying\"",
+        ],
+        "description": "Checks if the player is Creative Mode flying."
+    },
+    "daytime": {
+        "prefix": "entity:daytime",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:daytime\"",
+        ],
+        "description": "Checks whether it is daytime in the world."
+    },
+    "dimension": {
+        "prefix": "entity:dimension",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:dimension\"",
+            "\"dimension\": \"${1}\"",
+        ],
+        "description": "Checks whether the entity is in a specified dimension."
+    },
+    "distance_from_coordinates": {
+        "prefix": "entity:distance_from_coordinates",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:distance_from_coordinates\"",
+            "\"reference\": \"${1}\",",
+            "\"offset\": {$2},",
+            "\"ignore_x\": ${3|true,false|},",
+            "\"ignore_y\": ${4|true,false|},",
+            "\"ignore_z\": ${5|true,false|},",
+            "\"shape\": \"${6}\",",
+            "\"scale_reference_to_dimension\": ${7|true,false|},",
+            "\"result_on_the_wrong_dimension\": ${8|true,false|},",
+            "\"round_to_digit\": ${9:1},",
+            "\"comparison\": {$10},",
+            "\"compare_to\": ${11:1.0}",
+        ],
+        "description": "Compares the distance of the entity's current position to the specified coordinates."
+    },
+    "elytra_flight_possible": {
+        "prefix": "entity:elytra_flight_possible",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:elytra_flight_possible\"",
+            "\"check_state\": ${1|true,false|},",
+            "\"check_abilities\": ${2|true,false|}",
+        ],
+        "description": "Checks if the entity can fly with either an Elytra item or a power that uses the Elytra Flight (Power Type)."
+    },
+    "enchantment": {
+        "prefix": "entity:enchantment",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:enchantment\"",
+            "\"enchantment\": \"${1}\",",
+            "\"calculation\": \"${2}\",",
+            "\"comparison\": {$3},",
+            "\"compare_to\": ${4:1}",
+        ],
+        "description": "Checks the level of an enchantment on the entity's equipment."
+    },
+    "entity_group": {
+        "prefix": "entity:entity_group",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:entity_group\"",
+            "\"group\": \"${1}\"",
+        ],
+        "description": "Checks whether the entity is of a specific entity group."
+    },
+    "entity_type": {
+        "prefix": "entity:entity_type",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:entity_type\"",
+            "\"entity_type\": \"${1}\"",
+        ],
+        "description": "Checks whether the entity is of a specific entity type."
+    },
+    "equipped_item": {
+        "prefix": "entity:equipped_item",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:equipped_item\"",
+            "\"equipment_slot\": \"${1}\",",
+            "\"item_condition\": {$2}",
+        ],
+        "description": "Checks whether the entity has an item equipped in the specified equipment slot that fulfills the specified Item Condition Type."
+    },
+    "exists": {
+        "prefix": "entity:exists",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:exists\"",
+        ],
+        "description": "Checks if the entity exists."
+    },
+    "exposed_to_sky": {
+        "prefix": "entity:exposed_to_sky",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:exposed_to_sky\"",
+        ],
+        "description": "Checks whether the entity is currently exposed to the sky, meaning that the sky is currently visible in the entity's position."
+    },
+    "exposed_to_sun": {
+        "prefix": "entity:exposed_to_sun",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:exposed_to_sun\"",
+        ],
+        "description": "Checks whether the entity is currently exposed to the sun, which is essentially a mix of Brightness (Entity Condition Type) that checks if the brightness level at the entity's eyes is greather than 0.5 and Exposed to Sky (Entity Condition Type)."
+    },
+    "fall_distance": {
+        "prefix": "entity:fall_distance",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:fall_distance\"",
+            "\"comparison\": {$1},",
+            "\"compare_to\": ${2:1.0}",
+        ],
+        "description": "Checks how much blocks the entity has been falling."
+    },
+    "fall_flying": {
+        "prefix": "entity:fall_flying",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:fall_flying\"",
+        ],
+        "description": "Checks whether the entity is currently fall flying (with an Elytra, an Elytra power, or similar)."
+    },
+    "fluid_height": {
+        "prefix": "entity:fluid_height",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:fluid_height\"",
+            "\"fluid\": \"${1}\",",
+            "\"comparison\": {$2},",
+            "\"compare_to\": ${3:1.0}",
+        ],
+        "description": "Checks how high a specific fluid is at the entity. A fluid height of 0 means the entity is not touching the fluid."
+    },
+    "food_level": {
+        "prefix": "entity:food_level",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:food_level\"",
+            "\"comparison\": {$1},",
+            "\"compare_to\": ${2:1.0}",
+        ],
+        "description": "Checks the entity's food level (chicken legs / hunger meter / whatever you wanna call it). The food level is in the range of 0 to 20."
+    },
+    "gamemode": {
+        "prefix": "entity:gamemode",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:gamemode\"",
+            "\"gamemode\": \"${1}\"",
+        ],
+        "description": "Checks the gamemode of the entity."
+    },
+    "glowing": {
+        "prefix": "entity:glowing",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:glowing\"",
+        ],
+        "description": "Checks if the entity is glowing either via the Glowing status effect, Entity Glow (Power Type) or Self Glow (Power Type)."
+    },
+    "health": {
+        "prefix": "entity:health",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:health\"",
+            "\"comparison\": {$1},",
+            "\"compare_to\": ${2:1.0}",
+        ],
+        "description": "Checks the current (and absolute) health value of the entity."
+    },
+    "in_block_anywhere": {
+        "prefix": "entity:in_block_anywhere",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:in_block_anywhere\"",
+            "\"block_condition\": {$1},",
+            "\"comparison\": {$2},",
+            "\"compare_to\": ${3:1}",
+        ],
+        "description": "Checks how many blocks are overlapping with the entity's eyes or feet."
+    },
+    "in_block": {
+        "prefix": "entity:in_block",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:in_block\"",
+            "\"block_condition\": {$1}",
+        ],
+        "description": "Checks whether a block that fulfills the specified Block Condition Type is overlapping with the entity's feet."
+    },
+    "in_rain": {
+        "prefix": "entity:in_rain",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:in_rain\"",
+        ],
+        "description": "Checks if it's raining at the entity's position."
+    },
+    "in_tag": {
+        "prefix": "entity:in_tag",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:in_tag\"",
+            "\"tag\": \"${1}\"",
+        ],
+        "description": "Checks whether the entity's entity type is in a specific tag."
+    },
+    "invisible": {
+        "prefix": "entity:invisible",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:invisible\"",
+        ],
+        "description": "Checks whether the entity is currently invisible."
+    },
+    "living": {
+        "prefix": "entity:living",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:living\"",
+        ],
+        "description": "Checks if the entity is an instance of LivingEntity, or in simple terms, a mob or a player."
+    },
+    "moving": {
+        "prefix": "entity:moving",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:moving\"",
+        ],
+        "description": "Checks whether the entity is currently moving horizontally."
+    },
+    "nbt": {
+        "prefix": "entity:nbt",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:nbt\"",
+            "\"nbt\": \"${1}\"",
+        ],
+        "description": "Checks the entity's NBT."
+    },
+    "on_block": {
+        "prefix": "entity:on_block",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:on_block\"",
+            "\"block_condition\": {$1}",
+        ],
+        "description": "Checks if a block underneath the entity's feet fulfills the specified Block Condition Type."
+    },
+    "on_fire": {
+        "prefix": "entity:on_fire",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:on_fire\"",
+        ],
+        "description": "Checks if the entity is currently burning."
+    },
+    "origin": {
+        "prefix": "entity:origin",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:origin\"",
+            "\"origin\": \"${1}\",",
+            "\"layer\": \"${2}\"",
+        ],
+        "description": "Checks whether the entity has a certain origin (optionally from a certain layer)."
+    },
+    "passenger_recursive": {
+        "prefix": "entity:passenger_recursive",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:passenger_recursive\"",
+            "\"bientity_condition\": {$1},",
+            "\"comparison\": {$2},",
+            "\"compare_to\": ${3:1}",
+        ],
+        "description": "Checks whether any of the entities in the riding chain is the actor entity."
+    },
+    "passenger": {
+        "prefix": "entity:passenger",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:passenger\"",
+            "\"bientity_condition\": {$1},",
+            "\"comparison\": {$2},",
+            "\"compare_to\": ${3:1}",
+        ],
+        "description": "Checks whether the actor entity is directly riding the target entity."
+    },
+    "power_active": {
+        "prefix": "entity:power_active",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:power_active\"",
+            "\"power\": \"${1}\"",
+        ],
+        "description": "Checks whether the specified power is \"active\", meaning that the entity has the power and the power has all its conditions fulfilled."
+    },
+    "power_type": {
+        "prefix": "entity:power_type",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:power_type\"",
+            "\"power_type\": \"${1}\"",
+        ],
+        "description": "Checks if the entity has a power that uses the specified Power Type."
+    },
+    "power": {
+        "prefix": "entity:power",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:power\"",
+            "\"power\": \"${1}\",",
+            "\"source\": \"${2}\"",
+        ],
+        "description": "Checks whether the entity has a specified power. Mostly used for Origin conditions in layers"
+    },
+    "predicate": {
+        "prefix": "entity:predicate",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:predicate\"",
+            "\"predicate\": \"${1}\"",
+        ],
+        "description": "Checks whether the entity fulfills a specified Predicate."
+    },
+    "raycast": {
+        "prefix": "entity:raycast",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:raycast\"",
+            "\"distance\": ${1:1.0},",
+            "\"block\": ${2|true,false|},",
+            "\"entity\": ${3|true,false|},",
+            "\"shape_type\": {$4},",
+            "\"fluid_handling\": {$5},",
+            "\"match_bientity_condition\": {$6},",
+        ],
+        "description": "Casts a ray to the direction where the entity is looking."
+    },
+    "relative_health": {
+        "prefix": "entity:relative_health",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:relative_health\"",
+            "\"comparison\": {$1},",
+            "\"compare_to\": ${2:1.0}",
+        ],
+        "description": "Checks the current (and the percentage) health value of the entity."
+    },
+    "resource": {
+        "prefix": "entity:resource",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:resource\"",
+            "\"resource\": \"${1}\",",
+            "\"comparison\": {$2},",
+            "\"compare_to\": ${3:1}",
+        ],
+        "description": "Checks the value of a power that uses the Resource (Power Type) or a power type that has a built-in cooldown (using remaining ticks as the value)."
+    },
+    "riding_recursive": {
+        "prefix": "entity:riding_recursive",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:riding_recursive\"",
+            "\"bientity_condition\": {$1},",
+            "\"comparison\": {$2},",
+            "\"compare_to\": ${3:1}",
+        ],
+        "description": "Checks whether the 'actor' entity is directly riding the 'target' entity or the passenger(s) of the 'target' entity."
+    },
+    "riding_root": {
+        "prefix": "entity:riding_root",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:riding_root\"",
+            "\"bientity_condition\": {$1}",
+        ],
+        "description": "Checks whether the 'actor' entity is indirectly riding the 'target' entity."
+    },
+    "riding": {
+        "prefix": "entity:riding",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:riding\"",
+            "\"bientity_condition\": {$1}",
+        ],
+        "description": "Checks whether the 'actor' entity is directly riding the 'target' entity."
+    },
+    "saturation_level": {
+        "prefix": "entity:saturation_level",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:saturation_level\"",
+            "\"comparison\": {$1},",
+            "\"compare_to\": ${2:1.0}",
+        ],
+        "description": "Checks the entity's saturation level, which is the invisible value that determines how \"full\" the entity is, which then determines how long it takes before the hunger level of the entity will go down."
+    },
+    "scoreboard": {
+        "prefix": "entity:scoreboard",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:scoreboard\"",
+            "\"name\": \"${1}\",",
+            "\"objective\": \"${2}\",",
+            "\"comparison\": {$3},",
+            "\"compare_to\": ${4:1}",
+        ],
+        "description": "Compares the score of the entity from a specified scoreboard objective to a specified value."
+    },
+    "sneaking": {
+        "prefix": "entity:sneaking",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:sneaking\"",
+        ],
+        "description": "Checks whether the entity is currently sneaking."
+    },
+    "sprinting": {
+        "prefix": "entity:sprinting",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:sprinting\"",
+        ],
+        "description": "Checks whether the entity is currently sprinting."
+    },
+    "status_effect": {
+        "prefix": "entity:status_effect",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:status_effect\"",
+            "\"effect\": \"${1}\",",
+            "\"min_amplifier\": ${2:1},",
+            "\"max_amplifier\": ${3:1},",
+            "\"min_duration\": ${4:1},",
+            "\"max_duration\": ${5:1}",
+        ],
+        "description": "Checks whether the entity has a specified status effect with a specified amplifier, and/or duration range."
+    },
+    "submerged_in": {
+        "prefix": "entity:submerged_in",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:submerged_in\"",
+            "\"fluid\": \"${1}\"",
+        ],
+        "description": "Checks whether the entity's eyes are in a fluid that is included in the specified fluid tag."
+    },
+    "swimming": {
+        "prefix": "entity:swimming",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:swimming\"",
+        ],
+        "description": "Checks whether the entity is currently swimming (in the swimming pose)."
+    },
+    "tamed": {
+        "prefix": "entity:tamed",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:tamed\"",
+        ],
+        "description": "Checks whether a tamable entity is tamed. Will always return false if the entity is not tamable."
+    },
+    "time_of_day": {
+        "prefix": "entity:time_of_day",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:time_of_day\"",
+            "\"comparison\": {$1},",
+            "\"compare_to\": ${2:1}",
+        ],
+        "description": "Checks the current day time ticks of the world."
+    },
+    "using_effective_tool": {
+        "prefix": "entity:using_effective_tool",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:using_effective_tool\"",
+        ],
+        "description": "Checks whether the entity is currently using the effective tool of the block they're mining."
+    },
+    "using_item": {
+        "prefix": "entity:using_item",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:using_item\"",
+            "\"item_condition\": {$1}",
+        ],
+        "description": "Checks whether the entity is currently using an item (eating a food item, using a shield, drawing a bow, etc.) that fulfills the specified Item Condition Type."
+    },
+    "xp_levels": {
+        "prefix": "entity:xp_levels",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:xp_levels\"",
+            "\"comparison\": {$1},",
+            "\"compare_to\": ${2:1}",
+        ],
+        "description": "Checks the current experience level of the entity."
+    },
+    "xp_points": {
+        "prefix": "entity:xp_points",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:xp_points\"",
+            "\"comparison\": {$1},",
+            "\"compare_to\": ${2:1}",
+        ],
+        "description": "Checks the experience points of the entity."
+    }
+}

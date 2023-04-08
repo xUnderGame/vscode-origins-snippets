@@ -63,6 +63,10 @@
 			},
 			{
 				"language": "json",
+				"path": "./snippets/actions/entity/list.code-snippets"
+			},
+			{
+				"language": "json",
 				"path": "./snippets/actions/item/list.code-snippets"
 			},
 			{
@@ -88,6 +92,10 @@
 			{
 				"language": "json",
 				"path": "./snippets/conditions/block/meta.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/conditions/entity/list.code-snippets"
 			},
 			{
 				"language": "json",

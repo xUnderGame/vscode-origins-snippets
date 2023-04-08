@@ -7,6 +7,8 @@
 ### **Latest release: 1.0.0**
 This extension for Visual Studio Code adds snippets from the Minecraft Origins mod. Check out the [Origins wiki](https://origins.readthedocs.io/en/latest) for more information.
 
+![Demo](demo.gif)
+
 ## Usage
 Type part of a snippet, press enter, and the snippet unfolds.
 
@@ -25,6 +27,7 @@ Type part of a snippet, press enter, and the snippet unfolds.
 | `biome:*`        | Inserts a biome **condition** snippet.                |
 | `damage:*`       | Inserts a damage **condition** snippet.               |
 | `fluid:*`        | Inserts a fluid **condition** snippet.                |
+#### * (anything valid from the wiki)
 
 ## Release Notes
 See the [changelog](CHANGELOG.md) for the latest changes!
