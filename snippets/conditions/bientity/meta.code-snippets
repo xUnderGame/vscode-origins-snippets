@@ -1,0 +1,56 @@
+{
+    "actor_condition": {
+        "prefix": "bientity:actor_condition",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:actor_condition\"",
+            "\"condition\": {$1}",
+        ],
+        "description": "Checks for an Entity Condition Type on the actor entity."
+    },
+    "both": {
+        "prefix": "bientity:both",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:both\"",
+            "\"condition\": {$1}",
+        ],
+        "description": "Checks for an entity condition on both the actor and target entities."
+    },
+    "either": {
+        "prefix": "bientity:either",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:either\"",
+            "\"condition\": {$1}",
+        ],
+        "description": "Checks for an entity condition on either the actor or the target entities."
+    },
+    "invert": {
+        "prefix": "bientity:invert",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:invert\"",
+            "\"condition\": {$1}",
+        ],
+        "description": "Swaps the context of the target entity and the actor entity."
+    },
+    "target_condition": {
+        "prefix": "bientity:target_condition",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:target_condition\"",
+            "\"condition\": {$1}",
+        ],
+        "description": "Checks for an Entity Condition Type on the target entity."
+    },
+    "undirected": {
+        "prefix": "bientity:undirected",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:undirected\"",
+            "\"condition\": {$1}",
+        ],
+        "description": "Checks if the specified bi-entity condition is true before or after swapping the actor and target context."
+    }
+}
