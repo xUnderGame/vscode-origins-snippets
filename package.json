@@ -40,6 +40,34 @@
 			{
 				"language": "json",
 				"path": "./snippets/powers/regular-types.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/bientity/action/list.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/bientity/action/meta.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/block/action/list.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/block/action/meta.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/entity/action/list.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/item/action/list.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/meta/action/list.code-snippets"
 			}
 		]
 	}
