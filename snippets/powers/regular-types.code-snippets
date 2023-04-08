@@ -1,0 +1,160 @@
+{
+    "attribute_modify_transfer": {
+        "prefix": "attribute_modify_transfer",
+        "scope": "json",
+        "body": [
+            "\"class\": \"\",",
+            "\"attribute\": \"\",",
+            "\"multiplier\": 1.0",
+        ],
+        "description": "Transfers the value of an attribute modifier from a specified attribute to a specified power class that extends the ValueModifyingPower super-class."
+    },
+    "attribute": {
+        "prefix": "attribute",
+        "scope": "json",
+        "body": [
+            "\"modifier\": {},",
+            "\"modifiers\": [],",
+            "\"update_health\": {}",
+        ],
+        "description": "Modifies one or more attributes using Attributed Attribute Modifiers"
+    },
+    "burn": {
+        "prefix": "burn",
+        "scope": "json",
+        "body": [
+            "\"interval\": 1,",
+            "\"burn_duration\": 1",
+        ],
+        "description": "Sets the entity that has the power on fire within the specified interval."
+    },
+    "climbing": {
+        "prefix": "climbing",
+        "scope": "json",
+        "body": [
+            "\"allow_holding\": true,",
+            "\"hold_condition\": {}",
+        ],
+        "description": "Allows the entity that has the power to climb."
+    },
+    "conditioned_attribute": {
+        "prefix": "conditioned_attribute",
+        "scope": "json",
+        "body": [
+            "\"modifier\": {},",
+            "\"modifiers\": [],",
+            "\"tick_rate\": {},",
+            "\"update_health\": 1",
+        ],
+        "description": "Applies one or more attribute modifiers; may depend on a condition."
+    },
+    "conditioned_restrict_armor": {
+        "prefix": "conditioned_restrict_armor",
+        "scope": "json",
+        "body": [
+            "\"head\": {},",
+            "\"chest\": {},",
+            "\"legs\": {},",
+            "\"feet\": {},",
+            "\"tick_rate\": 1",
+        ],
+        "description": "Restricts the entity that has the power from equipping items as armor (via right-click, dispensing or by dragging and dropping the item in the equipment slot(s)) in the specified equipment slot(s); may depend on a condition."
+    },
+    "cooldown": {
+        "prefix": "cooldown",
+        "scope": "json",
+        "body": [
+            "\"cooldown\": 1,",
+            "\"hud_render\": {}",
+        ],
+        "description": "Provides a cooldown; can be used for providing cooldowns to power types that do not have a built-in cooldown or as a simple timer."
+    },
+    "creative_flight": {
+        "prefix": "creative_flight",
+        "scope": "json",
+        "body": [
+            "type": "origins:creative_flight"",	],	"description": "Allows the players to fly as if they were in Creative Mode."},"damage_over_time": {	"prefix": "damage_over_time",	"scope": "json",	"body": [		"\"interval\": 1,",
+            "\"onset_delay\": 1,",
+            "\"damage\": 1.0,",
+            "\"damage_easy\": 1.0,",
+            "\"damage_source\": {},",
+            "\"protection_enchantment\": \"\",",
+            "\"protection_effectiveness\": 1.0",
+        ],
+        "description": "Inflicts damage on the entity that has the power from a specified damage source within the specified interval."
+    },
+    "disable_regen": {
+        "prefix": "disable_regen",
+        "scope": "json",
+        "body": [
+            "type": "origins:disable_regen"",	],	"description": "Disables the natural health regeneration when on full hunger."},"effect_immunity": {	"prefix": "effect_immunity",	"scope": "json",	"body": [		"\"effect\": \"\",",
+            "\"effects\": [],",
+            "\"inverted\": {}",
+        ],
+        "description": "Prevents status effects from being applied to the entity that has the power."
+    },
+    "elytra_flight": {
+        "prefix": "elytra_flight",
+        "scope": "json",
+        "body": [
+            "\"render_elytra\": true,",
+            "\"texture_location\": \"\"",
+        ],
+        "description": "Allows the player to fly as if they had an Elytra equipped."
+    },
+    "entity_glow": {
+        "prefix": "entity_glow",
+        "scope": "json",
+        "body": [
+            "\"entity_condition\": {},",
+            "\"bientity_condition\": {},",
+            "\"use_teams\": true,",
+            "\"red\": 1.0,",
+            "\"green\": 1.0,",
+            "\"blue\": 1.0",
+        ],
+        "description": "Makes other entities glow (as with the glowing status effect), but only for the player that has the power."
+    },
+    "entity_group": {
+        "prefix": "entity_group",
+        "scope": "json",
+        "body": [
+            "\"group\": \"\"",
+        ],
+        "description": "Defines the entity group of the entity that has the power."
+    },
+    "exhaust": {
+        "prefix": "exhaust",
+        "scope": "json",
+        "body": [
+            "\"interval\": 1,",
+            "\"exhaustion\": 1.0",
+        ],
+        "description": "Applies exhaustion to the player over time."
+    },
+    "fire_immunity": {
+        "prefix": "fire_immunity",
+        "scope": "json",
+        "body": [
+            "type": "origins:fire_immunity"",	],	"description": "Grants full fire immunity (meaning not only do you take no damage from fire sources, you also can not be set on fire)."},"fire_projectile": {	"prefix": "fire_projectile",	"scope": "json",	"body": [		"\"entity_type\": \"\",",
+            "\"cooldown\": 1,",
+            "\"hud_render\": {},",
+            "\"count\": 1,",
+            "\"interval\": 1,",
+            "\"start_delay\": 1,",
+            "\"speed\": 1.0,",
+            "\"divergence\": 1.0,",
+            "\"sound\": \"\",",
+            "\"tag\": \"\",",
+            "\"key\": {}",
+        ],
+        "description": "Fires one or more projectiles upon pressing the specified Key."
+    },
+    "freeze": {
+        "prefix": "freeze",
+        "scope": "json",
+        "body": [
+            "type": "origins:freeze"",	],	"description": "Freezes the entity that has the power, as if they're in a Powder Snow block."},"ignore_water": {	"prefix": "ignore_water",	"scope": "json",	"body": [		"type": "origins:ignore_water"",
+        ],
+        "description": "Prevents the movement of the entity that has the power from being affected by water."
+    },

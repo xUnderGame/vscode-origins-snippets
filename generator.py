@@ -48,6 +48,7 @@ def scrapeResults(soup, name):
 
     return desc, attrList, valuesList, name
 
+# Builds a snippet. Technically there is a bug when a value has two "<a>" tags, but I just don't care.
 def buildSnippet(soup, name, desc, attrList, valuesList):
     # Build the skeleton... (SANS UNDERTALE???)
     build = [f'"{name}": {{']
@@ -61,7 +62,7 @@ def buildSnippet(soup, name, desc, attrList, valuesList):
         buildStr = ""
         
         if attr is None: buildStr += f'\t\t"type": '
-        else: buildStr += f'\t\t"{attr}": '
+        else: buildStr += f'\t\t\"\\\"{attr}\\\": '
 
         # Type of the value
         print(valuesList[i], i)
@@ -73,7 +74,9 @@ def buildSnippet(soup, name, desc, attrList, valuesList):
             case "Integer":
                 buildStr += '1'
             case "String" | "Identifier":
-                buildStr += '""'
+                buildStr += '\\\"\\\"'
+            case "Array":
+                buildStr += '[]'
             case None:
                 buildStr += f'"origins:{name}"'
             case _:
@@ -83,15 +86,17 @@ def buildSnippet(soup, name, desc, attrList, valuesList):
         if attr != attrList[len(attrList) - 1]:
             buildStr += ","
 
+        buildStr += "\","
         build.append(buildStr)
         i += 1
 
     build.append('\t],')
     build.append(f'\t"description": "{desc}"')
-    build.append("}")
+    build.append("},")
 
-    # Prints the mess that this is.
+    # Shows the mess that this is.
     for ele in build: print(ele)
+    return build
 
 # "placeholder": {
 #     "prefix": "placeholder",
@@ -105,21 +110,25 @@ def buildSnippet(soup, name, desc, attrList, valuesList):
 
 # Main program (woo...)
 mainWeb = "https://origins.readthedocs.io/en/latest/types/power_types/"
+if not os.path.exists("./snippets/powers"): os.mkdir("./snippets/powers")
 
 for tag in filterWeb(requestWeb(mainWeb)):
-    # filters the important information
+    # Filters the important information
     reg = re.compile('<a.*href="(?!\\.)(?!http)([a-zA-Z].*)">(.*)</a>|<h3.*>(.*)</h3>').search(str(tag))
-    # future me im sorry but you must fix this
-    # im leaving a comment big enough
-    # so you cannot miss it when
-    # you start debugging
-    # haha nerd get fucked
+
     if reg:
         if reg.group(3):
-            file = open(f"./snippets/powers/{reg.group(3).replace(' ', '-')}.code-snippets", "a")
+            # Initializes a snippet file.
+            file = open(f"./snippets/powers/{reg.group(3).lower().replace(' ', '-')}.code-snippets", "a")
+            file.write("{")
+
         elif reg.group(1) and reg.group(2):
-            # Scrape web if not an h3
-            newWeb = requestWeb(f"https://origins.readthedocs.io/en/latest/types/power_types/attribute/") # {mainWeb}{reg.group(1)}
+            # Scrape web if not an h3.
+            newWeb = requestWeb(f"{mainWeb}{reg.group(1)}")
             desc, attrs, values, name = scrapeResults(newWeb, reg.group(1)[:-1]) # Gets the data we want.
-            buildSnippet(newWeb, name, desc, attrs, values) # Builds the snippet.
-            break # leave this here for now, we dont want to clog the terminal.
+            snippet = buildSnippet(newWeb, name, desc, attrs, values) # Builds the snippet.
+            
+            # Updates the file.
+            for ele in snippet: file.write(f"{ele}")
+            # break # leave this here for now, we dont want to clog the terminal.
+file.write("}")

@@ -19,7 +19,7 @@
 		"snippets": [
 			{
 				"language": "json",
-				"path": "./snippets/powers/regular.code-snippets"
+				"path": "./snippets/powers/regular-types.code-snippets"
 			},
 			{
 				"language": "json",
