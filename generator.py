@@ -69,19 +69,19 @@ def buildSnippet(soup, name, desc, attrList, valuesList):
         # Type of the value
         match valuesList[i]:
             case "Boolean":
-                buildStr += 'true'
+                buildStr += f'${{{i + 1}|true,false|}}'
             case "Float":
-                buildStr += '1.0'
+                buildStr += f'${{{i + 1}:1.0}}'
             case "Integer":
-                buildStr += '1'
+                buildStr += f'${{{i + 1}:1}}'
             case "String" | "Identifier":
-                buildStr += '\\\"\\\"'
+                buildStr += f'\\\"${{{i + 1}}}\\\"'
             case "Array":
-                buildStr += '[]'
+                buildStr += f'[${{{i + 1}}}]'
             case None:
                 buildStr += f'\\\"origins:{name}\\\"'
             case _:
-                buildStr += '{}'
+                buildStr += f'{{${i + 1}}}'
 
         # Should a comma be added?
         if attr != attrList[len(attrList) - 1]:
