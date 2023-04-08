@@ -1,11 +1,10 @@
 # VS Code Origins Snippets
-
 <div align=center>
     <img src="icon.webp" style="width: 150px">
 </div>
 
 ### **Latest release: 1.0.0**
-This extension for Visual Studio Code adds snippets from the Minecraft Origins mod. Check out the [Origins wiki](https://origins.readthedocs.io/en/latest) for more information.
+This extension for Visual Studio Code adds snippets from the Minecraft Origins mod. Check out the [Origins wiki](https://origins.readthedocs.io/en/latest) for more information. You can obtain the extension by clicking [here](https://marketplace.visualstudio.com/items?itemName=UnderGame.vscode-origins-snippets) or searching it up in VS Code.
 
 ## Usage
 Type part of a snippet, press enter, and the snippet gets sent. You can also press `Ctrl`+`Space` to activate snippets.
