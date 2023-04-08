@@ -108,8 +108,8 @@ def buildSnippet(soup, name, desc, attrList, valuesList):
 
 
 # Main program (woo...)
-mainWeb = "https://origins.readthedocs.io/en/latest/types/badge_types/"
-folder = "./snippets/badges/"
+mainWeb = "https://origins.readthedocs.io/en/latest/types/data_types/"
+folder = "./snippets/data/"
 file = None
 if not os.path.exists(folder): os.mkdir(folder)
 

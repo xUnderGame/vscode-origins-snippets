@@ -23,6 +23,10 @@
 			},
 			{
 				"language": "json",
+				"path": "./snippets/data/origins-specific.code-snippets"
+			},
+			{
+				"language": "json",
 				"path": "./snippets/powers/action-related.code-snippets"
 			},
 			{
