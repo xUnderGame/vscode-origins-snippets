@@ -1,0 +1,38 @@
+{
+    "and": {
+        "prefix": "meta:and",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:and\"",
+            "\"conditions\": [${1}]",
+        ],
+        "description": "Checks whether all of the provided conditions are fulfilled."
+    },
+    "constant": {
+        "prefix": "meta:constant",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:constant\"",
+            "\"value\": ${1|true,false|}",
+        ],
+        "description": "Provides a constant state where it's either true or false. Mainly added as a backup case in case a condition is required in some power/action/condition types."
+    },
+    "not": {
+        "prefix": "meta:not",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:not\"",
+            "\"inverted\": ${1|true,false|}",
+        ],
+        "description": "There is no meta condition to invert the results of another condition. However, every condition supports the following field, which can be used to achieve the same:"
+    },
+    "or": {
+        "prefix": "meta:or",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:or\"",
+            "\"conditions\": [${1}]",
+        ],
+        "description": "Checks whether any (one or more) of the provided conditions are fulfilled."
+    }
+}

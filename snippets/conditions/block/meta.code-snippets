@@ -1,0 +1,14 @@
+{
+    "offset": {
+        "prefix": "block:offset",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:offset\"",
+            "\"condition\": {$1},",
+            "\"x\": ${2:1},",
+            "\"y\": ${3:1},",
+            "\"z\": ${4:1}",
+        ],
+        "description": "Checks the provided Block Condition Type at a position offset from the current position."
+    }
+}

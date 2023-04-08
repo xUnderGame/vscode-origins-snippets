@@ -1,0 +1,198 @@
+{
+    "adjacent": {
+        "prefix": "block:adjacent",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:adjacent\"",
+            "\"adjacent_condition\": {$1},",
+            "\"comparison\": {$2},",
+            "\"compare_to\": ${3:1.0}",
+        ],
+        "description": "Checks whether a specified amount of blocks adjacent to the block in question fulfills a specified Block Condition Type."
+    },
+    "attachable": {
+        "prefix": "block:attachable",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:attachable\"",
+        ],
+        "description": "Checks whether the block is in a place where a supported block can be attached (i.e. checks whether any of the adjacent blocks' sides towards this block position are solid)."
+    },
+    "blast_resistance": {
+        "prefix": "block:blast_resistance",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:blast_resistance\"",
+            "\"comparison\": {$1},",
+            "\"compare_to\": ${2:1.0}",
+        ],
+        "description": "Checks the blast resistance value of the block."
+    },
+    "block_entity": {
+        "prefix": "block:block_entity",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:block_entity\"",
+        ],
+        "description": "Checks if the block has a block entity."
+    },
+    "block_state": {
+        "prefix": "block:block_state",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:block_state\"",
+            "\"property\": \"${1}\",",
+            "\"comparison\": {$2},",
+            "\"compare_to\": ${3:1},",
+            "\"value\": ${4|true,false|},",
+            "\"enum\": \"${5}\"",
+        ],
+        "description": "Checks a block state property of the block.  Depending on the property type, different values are expected: boolean properties use value, enumeration properties use enum, and integer properties use comparison and compare_to."
+    },
+    "block": {
+        "prefix": "block:block",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:block\"",
+            "\"block\": \"${1}\"",
+        ],
+        "description": "Checks whether the block is a certain block (by ID)."
+    },
+    "distance_from_coordinates": {
+        "prefix": "block:distance_from_coordinates",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:distance_from_coordinates\"",
+            "\"reference\": \"${1}\",",
+            "\"offset\": {$2},",
+            "\"ignore_x\": ${3|true,false|},",
+            "\"ignore_y\": ${4|true,false|},",
+            "\"ignore_z\": ${5|true,false|},",
+            "\"shape\": \"${6}\",",
+            "\"scale_reference_to_dimension\": ${7|true,false|},",
+            "\"result_on_the_wrong_dimension\": ${8|true,false|},",
+            "\"round_to_digit\": ${9:1},",
+            "\"comparison\": {$10},",
+            "\"compare_to\": ${11:1.0}",
+        ],
+        "description": "Compares the distance of the block's current position to the specified coordinates."
+    },
+    "exposed_to_sky": {
+        "prefix": "block:exposed_to_sky",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:exposed_to_sky\"",
+        ],
+        "description": "Checks whether the block is exposed to the sky."
+    },
+    "fluid": {
+        "prefix": "block:fluid",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:fluid\"",
+            "\"fluid_condition\": {$1}",
+        ],
+        "description": "Checks the fluid state of the current position with a Fluid Condition Type."
+    },
+    "hardness": {
+        "prefix": "block:hardness",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:hardness\"",
+            "\"comparison\": {$1},",
+            "\"compare_to\": ${2:1.0}",
+        ],
+        "description": "Checks the hardness value of the block."
+    },
+    "height": {
+        "prefix": "block:height",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:height\"",
+            "\"comparison\": {$1},",
+            "\"compare_to\": ${2:1.0}",
+        ],
+        "description": "Compares the Y position of the block to a value."
+    },
+    "in_tag": {
+        "prefix": "block:in_tag",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:in_tag\"",
+            "\"tag\": \"${1}\"",
+        ],
+        "description": "Checks whether the block is in a specified tag."
+    },
+    "light_blocking": {
+        "prefix": "block:light_blocking",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:light_blocking\"",
+        ],
+        "description": "Checks whether the block is marked in code as blocking light. Glass for example would not fulfill this condition."
+    },
+    "light_level": {
+        "prefix": "block:light_level",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:light_level\"",
+            "\"light_type\": \"${1}\",",
+            "\"comparison\": {$2},",
+            "\"compare_to\": ${3:1}",
+        ],
+        "description": "Allows checking the light level at the block's position."
+    },
+    "material": {
+        "prefix": "block:material",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:material\"",
+            "\"material\": \"${1}\",",
+            "\"materials\": [${2}]",
+        ],
+        "description": "Checks if the block is classified as the specified material."
+    },
+    "movement_blocking": {
+        "prefix": "block:movement_blocking",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:movement_blocking\"",
+        ],
+        "description": "Checks whether the block is marked in code as blocking movement and doesn't have an empty collision shape."
+    },
+    "nbt": {
+        "prefix": "block:nbt",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:nbt\"",
+            "\"nbt\": \"${1}\"",
+        ],
+        "description": "Checks the NBT of the block entity."
+    },
+    "replacable": {
+        "prefix": "block:replacable",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:replacable\"",
+        ],
+        "description": "Checks whether the block is a replaceable material (e.g. tall grass, water, ...)."
+    },
+    "slipperiness": {
+        "prefix": "block:slipperiness",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:slipperiness\"",
+            "\"comparison\": {$1},",
+            "\"compare_to\": ${2:1.0}",
+        ],
+        "description": "Checks the slipperiness value of the block."
+    },
+    "water_loggable": {
+        "prefix": "block:water_loggable",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:water_loggable\"",
+        ],
+        "description": "Checks whether the block is waterloggable, meaning that there can be fluid in the same block space (e.g. stairs)."
+    }
+}

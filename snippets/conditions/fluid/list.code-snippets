@@ -1,0 +1,27 @@
+{
+    "empty": {
+        "prefix": "fluid:empty",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:empty\"",
+        ],
+        "description": "Checks whether there is no fluid in this state."
+    },
+    "in_tag": {
+        "prefix": "fluid:in_tag",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:in_tag\"",
+            "\"tag\": \"${1}\"",
+        ],
+        "description": "Checks whether the fluid is in a specified tag."
+    },
+    "still": {
+        "prefix": "fluid:still",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:still\"",
+        ],
+        "description": "Checks whether this state describes a still (i.e. not flowing, i.e. source) fluid."
+    }
+}

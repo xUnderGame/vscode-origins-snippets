@@ -1,0 +1,87 @@
+{
+    "amount": {
+        "prefix": "damage:amount",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:amount\"",
+            "\"comparison\": {$1},",
+            "\"compare_to\": ${2:1.0}",
+        ],
+        "description": "Checks whether the damage is of a specified amount."
+    },
+    "attacker": {
+        "prefix": "damage:attacker",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:attacker\"",
+            "\"entity_condition\": {$1}",
+        ],
+        "description": "Checks whether the damage source is from an entity."
+    },
+    "bypasses_armor": {
+        "prefix": "damage:bypasses_armor",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:bypasses_armor\"",
+        ],
+        "description": "Checks whether the damage source bypasses armor."
+    },
+    "explosive": {
+        "prefix": "damage:explosive",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:explosive\"",
+        ],
+        "description": "Checks whether the damage source is an explosive."
+    },
+    "fire": {
+        "prefix": "damage:fire",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:fire\"",
+        ],
+        "description": "Checks whether the damage is fire damage (this includes lava damage!)."
+    },
+    "from_falling": {
+        "prefix": "damage:from_falling",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:from_falling\"",
+        ],
+        "description": "Checks whether the damage source is from falling."
+    },
+    "name": {
+        "prefix": "damage:name",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:name\"",
+            "\"name\": \"${1}\"",
+        ],
+        "description": "Checks whether the damage source has a specific name (essentially checking the type of damage)."
+    },
+    "out_of_world": {
+        "prefix": "damage:out_of_world",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:out_of_world\"",
+        ],
+        "description": "Checks whether the damage source is out of world."
+    },
+    "projectile": {
+        "prefix": "damage:projectile",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:projectile\"",
+            "\"projectile\": \"${1}\"",
+        ],
+        "description": "Checks whether the damage source was projectile damage, and optionally the type of projectile it was (if specified)."
+    },
+    "unblockable": {
+        "prefix": "damage:unblockable",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:unblockable\"",
+        ],
+        "description": "Checks whether the damage source is unblockable."
+    }
+}

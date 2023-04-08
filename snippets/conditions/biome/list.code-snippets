@@ -1,1 +1,46 @@
-{"category": {	"prefix": "biome:category",	"scope": "json",	"body": [		"\"type\": \"origins:category\"",	],	"description": "Checks for the category of a biome."},"high_humidity": {	"prefix": "biome:high_humidity",	"scope": "json",	"body": [		"\"type\": \"origins:high_humidity\"",	],	"description": "Checks whether the biome counts as an area with high humidity."},"in_tag": {	"prefix": "biome:in_tag",	"scope": "json",	"body": [		"\"type\": \"origins:in_tag\"",		"\"tag\": \"${1}\"",	],	"description": "Checks whether the biome is in a specified tag."},"precipitation": {	"prefix": "biome:precipitation",	"scope": "json",	"body": [		"\"type\": \"origins:precipitation\"",		"\"precipitation\": \"${1}\"",	],	"description": "Checks for the precipitation type of the biome the entity is currently in."},"temperature": {	"prefix": "biome:temperature",	"scope": "json",	"body": [		"\"type\": \"origins:temperature\"",		"\"comparison\": {$1},",		"\"compare_to\": ${2:1.0}",	],	"description": "Checks for the temperature of the biome the entity is currently in."},}
+{
+    "category": {
+        "prefix": "biome:category",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:category\"",
+        ],
+        "description": "(DEPRECATED) Checks for the category of a biome. (DEPRECATED)"
+    },
+    "high_humidity": {
+        "prefix": "biome:high_humidity",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:high_humidity\"",
+        ],
+        "description": "Checks whether the biome counts as an area with high humidity."
+    },
+    "in_tag": {
+        "prefix": "biome:in_tag",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:in_tag\"",
+            "\"tag\": \"${1}\"",
+        ],
+        "description": "Checks whether the biome is in a specified tag."
+    },
+    "precipitation": {
+        "prefix": "biome:precipitation",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:precipitation\"",
+            "\"precipitation\": \"${1}\"",
+        ],
+        "description": "Checks for the precipitation type of the biome the entity is currently in."
+    },
+    "temperature": {
+        "prefix": "biome:temperature",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:temperature\"",
+            "\"comparison\": {$1},",
+            "\"compare_to\": ${2:1.0}",
+        ],
+        "description": "Checks for the temperature of the biome the entity is currently in."
+    }
+}

@@ -108,9 +108,9 @@ def buildSnippet(soup, name, desc, attrList, valuesList):
 
 
 # Main program (woo...)
-mainWeb = "https://origins.readthedocs.io/en/latest/types/biome_condition_types/"
-folder = "./snippets/conditions/biome/"
-entryType = "biome:" # change if you need it (default use is "", nothing)
+mainWeb = "https://origins.readthedocs.io/en/latest/types/meta_condition_types/"
+folder = "./snippets/conditions/meta/"
+entryType = "meta:" # change if you need it (default use is "", nothing)
 file = None
 if not os.path.exists(folder): os.mkdir(folder)
 
