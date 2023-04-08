@@ -13,7 +13,7 @@
 		"type": "git",
 		"url": "https://github.com/xUnderGame/vscode-origins-snippets"
 	},
-	"icon": "icon.png",
+	"icon": "icon.webp",
 	"categories": [
 		"Snippets"
 	],

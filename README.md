@@ -1,7 +1,7 @@
 # VS Code Origins Snippets
 
 <div align=center>
-    <img src="icon.png" style="width: 150px">
+    <img src="icon.webp" style="width: 150px">
 </div>
 
 ### **Latest release: 1.0.0**
@@ -17,8 +17,8 @@ Type part of a snippet, press enter, and the snippet gets sent. You can also pre
 ## Origins Snippets
 | Snippet          | Purpose                                               |
 | ---------------- | ----------------------------------------------------- |
-| `*` (data)       | Inserts a data **structure**.                         |
-| `*` (powers)     | Inserts a power **structure**.                        |
+| `*` (data)       | Inserts a data snippet.                               |
+| `*` (powers)     | Inserts a power snippet.                              |
 | `bientity:*`     | Inserts a bientity **action**/**condition** snippet.  |
 | `entity:*`       | Inserts an entity **action**/**condition** snippet.   |
 | `block:*`        | Inserts a block **action**/**condition** snippet.     |
