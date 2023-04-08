@@ -1,0 +1,14 @@
+{
+    "offset": {
+        "prefix": "block:offset",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:offset\"",
+            "\"action\": {$1},",
+            "\"x\": ${2:1},",
+            "\"y\": ${3:1},",
+            "\"z\": ${4:1}",
+        ],
+        "description": "Executes the provided Block Action Type at the position offset from the current position."
+    }
+}

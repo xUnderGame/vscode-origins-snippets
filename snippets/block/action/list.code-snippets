@@ -1,0 +1,64 @@
+{
+    "add_block": {
+        "prefix": "block:add_block",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:add_block\"",
+            "\"block\": \"${1}\"",
+        ],
+        "description": "Adds a block at the specified action position. Adding means setting the block at the position, offset by the direction of the action."
+    },
+    "bonemeal": {
+        "prefix": "block:bonemeal",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:bonemeal\"",
+            "\"effects\": ${1|true,false|}",
+        ],
+        "description": "Applies bone meal to the target block as if a dispenser or a player used a Bone Meal item to it."
+    },
+    "execute_command": {
+        "prefix": "block:execute_command",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:execute_command\"",
+            "\"command\": \"${1}\"",
+        ],
+        "description": "Executes a command at the position of the block."
+    },
+    "explode": {
+        "prefix": "block:explode",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:explode\"",
+            "\"power\": ${1:1.0},",
+            "\"destruction_type\": {$2},",
+            "\"indestructible\": {$3},",
+            "\"destructible\": ${4|true,false|},",
+        ],
+        "description": "Summons an explosion with a specific explosion power."
+    },
+    "modify_block_state": {
+        "prefix": "block:modify_block_state",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:modify_block_state\"",
+            "\"property\": \"${1}\",",
+            "\"operation\": \"${2}\",",
+            "\"change\": ${3:1},",
+            "\"value\": ${4|true,false|},",
+            "\"enum\": \"${5}\",",
+            "\"cycle\": ${6|true,false|}",
+        ],
+        "description": "Modifies the block state property of the block. Depending on the property type, different values are expected: boolean properties use value, enumeration properties use enum, and integer properties use operation and change."
+    },
+    "set_block": {
+        "prefix": "block:set_block",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:set_block\"",
+            "\"block\": \"${1}\"",
+        ],
+        "description": "Overwrites the block at the targeted position with the default state of another one."
+    }
+}

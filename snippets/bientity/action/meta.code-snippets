@@ -1,0 +1,29 @@
+{
+    "actor_action": {
+        "prefix": "bientity:actor_action",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:actor_action\"",
+            "\"action\": {$1}",
+        ],
+        "description": "Executes an Entity Action Type on the actor entity."
+    },
+    "invert": {
+        "prefix": "bientity:invert",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:invert\"",
+            "\"action\": {$1}",
+        ],
+        "description": "Swaps the context of the target entity and the actor entity."
+    },
+    "target_action": {
+        "prefix": "bientity:target_action",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:target_action\"",
+            "\"action\": {$1}",
+        ],
+        "description": "Executes an Entity Action Type on the target entity."
+    }
+}

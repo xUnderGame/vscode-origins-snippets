@@ -11,7 +11,7 @@ def requestWeb(website):
 # Gets the links
 def filterWeb(soup):
     spoonedDiv = soup.find_all(["ul", "h3"], attrs={'class': None})
-    spoonedDiv = soup.find_all(["a", "h3"], attrs={'class': None})
+    spoonedDiv = soup.find_all(["li", "h3"], attrs={'class': None}) # Change "a" to "li" to get bientity/entity
     return spoonedDiv
 
 # Gets the information from the website.
@@ -51,8 +51,8 @@ def scrapeResults(soup, name):
 # Builds a snippet. Technically there is a bug when a value has two "<a>" tags, but I just don't care and i'll fix it manually.
 def buildSnippet(soup, name, desc, attrList, valuesList):
     # Build the skeleton... (SANS UNDERTALE???)
-    build = [f'"{name}": {{']
-    build.append(f'\t"prefix": "{name}",')
+    build = [f'"{name}": {{'] # remove {}
+    build.append(f'\t"prefix": "{entryType}{name}",')
     build.append('\t"scope": "json",')
     build.append('\t"body": [')
     build.append(f'\t\t"\\\"type\\\": \\\"origins:{name}\\\"",')
@@ -108,8 +108,9 @@ def buildSnippet(soup, name, desc, attrList, valuesList):
 
 
 # Main program (woo...)
-mainWeb = "https://origins.readthedocs.io/en/latest/types/data_types/"
-folder = "./snippets/data/"
+mainWeb = "https://origins.readthedocs.io/en/latest/types/meta_action_types/"
+folder = "./snippets/meta/action/"
+entryType = "meta:" # change if you need it (default use is "", nothing)
 file = None
 if not os.path.exists(folder): os.mkdir(folder)
 

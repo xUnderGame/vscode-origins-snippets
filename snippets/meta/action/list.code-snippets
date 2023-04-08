@@ -1,0 +1,79 @@
+{
+    "and": {
+        "prefix": "meta:and",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:and\"",
+            "\"actions\": [${1}]",
+        ],
+        "description": "Executes all provided actions in order."
+    },
+    "chance": {
+        "prefix": "meta:chance",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:chance\"",
+            "\"action\": {$1},",
+            "\"chance\": ${2:1.0},",
+            "\"fail_action\": {$3}",
+        ],
+        "description": "Executes the provided action only with a specific chance."
+    },
+    "choice": {
+        "prefix": "meta:choice",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:choice\"",
+            "\"actions\": [${1}]",
+        ],
+        "description": "Executes one of the provided actions, choosing randomly based on the assigned weights. The actions with higher weight values are more likely to be chosen."
+    },
+    "delay": {
+        "prefix": "meta:delay",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:delay\"",
+            "\"action\": {$1},",
+            "\"ticks\": ${2:1}",
+        ],
+        "description": "Executes the provided action after a set amount of ticks."
+    },
+    "if_else_list": {
+        "prefix": "meta:if_else_list",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:if_else_list\"",
+            "\"actions\": [$1]",
+        ],
+        "description": "Checks a list of actions associated with conditions, and executes the first one in the list for which the condition holds. Basically a less indentation-heavy way to represent a deeply nested If-Else (Meta Action Type)."
+    },
+    "if_else": {
+        "prefix": "meta:if_else",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:if_else\"",
+            "\"condition\": {$1},",
+            "\"if_action\": {$2},",
+            "\"else_action\": {$3}",
+        ],
+        "description": "Executes an action only if a condition holds, and optionally executes another action when it doesn't hold."
+    },
+    "nothing": {
+        "prefix": "meta:nothing",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:nothing\"",
+        ],
+        "description": "Does nothing. Can be used as a backup in case an action is not optional in some place."
+    },
+    "side": {
+        "prefix": "meta:side",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:side\"",
+            "\"action\": {$1},",
+            "\"side\": \"${2}\"",
+        ],
+        "description": "Executes the specified action type on the specified \"side\"."
+    }
+}

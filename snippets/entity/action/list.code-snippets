@@ -1,0 +1,445 @@
+{
+    "add_velocity": {
+        "prefix": "entity:add_velocity",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:add_velocity\"",
+            "\"x\": ${1:1.0},",
+            "\"y\": ${2:1.0},",
+            "\"z\": ${3:1.0},",
+            "\"space\": \"${4}\",",
+            "\"client\": ${5|true,false|},",
+            "\"server\": ${6|true,false|},",
+            "\"set\": ${7|true,false|}",
+        ],
+        "description": "Adds or sets velocity towards a specific direction."
+    },
+    "add_xp": {
+        "prefix": "entity:add_xp",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:add_xp\"",
+            "\"points\": ${1:1},",
+            "\"levels\": ${2:1}",
+        ],
+        "description": "Adds experience points and levels to the player, or subtracts levels."
+    },
+    "apply_effect": {
+        "prefix": "entity:apply_effect",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:apply_effect\"",
+            "\"effect\": {$1},",
+            "\"effects\": [${2}]",
+        ],
+        "description": "Adds one or more status effects to the living entity. Does not have an effect on non-living entities."
+    },
+    "area_of_effect": {
+        "prefix": "entity:area_of_effect",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:area_of_effect\"",
+            "\"radius\": ${1:1.0},",
+            "\"bientity_action\": {$2},",
+            "\"bientity_condition\": {$3},",
+            "\"include_target\": ${4|true,false|}",
+        ],
+        "description": "Executes a Bi-Entity Action within a specified radius."
+    },
+    "block_action_at": {
+        "prefix": "entity:block_action_at",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:block_action_at\"",
+            "\"block_action\": {$1}",
+        ],
+        "description": "Executes a Block Action Type at the position of the entity."
+    },
+    "change_resource": {
+        "prefix": "entity:change_resource",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:change_resource\"",
+            "\"resource\": \"${1}\",",
+            "\"change\": ${2:1},",
+            "\"operation\": \"${3}\"",
+        ],
+        "description": "Changes the value of a power that either uses the Resource power type, or has a built-in cooldown."
+    },
+    "clear_effect": {
+        "prefix": "entity:clear_effect",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:clear_effect\"",
+            "\"effect\": \"${1}\"",
+        ],
+        "description": "Removes one specific type of status effect, or all status effects, from a living entity."
+    },
+    "crafting_table": {
+        "prefix": "entity:crafting_table",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:crafting_table\"",
+        ],
+        "description": "Brings up the Crafting Table GUI as if the player has interacted with one."
+    },
+    "damage": {
+        "prefix": "entity:damage",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:damage\"",
+            "\"amount\": ${1:1.0},",
+            "\"source\": {$2}",
+        ],
+        "description": "Applies damage to an entity."
+    },
+    "dismount": {
+        "prefix": "entity:dismount",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:dismount\"",
+        ],
+        "description": "Dismounts the entity from their vehicle."
+    },
+    "drop_inventory": {
+        "prefix": "entity:drop_inventory",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:drop_inventory\"",
+            "\"inventory_type\": {$1},",
+            "\"entity_action\": {$2},",
+            "\"item_action\": {$3},",
+            "\"item_condition\": {$4},",
+            "\"slot\": [${5}],",
+            "\"slots\": \"${6}\",",
+            "\"power\": ${7|true,false|},",
+            "\"throw_randomly\": ${8|true,false|},",
+            "\"retain_ownership\": ${9:1},",
+        ],
+        "description": "Drops the items from either the entity's inventory or a power that uses the Inventory (Power Type)."
+    },
+    "emit_game_event": {
+        "prefix": "entity:emit_game_event",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:emit_game_event\"",
+            "\"event\": \"${1}\"",
+        ],
+        "description": "Emits a 'game event' at the entity's position."
+    },
+    "ender_chest": {
+        "prefix": "entity:ender_chest",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:ender_chest\"",
+        ],
+        "description": "Brings up the Ender Chest GUI as if the player has interacted with one."
+    },
+    "equipped_item_action": {
+        "prefix": "entity:equipped_item_action",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:equipped_item_action\"",
+            "\"equipment_slot\": \"${1}\",",
+            "\"action\": {$2}",
+        ],
+        "description": "Executes an Item Action Type on an item stack in a specified equipment slot."
+    },
+    "execute_command": {
+        "prefix": "entity:execute_command",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:execute_command\"",
+            "\"command\": \"${1}\"",
+        ],
+        "description": "Executes a command with the entity as the source (i.e. @s will select the entity itself)."
+    },
+    "exhaust": {
+        "prefix": "entity:exhaust",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:exhaust\"",
+            "\"amount\": ${1:1.0}",
+        ],
+        "description": "Applies exhaustion to the entity, reducing saturation and hunger."
+    },
+    "explode": {
+        "prefix": "entity:explode",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:explode\"",
+            "\"power\": ${1:1.0},",
+            "\"destruction_type\": ${2|true,false|},",
+            "\"damage_self\": {$3},",
+            "\"indestructible\": {$4},",
+            "\"destructible\": ${5|true,false|},",
+        ],
+        "description": "Summons an explosion with a specific explosion power."
+    },
+    "extinguish": {
+        "prefix": "entity:extinguish",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:extinguish\"",
+        ],
+        "description": "Extinguishes the fire from the entity, removing the burning effect."
+    },
+    "feed": {
+        "prefix": "entity:feed",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:feed\"",
+            "\"food\": ${1:1},",
+            "\"saturation\": ${2:1.0}",
+        ],
+        "description": "Feeds the entity, filling up their hunger bar as if they had eaten a food item with the provided values."
+    },
+    "gain_air": {
+        "prefix": "entity:gain_air",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:gain_air\"",
+            "\"value\": ${1:1}",
+        ],
+        "description": "Restores breath (bubbles!) to a living entity."
+    },
+    "give": {
+        "prefix": "entity:give",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:give\"",
+            "\"stack\": {$1},",
+            "\"item_action\": {$2},",
+            "\"preferred_slot\": \"${3}\"",
+        ],
+        "description": "Gives the entity an item stack by inserting it into its inventory or dropping it on the ground if there is no available inventory space."
+    },
+    "grant_power": {
+        "prefix": "entity:grant_power",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:grant_power\"",
+            "\"power\": \"${1}\",",
+            "\"source\": \"${2}\"",
+        ],
+        "description": "Grants a power to the entity from a specified power source."
+    },
+    "heal": {
+        "prefix": "entity:heal",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:heal\"",
+            "\"amount\": ${1:1.0}",
+        ],
+        "description": "Restores a specified amount of health to the entity."
+    },
+    "modify_death_ticks": {
+        "prefix": "entity:modify_death_ticks",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:modify_death_ticks\"",
+            "\"modifier\": {$1}",
+        ],
+        "description": "Modifies how long the entity has been dead for."
+    },
+    "modify_inventory": {
+        "prefix": "entity:modify_inventory",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:modify_inventory\"",
+            "\"inventory_type\": {$1},",
+            "\"entity_action\": {$2},",
+            "\"item_action\": {$3},",
+            "\"item_condition\": {$4},",
+            "\"slot\": [${5}],",
+            "\"slots\": \"${6}\",",
+        ],
+        "description": "Modifies the items from either the entity's inventory or a power that uses the Inventory (Power Type)."
+    },
+    "modify_resource": {
+        "prefix": "entity:modify_resource",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:modify_resource\"",
+            "\"modifier\": {$1},",
+            "\"resource\": \"${2}\"",
+        ],
+        "description": "Modifies the value of a certain resource with Attribute Modifiers."
+    },
+    "modify_stat": {
+        "prefix": "entity:modify_stat",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:modify_stat\"",
+            "\"stat\": {$1},",
+            "\"modifier\": {$2}",
+        ],
+        "description": "Modifies the value of a certain statistic with Attribute Modifiers."
+    },
+    "passenger_action": {
+        "prefix": "entity:passenger_action",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:passenger_action\"",
+            "\"action\": {$1},",
+            "\"bientity_action\": {$2},",
+            "\"bientity_condition\": {$3},",
+            "\"recursive\": ${4|true,false|}",
+        ],
+        "description": "Executes an action on the passengers of the entity."
+    },
+    "play_sound": {
+        "prefix": "entity:play_sound",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:play_sound\"",
+            "\"sound\": \"${1}\",",
+            "\"volume\": ${2:1.0},",
+            "\"pitch\": ${3:1.0}",
+        ],
+        "description": "Plays a sound event at the entity's position."
+    },
+    "raycast": {
+        "prefix": "entity:raycast",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:raycast\"",
+            "\"distance\": ${1:1.0},",
+            "\"block\": ${2|true,false|},",
+            "\"entity\": ${3|true,false|},",
+            "\"shape_type\": {$4},",
+            "\"fluid_handling\": {$5},",
+            "\"bientity_condition\": {$6},",
+            "\"bientity_action\": {$7},",
+            "\"block_action\": {$8},",
+            "\"before_action\": {$9},",
+            "\"hit_action\": \"${10}\",",
+            "\"miss_action\": ${11:1.0},",
+            "\"command_at_hit\": \"${12}\",",
+            "\"command_hit_offset\": ${13:1.0},",
+            "\"command_along_ray\": ${14|true,false|},",
+        ],
+        "description": "Casts a ray to the direction where the entity is looking."
+    },
+    "replace_inventory": {
+        "prefix": "entity:replace_inventory",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:replace_inventory\"",
+            "\"inventory_type\": {$1},",
+            "\"entity_action\": {$2},",
+            "\"item_action\": {$3},",
+            "\"item_condition\": {$4},",
+            "\"slot\": [${5}],",
+            "\"slots\": \"${6}\",",
+            "\"power\": {$7},",
+            "\"stack\": ${8|true,false|},",
+        ],
+        "description": "Replaces the items from either the entity's inventory or a power that uses the Inventory (Power Type)."
+    },
+    "revoke_power": {
+        "prefix": "entity:revoke_power",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:revoke_power\"",
+            "\"power\": \"${1}\",",
+            "\"source\": \"${2}\"",
+        ],
+        "description": "Revokes a power from the entity from a specified power source."
+    },
+    "riding_action": {
+        "prefix": "entity:riding_action",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:riding_action\"",
+            "\"action\": {$1},",
+            "\"bientity_action\": {$2},",
+            "\"bientity_condition\": {$3},",
+            "\"recursive\": ${4|true,false|}",
+        ],
+        "description": "Executes an action on the entity/entities that's being ridden by the entity."
+    },
+    "set_fall_distance": {
+        "prefix": "entity:set_fall_distance",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:set_fall_distance\"",
+            "\"fall_distance\": ${1:1.0}",
+        ],
+        "description": "Sets the fall distance of the entity to the specified amount. The fall distance value keeps track of how many blocks the entity has fallen and is used to calculate the amount of fall damage the entity takes. By setting it to 0 while falling, the entity essentially takes fall damage as if it had only fallen from the current position."
+    },
+    "set_on_fire": {
+        "prefix": "entity:set_on_fire",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:set_on_fire\"",
+            "\"duration\": ${1:1}",
+        ],
+        "description": "Sets the entity on fire for the specified amount of time in seconds."
+    },
+    "spawn_effect_cloud": {
+        "prefix": "entity:spawn_effect_cloud",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:spawn_effect_cloud\"",
+            "\"radius\": ${1:1.0},",
+            "\"radius_on_use\": ${2:1.0},",
+            "\"wait_time\": ${3:1},",
+            "\"effect\": {$4},",
+            "\"effects\": [${5}]",
+        ],
+        "description": "Spawns an area effect cloud (as from a lingering potion) at the position of the entity."
+    },
+    "spawn_entity": {
+        "prefix": "entity:spawn_entity",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:spawn_entity\"",
+            "\"entity_type\": \"${1}\",",
+            "\"tag\": \"${2}\",",
+            "\"entity_action\": {$3}",
+        ],
+        "description": "Spawns another entity at the position of the target entity."
+    },
+    "spawn_particles": {
+        "prefix": "entity:spawn_particles",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:spawn_particles\"",
+            "\"particle\": {$1},",
+            "\"count\": ${2:1},",
+            "\"speed\": ${3:1.0},",
+            "\"force\": ${4|true,false|},",
+            "\"spread\": {$5},",
+            "\"offset_y\": ${6:1.0}",
+        ],
+        "description": "Spawns particles on the body of the entity that has the power for visual effects."
+    },
+    "swing_hand": {
+        "prefix": "entity:swing_hand",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:swing_hand\"",
+            "\"hand\": \"${1}\"",
+        ],
+        "description": "Swings the specified hand."
+    },
+    "toggle": {
+        "prefix": "entity:toggle",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:toggle\"",
+            "\"power\": \"${1}\"",
+        ],
+        "description": "Toggles the state of a power that uses the Toggle (Power Type)."
+    },
+    "trigger_cooldown": {
+        "prefix": "entity:trigger_cooldown",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:trigger_cooldown\"",
+            "\"power\": \"${1}\"",
+        ],
+        "description": "Starts the cooldown of a power that uses a Power Type that has a built-in cooldown, as if that power has just been used."
+    },
+}
