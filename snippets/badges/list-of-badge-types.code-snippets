@@ -31,7 +31,7 @@
         "description": "Displays a texture next to the name of the power."
     },
     "tooltip": {
-        "prefix": "tooltip",
+        "prefix": "tooltip_badge",
         "scope": "json",
         "body": [
             "\"type\": \"origins:tooltip\",",

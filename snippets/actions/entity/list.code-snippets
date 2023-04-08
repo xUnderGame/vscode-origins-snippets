@@ -300,7 +300,7 @@
         "description": "Plays a sound event at the entity's position."
     },
     "raycast": {
-        "prefix": "entity:raycast",
+        "prefix": "entity:raycast_action",
         "scope": "json",
         "body": [
             "\"type\": \"origins:raycast\",",

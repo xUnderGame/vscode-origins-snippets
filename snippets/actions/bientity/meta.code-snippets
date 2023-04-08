@@ -9,7 +9,7 @@
         "description": "Executes an Entity Action Type on the actor entity."
     },
     "invert": {
-        "prefix": "bientity:invert",
+        "prefix": "bientity:invert_action",
         "scope": "json",
         "body": [
             "\"type\": \"origins:invert\",",

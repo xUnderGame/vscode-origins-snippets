@@ -449,7 +449,7 @@
         "description": "Checks whether the entity fulfills a specified Predicate."
     },
     "raycast": {
-        "prefix": "entity:raycast",
+        "prefix": "entity:raycast_condition",
         "scope": "json",
         "body": [
             "\"type\": \"origins:raycast\",",

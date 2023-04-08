@@ -508,7 +508,7 @@
         "description": "Provides a switch that can be toggled ON and OFF with the specified Key."
     },
     "tooltip": {
-        "prefix": "tooltip",
+        "prefix": "tooltip_power",
         "scope": "json",
         "body": [
             "\"type\": \"origins:tooltip\",",

@@ -1,6 +1,6 @@
 {
     "offset": {
-        "prefix": "block:offset",
+        "prefix": "block:offset_action",
         "scope": "json",
         "body": [
             "\"type\": \"origins:offset\",",

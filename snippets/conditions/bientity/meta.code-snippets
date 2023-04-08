@@ -27,7 +27,7 @@
         "description": "Checks for an entity condition on either the actor or the target entities."
     },
     "invert": {
-        "prefix": "bientity:invert",
+        "prefix": "bientity:invert_condition",
         "scope": "json",
         "body": [
             "\"type\": \"origins:invert\",",
