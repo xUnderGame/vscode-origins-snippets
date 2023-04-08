@@ -7,12 +7,12 @@
 ### **Latest release: 1.0.0**
 This extension for Visual Studio Code adds snippets from the Minecraft Origins mod. Check out the [Origins wiki](https://origins.readthedocs.io/en/latest) for more information.
 
-![Demo](demo.gif)
-
 ## Usage
-Type part of a snippet, press enter, and the snippet unfolds.
+Type part of a snippet, press enter, and the snippet gets sent. You can also press `Ctrl`+`Space` to activate snippets.
 
-> Right now this extension is only covering the latest version of the Origins wiki (1.8.1). Some snippets might be different depending on the version you are coding your origin for. Be careful with that.
+> Right now this extension is only covering the latest version of the Origins wiki (1.8.1). Some snippets might be different depending on the version you are coding your origin for. If you'd like to port this to another version, you can use 'generator.py' and manually edit the files.
+
+![Demo](demo.gif)
 
 ## Origins Snippets
 | Snippet          | Purpose                                               |

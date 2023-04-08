@@ -5,13 +5,13 @@ import os
 from bs4 import BeautifulSoup
 
 def requestWeb(website):
-    request = requests.get(website, headers={"User-Agent": "Mozilla/5.0"})  # Requests access
+    request = requests.get(website, headers={"User-Agent": "Mozilla/5.0"})
     return BeautifulSoup(request.text, 'html.parser')
 
 # Gets the links
 def filterWeb(soup):
     spoonedDiv = soup.find_all(["ul", "h3"], attrs={'class': None})
-    spoonedDiv = soup.find_all(["li", "h3"], attrs={'class': None}) # Change "a" to "li" to get bientity/entity
+    spoonedDiv = soup.find_all(["li", "h3"], attrs={'class': None}) # Change "li" to "a" to get powers.
     return spoonedDiv
 
 # Gets the information from the website.
@@ -43,12 +43,12 @@ def scrapeResults(soup, name):
         try:
             valuesList.append(value.contents[0].contents[0])
         except AttributeError:
-            print(f"{name} can't be fetched correctly.") # Or maybe it can and im just dum.
+            print(f"{name} can't be fetched correctly.") # Or maybe it can and im just dum. (most of the time its a false-positive)
             desc, [None], [None], name
 
     return desc, attrList, valuesList, name
 
-# Builds a snippet. Technically there is a bug when a value has two "<a>" tags, but I just don't care and i'll fix it manually.
+# Builds a snippet.
 def buildSnippet(soup, name, desc, attrList, valuesList):
     # Build the skeleton... (SANS UNDERTALE???)
     build = [f'"{name}": {{'] # remove {}
