@@ -21,7 +21,7 @@ def scrapeResults(soup, name):
     desc = str(desc[1].text)
 
     # Check if the power has at least one field.
-    if "<p><em>None.</em></p>" in str(soup):
+    if "<p><em>None.</em></p>" in str(soup) or not soup.find("table"):
         return desc, [None], [None], name
 
     # Gets the attibutes.
@@ -40,15 +40,10 @@ def scrapeResults(soup, name):
     values = [x for x in values if not "../../../" in str(x)]
     for value in values:
         valuesList.append(value.contents[0]) 
-        # Fiddle with this!!!!! example: conditioned_attribute
-        # Attributed Attribute Modifier 0
-        # Array 1 <------ BAD!!! (array)
-        # Attributed Attribute Modifiers 2
-        # Integer 3
 
     return desc, attrList, valuesList, name
 
-# Builds a snippet. Technically there is a bug when a value has two "<a>" tags, but I just don't care.
+# Builds a snippet. Technically there is a bug when a value has two "<a>" tags, but I just don't care and i'll fix it manually.
 def buildSnippet(soup, name, desc, attrList, valuesList):
     # Build the skeleton... (SANS UNDERTALE???)
     build = [f'"{name}": {{']
@@ -61,11 +56,12 @@ def buildSnippet(soup, name, desc, attrList, valuesList):
     for attr in attrList:
         buildStr = ""
         
-        if attr is None: buildStr += f'\t\t"type": '
+        if i >= len(valuesList): break
+
+        if attr is None: buildStr += f'\t\t"\\\"type\\\": '
         else: buildStr += f'\t\t\"\\\"{attr}\\\": '
 
         # Type of the value
-        print(valuesList[i], i)
         match valuesList[i]:
             case "Boolean":
                 buildStr += 'true'
@@ -78,7 +74,7 @@ def buildSnippet(soup, name, desc, attrList, valuesList):
             case "Array":
                 buildStr += '[]'
             case None:
-                buildStr += f'"origins:{name}"'
+                buildStr += f'\\\"origins:{name}\\\"'
             case _:
                 buildStr += '{}'
 

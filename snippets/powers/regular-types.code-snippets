@@ -73,7 +73,15 @@
         "prefix": "creative_flight",
         "scope": "json",
         "body": [
-            "type": "origins:creative_flight"",	],	"description": "Allows the players to fly as if they were in Creative Mode."},"damage_over_time": {	"prefix": "damage_over_time",	"scope": "json",	"body": [		"\"interval\": 1,",
+            "\"type\": \"origins:creative_flight\"",
+        ],
+        "description": "Allows the players to fly as if they were in Creative Mode."
+    },
+    "damage_over_time": {
+        "prefix": "damage_over_time",
+        "scope": "json",
+        "body": [
+            "\"interval\": 1,",
             "\"onset_delay\": 1,",
             "\"damage\": 1.0,",
             "\"damage_easy\": 1.0,",
@@ -87,7 +95,15 @@
         "prefix": "disable_regen",
         "scope": "json",
         "body": [
-            "type": "origins:disable_regen"",	],	"description": "Disables the natural health regeneration when on full hunger."},"effect_immunity": {	"prefix": "effect_immunity",	"scope": "json",	"body": [		"\"effect\": \"\",",
+            "\"type\": \"origins:disable_regen\"",
+        ],
+        "description": "Disables the natural health regeneration when on full hunger."
+    },
+    "effect_immunity": {
+        "prefix": "effect_immunity",
+        "scope": "json",
+        "body": [
+            "\"effect\": \"\",",
             "\"effects\": [],",
             "\"inverted\": {}",
         ],
@@ -136,7 +152,15 @@
         "prefix": "fire_immunity",
         "scope": "json",
         "body": [
-            "type": "origins:fire_immunity"",	],	"description": "Grants full fire immunity (meaning not only do you take no damage from fire sources, you also can not be set on fire)."},"fire_projectile": {	"prefix": "fire_projectile",	"scope": "json",	"body": [		"\"entity_type\": \"\",",
+            "\"type\": \"origins:fire_immunity\"",
+        ],
+        "description": "Grants full fire immunity (meaning not only do you take no damage from fire sources, you also can not be set on fire)."
+    },
+    "fire_projectile": {
+        "prefix": "fire_projectile",
+        "scope": "json",
+        "body": [
+            "\"entity_type\": \"\",",
             "\"cooldown\": 1,",
             "\"hud_render\": {},",
             "\"count\": 1,",
@@ -154,7 +178,314 @@
         "prefix": "freeze",
         "scope": "json",
         "body": [
-            "type": "origins:freeze"",	],	"description": "Freezes the entity that has the power, as if they're in a Powder Snow block."},"ignore_water": {	"prefix": "ignore_water",	"scope": "json",	"body": [		"type": "origins:ignore_water"",
+            "\"type\": \"origins:freeze\"",
+        ],
+        "description": "Freezes the entity that has the power, as if they're in a Powder Snow block."
+    },
+    "ignore_water": {
+        "prefix": "ignore_water",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:ignore_water\"",
         ],
         "description": "Prevents the movement of the entity that has the power from being affected by water."
     },
+    "inventory": {
+        "prefix": "inventory",
+        "scope": "json",
+        "body": [
+            "\"title\": \"\",",
+            "\"container_type\": true,",
+            "\"drop_on_death\": {},",
+            "\"drop_on_death_filter\": true,",
+            "\"recoverable\": {},",
+        ],
+        "description": "Provides an inventory that can be opened with the specified Key; may or may not persist on death."
+    },
+    "invisibility": {
+        "prefix": "invisibility",
+        "scope": "json",
+        "body": [
+            "\"render_armor\": true,",
+            "\"render_outline\": true",
+        ],
+        "description": "Grants the entity that has the power invisibility; may or may not affect their worn armor."
+    },
+    "invulnerability": {
+        "prefix": "invulnerability",
+        "scope": "json",
+        "body": [
+            "\"damage_condition\": {}",
+        ],
+        "description": "Provides damage immunity to specific damage sources."
+    },
+    "item_on_item": {
+        "prefix": "item_on_item",
+        "scope": "json",
+        "body": [
+            "\"using_item_condition\": {},",
+            "\"on_item_condition\": {},",
+            "\"result\": {},",
+            "\"result_from_on_stack\": 1,",
+            "\"using_item_action\": {},",
+            "\"on_item_action\": {},",
+            "\"result_item_action\": {},",
+            "\"entity_action\": {}",
+        ],
+        "description": "Executes an Entity Action Type or Item Action Types when the player uses an item on an item, similar to how you would put items in a bundle."
+    },
+    "keep_inventory": {
+        "prefix": "keep_inventory",
+        "scope": "json",
+        "body": [
+            "\"item_condition\": {},",
+            "\"slots\": []",
+        ],
+        "description": "Makes certain items persist in the entity's inventory."
+    },
+    "launch": {
+        "prefix": "launch",
+        "scope": "json",
+        "body": [
+            "\"cooldown\": 1,",
+            "\"speed\": 1.0,",
+            "\"hud_render\": {},",
+            "\"sound\": \"\",",
+            "\"key\": {}",
+        ],
+        "description": "Launches the entity that has the power upwards upon pressing the specified Key."
+    },
+    "lava_vision": {
+        "prefix": "lava_vision",
+        "scope": "json",
+        "body": [
+            "\"s\": 1.0,",
+            "\"v\": 1.0",
+        ],
+        "description": "Changes how far the player can see when submerged in lava."
+    },
+    "model_color": {
+        "prefix": "model_color",
+        "scope": "json",
+        "body": [
+            "\"red\": 1.0,",
+            "\"green\": 1.0,",
+            "\"blue\": 1.0,",
+            "\"alpha\": 1.0",
+        ],
+        "description": "Multiplies the luminosity of the base color of the texture of the entity that has the power by the specified color values."
+    },
+    "multiple": {
+        "prefix": "multiple",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:multiple\"",
+        ],
+        "description": "Allows for defining more than one power in a single file."
+    },
+    "night_vision": {
+        "prefix": "night_vision",
+        "scope": "json",
+        "body": [
+            "\"strength\": 1.0",
+        ],
+        "description": "Grants night vision to the player without the Night Vision status effect."
+    },
+    "overlay": {
+        "prefix": "overlay",
+        "scope": "json",
+        "body": [
+            "\"texture\": \"\",",
+            "\"strength\": 1.0,",
+            "\"red\": 1.0,",
+            "\"green\": 1.0,",
+            "\"blue\": 1.0,",
+            "\"draw_mode\": \"\",",
+            "\"draw_phase\": \"\",",
+            "\"hide_with_hud\": true,",
+            "\"visible_in_third_person\": true",
+        ],
+        "description": "Applies an overlay to the player's screen."
+    },
+    "particle": {
+        "prefix": "particle",
+        "scope": "json",
+        "body": [
+            "\"particle\": {},",
+            "\"frequency\": 1,",
+            "\"count\": 1,",
+            "\"speed\": 1.0,",
+            "\"spread\": {},",
+            "\"offset_y\": 1.0,",
+            "\"visible_in_first_person\": true,",
+            "\"visible_while_invisible\": true",
+        ],
+        "description": "Spawns particles on the body of the entity that has the power for visual effects."
+    },
+    "phasing": {
+        "prefix": "phasing",
+        "scope": "json",
+        "body": [
+            "\"blacklist\": true,",
+            "\"block_condition\": {},",
+            "\"render_type\": \"\",",
+            "\"view_distance\": 1.0,",
+            "\"phase_down_condition\": {}",
+        ],
+        "description": "Allows the entity that has the power to \"phase\" (move) through blocks."
+    },
+    "recipe": {
+        "prefix": "recipe",
+        "scope": "json",
+        "body": [
+            "\"recipe\": {}",
+        ],
+        "description": "Allows a player with this power to craft the defined crafting recipe."
+    },
+    "replace_loot_table": {
+        "prefix": "replace_loot_table",
+        "scope": "json",
+        "body": [],
+        "description": "Replaces a loot table with another loot table."
+    },
+    "resource": {
+        "prefix": "resource",
+        "scope": "json",
+        "body": [
+            "\"min\": 1,",
+            "\"max\": 1,",
+            "\"hud_render\": {},",
+            "\"start_value\": 1,",
+            "\"min_action\": {},",
+            "\"max_action\": {}",
+        ],
+        "description": "Provides a variable with an assignable minimum and maximum value that can be used as a timer, or other things."
+    },
+    "restrict_armor": {
+        "prefix": "restrict_armor",
+        "scope": "json",
+        "body": [
+            "\"head\": {},",
+            "\"chest\": {},",
+            "\"legs\": {},",
+            "\"feet\": {}",
+        ],
+        "description": "Restricts the entity that has the power from equipping items as armor (via right-click, dispensing or by dragging and dropping the item in the equipment slot(s)) in the specified equipment slot(s)."
+    },
+    "self_glow": {
+        "prefix": "self_glow",
+        "scope": "json",
+        "body": [
+            "\"entity_condition\": {},",
+            "\"bientity_condition\": {},",
+            "\"use_teams\": true,",
+            "\"red\": 1.0,",
+            "\"green\": 1.0,",
+            "\"blue\": 1.0",
+        ],
+        "description": "Makes the entity that has the power glow if certain conditions are met."
+    },
+    "shader": {
+        "prefix": "shader",
+        "scope": "json",
+        "body": [
+            "\"shader\": \"\",",
+            "\"toggleable\": true",
+        ],
+        "description": "Applies a post-processing shader to the vision of the entity that has the power."
+    },
+    "shaking": {
+        "prefix": "shaking",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:shaking\"",
+        ],
+        "description": "Makes the entity that has the power shake, similar to a Strider out of lava or a Zombie undergoing conversion."
+    },
+    "simple": {
+        "prefix": "simple",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:simple\"",
+        ],
+        "description": "Does nothing."
+    },
+    "stacking_status_effect": {
+        "prefix": "stacking_status_effect",
+        "scope": "json",
+        "body": [
+            "\"min_stacks\": 1,",
+            "\"max_stacks\": 1,",
+            "\"duration_per_stack\": 1,",
+            "\"tick_rate\": 1,",
+            "\"effect\": {},",
+            "\"effects\": []",
+        ],
+        "description": "Provides a system where the entity that has the power gains/loses a stack per specified interval if the power is active or inactive respectively. If the stack count is greater than 0, the specified status effect(s) will be applied to the entity."
+    },
+    "starting_equipment": {
+        "prefix": "starting_equipment",
+        "scope": "json",
+        "body": [
+            "\"stack\": {},",
+            "\"stacks\": [],",
+            "\"recurrent\": {}",
+        ],
+        "description": "Provides the player with items when the power is granted."
+    },
+    "status_bar_texture": {
+        "prefix": "status_bar_texture",
+        "scope": "json",
+        "body": [
+            "\"texture\": \"\"",
+        ],
+        "description": "Replaces the status bar textures (health, hunger, air, experience, etc.) with a specified sprite sheet."
+    },
+    "swimming": {
+        "prefix": "swimming",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:swimming\"",
+        ],
+        "description": "Allows the player to swim (outside of water!)."
+    },
+    "toggle_night_vision": {
+        "prefix": "toggle_night_vision",
+        "scope": "json",
+        "body": [
+            "\"active_by_default\": true,",
+            "\"strength\": 1.0,",
+            "\"key\": {}",
+        ],
+        "description": "Defines a Night Vision (Power Type) which can be toggled on and off with the specified Key."
+    },
+    "toggle": {
+        "prefix": "toggle",
+        "scope": "json",
+        "body": [
+            "\"active_by_default\": true,",
+            "\"key\": {},",
+            "\"retain_state\": true",
+        ],
+        "description": "Provides a switch that can be toggled ON and OFF with the specified Key."
+    },
+    "tooltip": {
+        "prefix": "tooltip",
+        "scope": "json",
+        "body": [
+            "\"item_condition\": {},",
+            "\"text\": {},",
+            "\"texts\": [],",
+            "\"priority\": {}",
+        ],
+        "description": "Applies the specified tooltip(s) to an item that is only visible to the entity that has the power."
+    },
+    "walk_on_fluid": {
+        "prefix": "walk_on_fluid",
+        "scope": "json",
+        "body": [
+            "\"fluid\": \"\"",
+        ],
+        "description": "Allows the entity that has the power to walk on fluid."
+    }
+}
