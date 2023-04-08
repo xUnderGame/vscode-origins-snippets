@@ -129,10 +129,10 @@
             "\"food_modifier\": {},",
             "\"food_modifiers\": [],",
             "\"saturation_modifier\": {},",
-            "\"saturation_modifiers\": {},",
-            "\"entity_action\": [],",
-            "\"always_edible\": {},",
-            "\"prevent_effects\": {}",
+            "\"saturation_modifiers\": [],",
+            "\"entity_action\": {},",
+            "\"always_edible\": true,",
+            "\"prevent_effects\": true",
         ],
         "description": "Executes an Entity Action Type and modifies the food and saturation level gain of a food item when a player that has the power eats food item."
     },
@@ -241,7 +241,7 @@
             "\"status_effect\": \"\",",
             "\"status_effects\": [],",
             "\"modifier\": {},",
-            "\"modifiers\": {}",
+            "\"modifiers\": []",
         ],
         "description": "Modifies the amplifier of the specified status effect upon receiving the specified status effect."
     },
@@ -252,7 +252,7 @@
             "\"status_effect\": \"\",",
             "\"status_effects\": [],",
             "\"modifier\": {},",
-            "\"modifiers\": {}",
+            "\"modifiers\": []",
         ],
         "description": "Modifies the duration of the specified status effect(s) upon receiving the said status effect(s)."
     },

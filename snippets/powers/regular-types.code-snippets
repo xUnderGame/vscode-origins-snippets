@@ -15,7 +15,7 @@
         "body": [
             "\"modifier\": {},",
             "\"modifiers\": [],",
-            "\"update_health\": {}",
+            "\"update_health\": true",
         ],
         "description": "Modifies one or more attributes using Attributed Attribute Modifiers"
     },
@@ -43,8 +43,8 @@
         "body": [
             "\"modifier\": {},",
             "\"modifiers\": [],",
-            "\"tick_rate\": {},",
-            "\"update_health\": 1",
+            "\"tick_rate\": 1,",
+            "\"update_health\": true",
         ],
         "description": "Applies one or more attribute modifiers; may depend on a condition."
     },
@@ -105,7 +105,7 @@
         "body": [
             "\"effect\": \"\",",
             "\"effects\": [],",
-            "\"inverted\": {}",
+            "\"inverted\": true",
         ],
         "description": "Prevents status effects from being applied to the entity that has the power."
     },
@@ -429,7 +429,7 @@
         "body": [
             "\"stack\": {},",
             "\"stacks\": [],",
-            "\"recurrent\": {}",
+            "\"recurrent\": true",
         ],
         "description": "Provides the player with items when the power is granted."
     },
@@ -476,7 +476,7 @@
             "\"item_condition\": {},",
             "\"text\": {},",
             "\"texts\": [],",
-            "\"priority\": {}",
+            "\"priority\": 1",
         ],
         "description": "Applies the specified tooltip(s) to an item that is only visible to the entity that has the power."
     },

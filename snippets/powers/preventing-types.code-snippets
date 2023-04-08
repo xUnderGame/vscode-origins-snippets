@@ -80,9 +80,7 @@
     "prevent_feature_render": {
         "prefix": "prevent_feature_render",
         "scope": "json",
-        "body": [
-            "\"feature\": [],",
-        ],
+        "body": [],
         "description": "Prevents certain Feature Renderers (like the wool coat of a Sheep, the worn armor of a mob, etc.) from rendering on the entity that has the power."
     },
     "prevent_game_event": {
@@ -91,8 +89,8 @@
         "body": [
             "\"event\": \"\",",
             "\"events\": [],",
-            "\"tag\": {},",
-            "\"entity_action\": \"\"",
+            "\"tag\": \"\",",
+            "\"entity_action\": {}",
         ],
         "description": "Prevents specified game event(s) from being emitted by the entity that has the power."
     },

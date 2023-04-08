@@ -10,8 +10,7 @@
             "\"item_condition\": {},",
             "\"hands\": [],",
             "\"result_stack\": {},",
-            "\"action_result\": {},",
-            "\"priority\": 1",
+            "\"action_result\": 1,",
         ],
         "description": "Executes an action when a player \"uses\" (right-clicks) the entity that has the power."
     },
@@ -35,11 +34,10 @@
             "\"block_condition\": {},",
             "\"item_condition\": {},",
             "\"directions\": [],",
-            "\"hands\": {},",
-            "\"result_stack\": [],",
+            "\"hands\": [],",
+            "\"result_stack\": {},",
             "\"held_item_action\": {},",
             "\"result_item_action\": {},",
-            "\"action_result\": {}",
         ],
         "description": "Executes a Block Action Type and/or Item Action Types when the player that has the power \"uses\" (right-clicks) a block."
     },
@@ -68,8 +66,7 @@
             "\"item_condition\": {},",
             "\"hands\": [],",
             "\"result_stack\": {},",
-            "\"action_result\": {},",
-            "\"priority\": 1",
+            "\"action_result\": 1,",
         ],
         "description": "Executes an action when the player that has the power \"uses\" (right-clicks) an entity."
     },

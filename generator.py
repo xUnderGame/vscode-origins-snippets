@@ -18,7 +18,7 @@ def filterWeb(soup):
 def scrapeResults(soup, name):
     # Gets the description
     desc = soup.find_all("p", attrs={'class': None}, limit=2)
-    desc = str(desc[1].text)
+    desc = str(desc[1].text).replace("\"", "\\\"")
 
     # Check if the power has at least one field.
     if "<p><em>None.</em></p>" in str(soup) or not soup.find("table"):
@@ -36,10 +36,15 @@ def scrapeResults(soup, name):
 
     # Gets the (raw) values.
     values = soup.find("table")
-    values = values.select('tbody > tr > td > a')
+    values = values.select('tbody > tr > td:has(a)')
     values = [x for x in values if not "../../../" in str(x)]
+
     for value in values:
-        valuesList.append(value.contents[0]) 
+        try:
+            valuesList.append(value.contents[0].contents[0])
+        except AttributeError:
+            print(f"{name} can't be fetched correctly.") # Or maybe it can and im just dum.
+            desc, [None], [None], name
 
     return desc, attrList, valuesList, name
 
@@ -103,7 +108,9 @@ def buildSnippet(soup, name, desc, attrList, valuesList):
 
 # Main program (woo...)
 mainWeb = "https://origins.readthedocs.io/en/latest/types/power_types/"
-if not os.path.exists("./snippets/powers"): os.mkdir("./snippets/powers")
+folder = "./snippets/powers/"
+file = None
+if not os.path.exists(folder): os.mkdir(folder)
 
 for tag in filterWeb(requestWeb(mainWeb)):
     # Filters the important information
@@ -112,7 +119,8 @@ for tag in filterWeb(requestWeb(mainWeb)):
     if reg:
         if reg.group(3):
             # Initializes a snippet file.
-            file = open(f"./snippets/powers/{reg.group(3).lower().replace(' ', '-')}.code-snippets", "a")
+            if file: file.write("}")
+            file = open(f"{folder}{reg.group(3).lower().replace(' ', '-')}.code-snippets", "a")
             file.write("{")
 
         elif reg.group(1) and reg.group(2):
@@ -123,4 +131,5 @@ for tag in filterWeb(requestWeb(mainWeb)):
             
             # Updates the file.
             for ele in snippet: file.write(f"{ele}")
-file.write("}")
+
+file.write("}") # For the last file.
