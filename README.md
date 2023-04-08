@@ -1,7 +1,7 @@
 # VS Code Origins Snippets
 
 <div style="text-align: center">
-    <img src="icon.png" style="width: 150px">t
+    <img src="icon.png" style="width: 150px">
 </div>
 
 ### **Latest release: 1.0.0**
