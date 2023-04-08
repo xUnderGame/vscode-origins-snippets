@@ -2,8 +2,10 @@
 	"name": "vscode-origins-snippets",
 	"displayName": "Vscode Origins Snippets",
 	"description": "A collection of snippets from the Minecraft Origins mod.",
+	"homepage": "https://ugdev.xyz",
 	"publisher": "UnderGame",
 	"version": "1.0.0",
+	"license": "See license in LICENSE",
 	"engines": {
 		"vscode": "^1.77.0"
 	},
@@ -15,6 +17,10 @@
 	"categories": [
 		"Snippets"
 	],
+	"bugs": {
+		"url": "https://github.com/xUnderGame/vscode-origins-snippets/issues"
+	},
+	"keywords": ["Origins", "Minecraft", "Mod", "Fabric", "Forge", "Snippet", "Docs"],
 	"contributes": {
 		"snippets": [
 			{
