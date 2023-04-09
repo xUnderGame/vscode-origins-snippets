@@ -4,7 +4,7 @@
 	"description": "A collection of snippets from the Minecraft Origins mod.",
 	"homepage": "https://ugdev.xyz",
 	"publisher": "UnderGame",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"license": "See license in LICENSE",
 	"engines": {
 		"vscode": "^1.77.0"

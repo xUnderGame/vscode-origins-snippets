@@ -61,8 +61,8 @@
         "body": [
             "\"type\": \"origins:change_resource\",",
             "\"resource\": \"${1}\",",
-            "\"change\": ${2:1},",
-            "\"operation\": \"${3}\"",
+            "\"operation\": \"${2}\"",
+            "\"change\": ${3:1},",
         ],
         "description": "Changes the value of a power that either uses the Resource power type, or has a built-in cooldown."
     },
