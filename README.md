@@ -10,7 +10,7 @@
 [![GitHub](https://img.shields.io/github/stars/xUnderGame/vscode-origins-snippets.svg?style=flat-square)](https://github.com/xUnderGame/vscode-origins-snippets)
 </div>
 
-### **Latest release: 1.0.0**
+### **Latest release: 1.0.3**
 This extension for Visual Studio Code adds snippets from the Minecraft Origins mod. Check out the [Origins wiki](https://origins.readthedocs.io/en/latest) for more information. You can obtain the extension by clicking [here](https://marketplace.visualstudio.com/items?itemName=UnderGame.vscode-origins-snippets) or searching it up in VS Code.
 
 ## Usage
