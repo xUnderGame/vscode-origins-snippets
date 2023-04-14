@@ -1,6 +1,6 @@
 {
     "and": {
-        "prefix": "meta:and",
+        "prefix": "meta:and_condition",
         "scope": "json",
         "body": [
             "\"type\": \"origins:and\",",

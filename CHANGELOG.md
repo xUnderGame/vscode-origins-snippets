@@ -16,3 +16,10 @@ All notable changes to the extension will be documented in this file.
 
 ## [v1.0.3] - 2023-04-09
 - Moved two snippet's properties position to the bottom of the snippet to make "reading" easier.
+
+## [v1.0.4] - 2023-04-09
+- Updated README.md.
+
+## [v1.0.5] - 2023-04-15
+- Fixed "entity:change_resource" having it's comma in the wrong spot. (Ty ying)
+- Renamed dupe snippets for meta:and so that it now specifies if it is an action or a condition. (Ty ying)
