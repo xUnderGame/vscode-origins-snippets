@@ -61,9 +61,9 @@
     "nothing": {
         "prefix": "meta:nothing",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:nothing\",",
-        ],
+		"body": [
+			"\"type\": \"origins:nothing\""
+		],
         "description": "Does nothing. Can be used as a backup in case an action is not optional in some place."
     },
     "side": {

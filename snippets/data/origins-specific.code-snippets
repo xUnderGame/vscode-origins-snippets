@@ -2,9 +2,9 @@
     "attribute_modifier_operation": {
         "prefix": "attribute_modifier_operation",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:attribute_modifier_operation\",",
-        ],
+		"body": [
+			"\"type\": \"origins:attribute_modifier_operation\""
+		],
         "description": "A String used to specify the operation used by Attribute Modifiers."
     },
     "attribute_modifier": {
@@ -23,9 +23,9 @@
     "attributed_attribute_modifier_operation": {
         "prefix": "attributed_attribute_modifier_operation",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:attributed_attribute_modifier_operation\",",
-        ],
+		"body": [
+			"\"type\": \"origins:attributed_attribute_modifier_operation\""
+		],
         "description": "A String used to specify the operation used by Attributed Attribute Modifiers."
     },
     "attributed_attribute_modifier": {
@@ -43,9 +43,9 @@
     "comparison": {
         "prefix": "comparison",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:comparison\",",
-        ],
+		"body": [
+			"\"type\": \"origins:comparison\""
+		],
         "description": "A String which specifies how two numbers should be compared. Usually the first number is provided by whatever condition you are in, and the second is specified in an accompanying compare_to field."
     },
     "damage_source": {
@@ -78,9 +78,9 @@
     "identifier": {
         "prefix": "identifier",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:identifier\",",
-        ],
+		"body": [
+			"\"type\": \"origins:identifier\""
+		],
         "description": "A String which specifies an identifier used in Minecraft. They are used to refer to items, blocks, status effects, locations in data or resource packs, and a lot of other things."
     },
     "ingredient": {
@@ -96,9 +96,9 @@
     "item_slot": {
         "prefix": "item_slot",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:item_slot\",",
-        ],
+		"body": [
+			"\"type\": \"origins:item_slot\""
+		],
         "description": "A String that represents a slot from an entity or container's inventory."
     },
     "item_stack": {
@@ -171,9 +171,9 @@
     "text_component": {
         "prefix": "text_component",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:text_component\",",
-        ],
+		"body": [
+			"\"type\": \"origins:text_component\""
+		],
         "description": "A String or Object used for displaying text with fancy formatting."
     },
     "vector": {

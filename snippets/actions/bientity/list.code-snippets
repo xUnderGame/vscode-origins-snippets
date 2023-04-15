@@ -26,25 +26,25 @@
     "mount": {
         "prefix": "bientity:mount",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:mount\",",
-        ],
+		"body": [
+			"\"type\": \"origins:mount\""
+		],
         "description": "Mounts the actor entity onto the target entity."
     },
     "set_in_love": {
         "prefix": "bientity:set_in_love",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:set_in_love\",",
-        ],
+		"body": [
+			"\"type\": \"origins:set_in_love\""
+		],
         "description": "Sets the target entity into \"love mode\", where they will seek out other animals to breed with. Note that this only works on animals that can breed, such as Cows or Pigs."
     },
     "tame": {
         "prefix": "bientity:tame",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:tame\",",
-        ],
+		"body": [
+			"\"type\": \"origins:tame\""
+		],
         "description": "Tames the target entity with the actor entity as the owner. Only works on tameable entities such as wolves or cats."
     }
 }

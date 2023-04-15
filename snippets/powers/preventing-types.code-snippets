@@ -88,9 +88,9 @@
     "prevent_feature_render": {
         "prefix": "prevent_feature_render",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:prevent_feature_render\",",
-        ],
+		"body": [
+			"\"type\": \"origins:prevent_feature_render\""
+		],
         "description": "Prevents certain Feature Renderers (like the wool coat of a Sheep, the worn armor of a mob, etc.) from rendering on the entity that has the power."
     },
     "prevent_game_event": {
@@ -128,9 +128,9 @@
     "prevent_sprinting": {
         "prefix": "prevent_sprinting",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:prevent_sprinting\",",
-        ],
+		"body": [
+			"\"type\": \"origins:prevent_sprinting\""
+		],
         "description": "Prevents the player that has the power from sprinting."
     }
 }
