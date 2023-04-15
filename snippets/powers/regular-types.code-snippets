@@ -79,9 +79,9 @@
     "creative_flight": {
         "prefix": "creative_flight",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:creative_flight\",",
-        ],
+		"body": [
+			"\"type\": \"origins:creative_flight\""
+		],
         "description": "Allows the players to fly as if they were in Creative Mode."
     },
     "damage_over_time": {
@@ -102,9 +102,9 @@
     "disable_regen": {
         "prefix": "disable_regen",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:disable_regen\",",
-        ],
+		"body": [
+			"\"type\": \"origins:disable_regen\""
+		],
         "description": "Disables the natural health regeneration when on full hunger."
     },
     "effect_immunity": {
@@ -164,9 +164,9 @@
     "fire_immunity": {
         "prefix": "fire_immunity",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:fire_immunity\",",
-        ],
+		"body": [
+			"\"type\": \"origins:fire_immunity\""
+		],
         "description": "Grants full fire immunity (meaning not only do you take no damage from fire sources, you also can not be set on fire)."
     },
     "fire_projectile": {
@@ -191,17 +191,17 @@
     "freeze": {
         "prefix": "freeze",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:freeze\",",
-        ],
+		"body": [
+			"\"type\": \"origins:freeze\""
+		],
         "description": "Freezes the entity that has the power, as if they're in a Powder Snow block."
     },
     "ignore_water": {
         "prefix": "ignore_water",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:ignore_water\",",
-        ],
+		"body": [
+			"\"type\": \"origins:ignore_water\""
+		],
         "description": "Prevents the movement of the entity that has the power from being affected by water."
     },
     "inventory": {
@@ -300,9 +300,9 @@
     "multiple": {
         "prefix": "multiple",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:multiple\",",
-        ],
+		"body": [
+			"\"type\": \"origins:multiple\""
+		],
         "description": "Allows for defining more than one power in a single file."
     },
     "night_vision": {
@@ -372,9 +372,9 @@
     "replace_loot_table": {
         "prefix": "replace_loot_table",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:replace_loot_table\",",
-        ],
+		"body": [
+			"\"type\": \"origins:replace_loot_table\""
+		],
         "description": "Replaces a loot table with another loot table."
     },
     "resource": {
@@ -430,17 +430,17 @@
     "shaking": {
         "prefix": "shaking",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:shaking\",",
-        ],
+		"body": [
+			"\"type\": \"origins:shaking\""
+		],
         "description": "Makes the entity that has the power shake, similar to a Strider out of lava or a Zombie undergoing conversion."
     },
     "simple": {
         "prefix": "simple",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:simple\",",
-        ],
+		"body": [
+			"\"type\": \"origins:simple\""
+		],
         "description": "Does nothing."
     },
     "stacking_status_effect": {
@@ -480,9 +480,9 @@
     "swimming": {
         "prefix": "swimming",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:swimming\",",
-        ],
+		"body": [
+			"\"type\": \"origins:swimming\""
+		],
         "description": "Allows the player to swim (outside of water!)."
     },
     "toggle_night_vision": {

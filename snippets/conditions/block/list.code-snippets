@@ -13,9 +13,9 @@
     "attachable": {
         "prefix": "block:attachable",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:attachable\",",
-        ],
+		"body": [
+			"\"type\": \"origins:attachable\""
+		],
         "description": "Checks whether the block is in a place where a supported block can be attached (i.e. checks whether any of the adjacent blocks' sides towards this block position are solid)."
     },
     "blast_resistance": {
@@ -31,9 +31,9 @@
     "block_entity": {
         "prefix": "block:block_entity",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:block_entity\",",
-        ],
+		"body": [
+			"\"type\": \"origins:block_entity\""
+		],
         "description": "Checks if the block has a block entity."
     },
     "block_state": {
@@ -80,9 +80,9 @@
     "exposed_to_sky": {
         "prefix": "block:exposed_to_sky",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:exposed_to_sky\",",
-        ],
+		"body": [
+			"\"type\": \"origins:exposed_to_sky\""
+		],
         "description": "Checks whether the block is exposed to the sky."
     },
     "fluid": {
@@ -126,9 +126,9 @@
     "light_blocking": {
         "prefix": "block:light_blocking",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:light_blocking\",",
-        ],
+		"body": [
+			"\"type\": \"origins:light_blocking\""
+		],
         "description": "Checks whether the block is marked in code as blocking light. Glass for example would not fulfill this condition."
     },
     "light_level": {
@@ -155,9 +155,9 @@
     "movement_blocking": {
         "prefix": "block:movement_blocking",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:movement_blocking\",",
-        ],
+		"body": [
+			"\"type\": \"origins:movement_blocking\""
+		],
         "description": "Checks whether the block is marked in code as blocking movement and doesn't have an empty collision shape."
     },
     "nbt": {
@@ -172,9 +172,9 @@
     "replacable": {
         "prefix": "block:replacable",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:replacable\",",
-        ],
+		"body": [
+			"\"type\": \"origins:replacable\""
+		],
         "description": "Checks whether the block is a replaceable material (e.g. tall grass, water, ...)."
     },
     "slipperiness": {
@@ -190,9 +190,9 @@
     "water_loggable": {
         "prefix": "block:water_loggable",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:water_loggable\",",
-        ],
+		"body": [
+			"\"type\": \"origins:water_loggable\""
+		],
         "description": "Checks whether the block is waterloggable, meaning that there can be fluid in the same block space (e.g. stairs)."
     }
 }

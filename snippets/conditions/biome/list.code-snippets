@@ -2,17 +2,17 @@
     "category": {
         "prefix": "biome:category",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:category\",",
-        ],
+		"body": [
+			"\"type\": \"origins:category\""
+		],
         "description": "(DEPRECATED) Checks for the category of a biome. (DEPRECATED)"
     },
     "high_humidity": {
         "prefix": "biome:high_humidity",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:high_humidity\",",
-        ],
+		"body": [
+			"\"type\": \"origins:high_humidity\""
+		],
         "description": "Checks whether the biome counts as an area with high humidity."
     },
     "in_tag": {

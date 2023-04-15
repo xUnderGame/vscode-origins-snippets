@@ -78,9 +78,9 @@
     "crafting_table": {
         "prefix": "entity:crafting_table",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:crafting_table\",",
-        ],
+		"body": [
+			"\"type\": \"origins:crafting_table\""
+		],
         "description": "Brings up the Crafting Table GUI as if the player has interacted with one."
     },
     "damage": {
@@ -96,9 +96,9 @@
     "dismount": {
         "prefix": "entity:dismount",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:dismount\",",
-        ],
+		"body": [
+			"\"type\": \"origins:dismount\""
+		],
         "description": "Dismounts the entity from their vehicle."
     },
     "drop_inventory": {
@@ -130,9 +130,9 @@
     "ender_chest": {
         "prefix": "entity:ender_chest",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:ender_chest\",",
-        ],
+		"body": [
+			"\"type\": \"origins:ender_chest\""
+		],
         "description": "Brings up the Ender Chest GUI as if the player has interacted with one."
     },
     "equipped_item_action": {
@@ -179,9 +179,9 @@
     "extinguish": {
         "prefix": "entity:extinguish",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:extinguish\",",
-        ],
+		"body": [
+			"\"type\": \"origins:extinguish\""
+		],
         "description": "Extinguishes the fire from the entity, removing the burning effect."
     },
     "feed": {

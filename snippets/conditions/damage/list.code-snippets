@@ -21,33 +21,33 @@
     "bypasses_armor": {
         "prefix": "damage:bypasses_armor",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:bypasses_armor\",",
-        ],
+		"body": [
+			"\"type\": \"origins:bypasses_armor\""
+		],
         "description": "Checks whether the damage source bypasses armor."
     },
     "explosive": {
         "prefix": "damage:explosive",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:explosive\",",
-        ],
+		"body": [
+			"\"type\": \"origins:explosive\""
+		],
         "description": "Checks whether the damage source is an explosive."
     },
     "fire": {
         "prefix": "damage:fire",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:fire\",",
-        ],
+		"body": [
+			"\"type\": \"origins:fire\""
+		],
         "description": "Checks whether the damage is fire damage (this includes lava damage!)."
     },
     "from_falling": {
         "prefix": "damage:from_falling",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:from_falling\",",
-        ],
+		"body": [
+			"\"type\": \"origins:from_falling\""
+		],
         "description": "Checks whether the damage source is from falling."
     },
     "name": {
@@ -62,9 +62,9 @@
     "out_of_world": {
         "prefix": "damage:out_of_world",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:out_of_world\",",
-        ],
+		"body": [
+			"\"type\": \"origins:out_of_world\""
+		],
         "description": "Checks whether the damage source is out of world."
     },
     "projectile": {
@@ -79,9 +79,9 @@
     "unblockable": {
         "prefix": "damage:unblockable",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:unblockable\",",
-        ],
+		"body": [
+			"\"type\": \"origins:unblockable\""
+		],
         "description": "Checks whether the damage source is unblockable."
     }
 }

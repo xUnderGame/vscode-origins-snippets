@@ -32,17 +32,17 @@
     "empty": {
         "prefix": "item:empty",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:empty\",",
-        ],
+		"body": [
+			"\"type\": \"origins:empty\""
+		],
         "description": "Checks if there is no item."
     },
     "enchantable": {
         "prefix": "item:enchantable",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:enchantable\",",
-        ],
+		"body": [
+			"\"type\": \"origins:enchantable\""
+		],
         "description": "Checks if the item is enchantable."
     },
     "enchantment": {
@@ -59,17 +59,17 @@
     "fireproof": {
         "prefix": "item:fireproof",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:fireproof\",",
-        ],
+		"body": [
+			"\"type\": \"origins:fireproof\""
+		],
         "description": "Checks if the item stack is fireproof."
     },
     "food": {
         "prefix": "item:food",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:food\",",
-        ],
+		"body": [
+			"\"type\": \"origins:food\""
+		],
         "description": "Checks whether the item is a food component."
     },
     "harvest_level": {
@@ -104,25 +104,25 @@
     "is_damageable": {
         "prefix": "item:is_damageable",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:is_damageable\",",
-        ],
+		"body": [
+			"\"type\": \"origins:is_damageable\""
+		],
         "description": "Checks if the item is damageable."
     },
     "is_equippable": {
         "prefix": "item:is_equippable",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:is_equippable\",",
-        ],
+		"body": [
+			"\"type\": \"origins:is_equippable\""
+		],
         "description": "Checks if the item is equippable."
     },
     "meat": {
         "prefix": "item:meat",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:meat\",",
-        ],
+		"body": [
+			"\"type\": \"origins:meat\""
+		],
         "description": "Checks whether the item is considered meat by Minecraft (usable for breeding wolves)."
     },
     "nbt": {
@@ -158,9 +158,9 @@
     "smeltable": {
         "prefix": "item:smeltable",
         "scope": "json",
-        "body": [
-            "\"type\": \"origins:smeltable\",",
-        ],
+		"body": [
+			"\"type\": \"origins:smeltable\""
+		],
         "description": "Checks if the item stack is an ingredient used in a smelting recipe."
     }
 }
