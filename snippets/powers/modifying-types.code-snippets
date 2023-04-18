@@ -4,8 +4,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_air_speed\",",
-            "\"modifier\": {$1},",
-            "\"modifiers\": [${2}]",
+            "\"modifiers\": [${1}]",
         ],
         "description": "Modifies the air speed of the entity that has the power."
     },
@@ -15,8 +14,7 @@
         "body": [
             "\"type\": \"origins:modify_attribute\",",
             "\"attribute\": \"${1}\",",
-            "\"modifier\": {$2},",
-            "\"modifiers\": [${3}]",
+            "\"modifiers\": [${2}]",
         ],
         "description": "Modifies an attribute using Attribute Modifiers."
     },
@@ -36,8 +34,7 @@
         "body": [
             "\"type\": \"origins:modify_break_speed\",",
             "\"block_condition\": {$1},",
-            "\"modifier\": {$2},",
-            "\"modifiers\": [${3}]",
+            "\"modifiers\": [${2}]",
         ],
         "description": "Modifies how fast the player that has the power can break blocks."
     },
@@ -77,8 +74,7 @@
             "\"bientity_condition\": {$4},",
             "\"target_condition\": {$5},",
             "\"damage_condition\": {$6},",
-            "\"modifier\": {$7},",
-            "\"modifiers\": [${8}]",
+            "\"modifiers\": [${7}]",
         ],
         "description": "Modifies how much melee damage the entity that has the power deals."
     },
@@ -94,8 +90,7 @@
             "\"apply_armor_condition\": {$5},",
             "\"damage_armor_condition\": {$6},",
             "\"damage_condition\": {$7},",
-            "\"modifier\": {$8},",
-            "\"modifiers\": [${9}]",
+            "\"modifiers\": [${8}]",
         ],
         "description": "Modifies how much damage the entity that has the power takes."
     },
@@ -104,8 +99,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_exhaustion\",",
-            "\"modifier\": {$1},",
-            "\"modifiers\": [${2}]",
+            "\"modifiers\": [${1}]",
         ],
         "description": "Modifies the amount of exhaustion the player receives each time they receive exhaustion."
     },
@@ -138,13 +132,11 @@
             "\"item_condition\": {$1},",
             "\"item_action\": {$2},",
             "\"replace_stack\": {$3},",
-            "\"food_modifier\": {$4},",
-            "\"food_modifiers\": [${5}],",
-            "\"saturation_modifier\": {$6},",
-            "\"saturation_modifiers\": [${7}],",
-            "\"entity_action\": {$8},",
-            "\"always_edible\": ${9|true,false|},",
-            "\"prevent_effects\": ${10|true,false|}",
+            "\"food_modifiers\": [${4}],",
+            "\"saturation_modifiers\": [${5}],",
+            "\"entity_action\": {$6},",
+            "\"always_edible\": ${7|true,false|},",
+            "\"prevent_effects\": ${8|true,false|}",
         ],
         "description": "Executes an Entity Action Type and modifies the food and saturation level gain of a food item when a player that has the power eats food item."
     },
@@ -181,8 +173,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_healing\",",
-            "\"modifier\": {$1},",
-            "\"modifiers\": [${2}]",
+            "\"modifiers\": [${1}]",
         ],
         "description": "Modifies the amount of health you get from all sources of healing (e.g natural regen, instant health effect, regeneration effect)"
     },
@@ -191,8 +182,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_insomnia_ticks\",",
-            "\"modifier\": {$1},",
-            "\"modifiers\": [${2}]",
+            "\"modifiers\": [${1}]",
         ],
         "description": "Modifies the value used for calculating when a Phantom will spawn for a player."
     },
@@ -201,9 +191,8 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_jump\",",
-            "\"modifier\": {$1},",
-            "\"modifiers\": [${2}],",
-            "\"entity_action\": {$3}",
+            "\"modifiers\": [${1}],",
+            "\"entity_action\": {$2}",
         ],
         "description": "Modifies how high the entity that has the power can jump."
     },
@@ -212,8 +201,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_lava_speed\",",
-            "\"modifier\": {$1},",
-            "\"modifiers\": [${2}]",
+            "\"modifiers\": [${1}]",
         ],
         "description": "Modifies how fast the entity that has the power moves in lava."
     },
@@ -236,11 +224,10 @@
         "body": [
             "\"type\": \"origins:modify_projectile_damage\",",
             "\"damage_condition\": {$1},",
-            "\"modifier\": {$2},",
-            "\"modifiers\": [${3}],",
-            "\"target_condition\": {$4},",
-            "\"self_action\": {$5},",
-            "\"target_action\": {$6}",
+            "\"modifiers\": [${2}],",
+            "\"target_condition\": {$3},",
+            "\"self_action\": {$4},",
+            "\"target_action\": {$5}",
         ],
         "description": "Modifies how much damage the projectile of the entity that has the power deals."
     },
@@ -250,8 +237,7 @@
         "body": [
             "\"type\": \"origins:modify_slipperiness\",",
             "\"block_condition\": {$1},",
-            "\"modifier\": {$2},",
-            "\"modifiers\": [${3}]",
+            "\"modifiers\": [${2}]",
         ],
         "description": "Adjusts your friction, allowing you to emulate or counter the effects of ice blocks under certain conditions."
     },
@@ -260,10 +246,8 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_status_effect_amplifier\",",
-            "\"status_effect\": \"${1}\",",
-            "\"status_effects\": [${2}],",
-            "\"modifier\": {$3},",
-            "\"modifiers\": [${4}]",
+            "\"status_effects\": [${1}],",
+            "\"modifiers\": [${2}]",
         ],
         "description": "Modifies the amplifier of the specified status effect upon receiving the specified status effect."
     },
@@ -272,10 +256,8 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_status_effect_duration\",",
-            "\"status_effect\": \"${1}\",",
-            "\"status_effects\": [${2}],",
-            "\"modifier\": {$3},",
-            "\"modifiers\": [${4}]",
+            "\"status_effects\": [${1}],",
+            "\"modifiers\": [${2}]",
         ],
         "description": "Modifies the duration of the specified status effect(s) upon receiving the said status effect(s)."
     },
@@ -284,8 +266,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_swim_speed\",",
-            "\"modifier\": {$1},",
-            "\"modifiers\": [${2}]",
+            "\"modifiers\": [${1}]",
         ],
         "description": "Modifies how fast the entity that has the power swims."
     },
@@ -295,8 +276,7 @@
         "body": [
             "\"type\": \"origins:modify_velocity\",",
             "\"axes\": {$1},",
-            "\"modifier\": {$2},",
-            "\"modifiers\": [${3}]",
+            "\"modifiers\": [${2}]",
         ],
         "description": "Modifies all velocity in a specified axis."
     },
@@ -305,8 +285,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_xp_gain\",",
-            "\"modifier\": {$1},",
-            "\"modifiers\": [${2}]",
+            "\"modifiers\": [${1}]",
         ],
         "description": "Modifies how much XP the player gains when they pick up an experience orb."
     }

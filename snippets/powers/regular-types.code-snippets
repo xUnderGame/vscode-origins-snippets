@@ -15,9 +15,8 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:attribute\",",
-            "\"modifier\": {$1},",
-            "\"modifiers\": [${2}],",
-            "\"update_health\": ${3|true,false|}",
+            "\"modifiers\": [${1}],",
+            "\"update_health\": ${2|true,false|}",
         ],
         "description": "Modifies one or more attributes using Attributed Attribute Modifiers"
     },
@@ -46,10 +45,9 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:conditioned_attribute\",",
-            "\"modifier\": {$1},",
-            "\"modifiers\": [${2}],",
-            "\"tick_rate\": ${3:1},",
-            "\"update_health\": ${4|true,false|}",
+            "\"modifiers\": [${1}],",
+            "\"tick_rate\": ${2:1},",
+            "\"update_health\": ${3|true,false|}",
         ],
         "description": "Applies one or more attribute modifiers; may depend on a condition."
     },
