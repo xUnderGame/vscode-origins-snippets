@@ -5,7 +5,7 @@
         "body": [
             "\"type\": \"origins:adjacent\",",
             "\"adjacent_condition\": {$1},",
-            "\"comparison\": {$2},",
+            "\"comparison\": \"${2}\",",
             "\"compare_to\": ${3:1.0}",
         ],
         "description": "Checks whether a specified amount of blocks adjacent to the block in question fulfills a specified Block Condition Type."
@@ -23,7 +23,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:blast_resistance\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1.0}",
         ],
         "description": "Checks the blast resistance value of the block."
@@ -42,7 +42,7 @@
         "body": [
             "\"type\": \"origins:block_state\",",
             "\"property\": \"${1}\",",
-            "\"comparison\": {$2},",
+            "\"comparison\": \"${2}\",",
             "\"compare_to\": ${3:1},",
             "\"value\": ${4|true,false|},",
             "\"enum\": \"${5}\"",
@@ -72,7 +72,7 @@
             "\"scale_reference_to_dimension\": ${7|true,false|},",
             "\"result_on_the_wrong_dimension\": ${8|true,false|},",
             "\"round_to_digit\": ${9:1},",
-            "\"comparison\": {$10},",
+            "\"comparison\": \"${10}\",",
             "\"compare_to\": ${11:1.0}",
         ],
         "description": "Compares the distance of the block's current position to the specified coordinates."
@@ -99,7 +99,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:hardness\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1.0}",
         ],
         "description": "Checks the hardness value of the block."
@@ -109,7 +109,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:height\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1.0}",
         ],
         "description": "Compares the Y position of the block to a value."
@@ -137,7 +137,7 @@
         "body": [
             "\"type\": \"origins:light_level\",",
             "\"light_type\": \"${1}\",",
-            "\"comparison\": {$2},",
+            "\"comparison\": \"${2}\",",
             "\"compare_to\": ${3:1}",
         ],
         "description": "Allows checking the light level at the block's position."
@@ -182,7 +182,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:slipperiness\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1.0}",
         ],
         "description": "Checks the slipperiness value of the block."

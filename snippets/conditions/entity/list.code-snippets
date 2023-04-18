@@ -21,7 +21,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:air\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1}",
         ],
         "description": "Checks how much breath / air / bubble the entity has at the moment."
@@ -32,7 +32,7 @@
         "body": [
             "\"type\": \"origins:attribute\",",
             "\"attribute\": \"${1}\",",
-            "\"comparison\": {$2},",
+            "\"comparison\": \"${2}\",",
             "\"compare_to\": ${3:1.0}",
         ],
         "description": "Applies a check towards a specific attribute value of the entity."
@@ -68,7 +68,7 @@
             "\"block_condition\": {$1},",
             "\"radius\": ${2:1},",
             "\"shape\": \"${3}\",",
-            "\"comparison\": {$4},",
+            "\"comparison\": \"${4}\",",
             "\"compare_to\": ${5:1}",
         ],
         "description": "Checks whether there is a specified number of blocks that fulfills the specified Block Condition Type within a specified radius relative to the entity's feet."
@@ -103,7 +103,7 @@
         "body": [
             "\"type\": \"origins:command\",",
             "\"command\": \"${1}\",",
-            "\"comparison\": {$2},",
+            "\"comparison\": \"${2}\",",
             "\"compare_to\": ${3:1}",
         ],
         "description": "Compares the result of the specified command to the specified value."
@@ -147,7 +147,7 @@
             "\"scale_reference_to_dimension\": ${7|true,false|},",
             "\"result_on_the_wrong_dimension\": ${8|true,false|},",
             "\"round_to_digit\": ${9:1},",
-            "\"comparison\": {$10},",
+            "\"comparison\": \"${10}\",",
             "\"compare_to\": ${11:1.0}",
         ],
         "description": "Compares the distance of the entity's current position to the specified coordinates."
@@ -169,7 +169,7 @@
             "\"type\": \"origins:enchantment\",",
             "\"enchantment\": \"${1}\",",
             "\"calculation\": \"${2}\",",
-            "\"comparison\": {$3},",
+            "\"comparison\": \"${3}\",",
             "\"compare_to\": ${4:1}",
         ],
         "description": "Checks the level of an enchantment on the entity's equipment."
@@ -231,7 +231,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:fall_distance\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1.0}",
         ],
         "description": "Checks how much blocks the entity has been falling."
@@ -250,7 +250,7 @@
         "body": [
             "\"type\": \"origins:fluid_height\",",
             "\"fluid\": \"${1}\",",
-            "\"comparison\": {$2},",
+            "\"comparison\": \"${2}\",",
             "\"compare_to\": ${3:1.0}",
         ],
         "description": "Checks how high a specific fluid is at the entity. A fluid height of 0 means the entity is not touching the fluid."
@@ -260,7 +260,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:food_level\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1.0}",
         ],
         "description": "Checks the entity's food level (chicken legs / hunger meter / whatever you wanna call it). The food level is in the range of 0 to 20."
@@ -287,7 +287,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:health\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1.0}",
         ],
         "description": "Checks the current (and absolute) health value of the entity."
@@ -298,7 +298,7 @@
         "body": [
             "\"type\": \"origins:in_block_anywhere\",",
             "\"block_condition\": {$1},",
-            "\"comparison\": {$2},",
+            "\"comparison\": \"${2}\",",
             "\"compare_to\": ${3:1}",
         ],
         "description": "Checks how many blocks are overlapping with the entity's eyes or feet."
@@ -395,7 +395,7 @@
         "body": [
             "\"type\": \"origins:passenger_recursive\",",
             "\"bientity_condition\": {$1},",
-            "\"comparison\": {$2},",
+            "\"comparison\": \"${2}\",",
             "\"compare_to\": ${3:1}",
         ],
         "description": "Checks whether any of the entities in the riding chain is the actor entity."
@@ -406,7 +406,7 @@
         "body": [
             "\"type\": \"origins:passenger\",",
             "\"bientity_condition\": {$1},",
-            "\"comparison\": {$2},",
+            "\"comparison\": \"${2}\",",
             "\"compare_to\": ${3:1}",
         ],
         "description": "Checks whether the actor entity is directly riding the target entity."
@@ -467,7 +467,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:relative_health\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1.0}",
         ],
         "description": "Checks the current (and the percentage) health value of the entity."
@@ -478,7 +478,7 @@
         "body": [
             "\"type\": \"origins:resource\",",
             "\"resource\": \"${1}\",",
-            "\"comparison\": {$2},",
+            "\"comparison\": \"${2}\",",
             "\"compare_to\": ${3:1}",
         ],
         "description": "Checks the value of a power that uses the Resource (Power Type) or a power type that has a built-in cooldown (using remaining ticks as the value)."
@@ -489,7 +489,7 @@
         "body": [
             "\"type\": \"origins:riding_recursive\",",
             "\"bientity_condition\": {$1},",
-            "\"comparison\": {$2},",
+            "\"comparison\": \"${2}\",",
             "\"compare_to\": ${3:1}",
         ],
         "description": "Checks whether the 'actor' entity is directly riding the 'target' entity or the passenger(s) of the 'target' entity."
@@ -517,7 +517,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:saturation_level\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1.0}",
         ],
         "description": "Checks the entity's saturation level, which is the invisible value that determines how \"full\" the entity is, which then determines how long it takes before the hunger level of the entity will go down."
@@ -529,7 +529,7 @@
             "\"type\": \"origins:scoreboard\",",
             "\"name\": \"${1}\",",
             "\"objective\": \"${2}\",",
-            "\"comparison\": {$3},",
+            "\"comparison\": \"${3}\",",
             "\"compare_to\": ${4:1}",
         ],
         "description": "Compares the score of the entity from a specified scoreboard objective to a specified value."
@@ -593,7 +593,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:time_of_day\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1}",
         ],
         "description": "Checks the current day time ticks of the world."
@@ -620,7 +620,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:xp_levels\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1}",
         ],
         "description": "Checks the current experience level of the entity."
@@ -630,7 +630,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:xp_points\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1}",
         ],
         "description": "Checks the experience points of the entity."
