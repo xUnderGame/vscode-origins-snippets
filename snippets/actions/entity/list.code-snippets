@@ -29,8 +29,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:apply_effect\",",
-            "\"effect\": {$1},",
-            "\"effects\": [${2}]",
+            "\"effects\": [${1}]",
         ],
         "description": "Adds one or more status effects to the living entity. Does not have an effect on non-living entities."
     },
@@ -106,15 +105,15 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:drop_inventory\",",
-            "\"inventory_type\": {$1},",
+            "\"inventory_type\": \"${1}\",",
             "\"entity_action\": {$2},",
             "\"item_action\": {$3},",
             "\"item_condition\": {$4},",
-            "\"slot\": [${5}],",
-            "\"slots\": \"${6}\",",
-            "\"power\": ${7|true,false|},",
-            "\"throw_randomly\": ${8|true,false|},",
-            "\"retain_ownership\": ${9:1},",
+            "\"slots\": [${5}],",
+            "\"power\": \"${6}\",",
+            "\"throw_randomly\": ${7|true,false|},",
+            "\"retain_ownership\": ${8|true,false|},",
+            "\"amount\": ${9:1}"
         ],
         "description": "Drops the items from either the entity's inventory or a power that uses the Inventory (Power Type)."
     },
@@ -251,8 +250,7 @@
             "\"entity_action\": {$2},",
             "\"item_action\": {$3},",
             "\"item_condition\": {$4},",
-            "\"slot\": [${5}],",
-            "\"slots\": \"${6}\",",
+            "\"slots\": \"${5}\"",
         ],
         "description": "Modifies the items from either the entity's inventory or a power that uses the Inventory (Power Type)."
     },
@@ -330,10 +328,9 @@
             "\"entity_action\": {$2},",
             "\"item_action\": {$3},",
             "\"item_condition\": {$4},",
-            "\"slot\": [${5}],",
-            "\"slots\": \"${6}\",",
-            "\"power\": {$7},",
-            "\"stack\": ${8|true,false|},",
+            "\"slots\": \"${5}\",",
+            "\"power\": {$6},",
+            "\"stack\": ${7|true,false|},",
         ],
         "description": "Replaces the items from either the entity's inventory or a power that uses the Inventory (Power Type)."
     },
@@ -385,8 +382,7 @@
             "\"radius\": ${1:1.0},",
             "\"radius_on_use\": ${2:1.0},",
             "\"wait_time\": ${3:1},",
-            "\"effect\": {$4},",
-            "\"effects\": [${5}]",
+            "\"effects\": [${4}]",
         ],
         "description": "Spawns an area effect cloud (as from a lingering potion) at the position of the entity."
     },

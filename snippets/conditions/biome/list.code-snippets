@@ -38,7 +38,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:temperature\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1.0}",
         ],
         "description": "Checks for the temperature of the biome the entity is currently in."

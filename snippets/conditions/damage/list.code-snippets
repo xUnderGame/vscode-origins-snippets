@@ -4,7 +4,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:amount\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1.0}",
         ],
         "description": "Checks whether the damage is of a specified amount."

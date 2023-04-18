@@ -4,7 +4,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:amount\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1}",
         ],
         "description": "Checks the amount of the item."
@@ -14,7 +14,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:armor_value\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1}",
         ],
         "description": "Checks whether the item has a certain armor value. Non-armor items are considered as having an armor value of 0."
@@ -24,7 +24,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:durability\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1}",
         ],
         "description": "Checks the current and absolute durability value of the item."
@@ -51,7 +51,7 @@
         "body": [
             "\"type\": \"origins:enchantment\",",
             "\"enchantment\": \"${1}\",",
-            "\"comparison\": {$2},",
+            "\"comparison\": \"${2}\",",
             "\"compare_to\": ${3:1}",
         ],
         "description": "Checks the level of a certain enchantment on the item."
@@ -77,7 +77,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:harvest_level\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1}",
         ],
         "description": "Checks whether the material of the item has a certain harvest level value. Refer to Minecraft Wiki: Tiers for the harvest level of the materials (there it's called \"mining level\"). Items without a material are considered to have a harvest level of 0."
@@ -140,7 +140,7 @@
         "body": [
             "\"type\": \"origins:power_count\",",
             "\"slot\": \"${1}\",",
-            "\"comparison\": {$2},",
+            "\"comparison\": \"${2}\",",
             "\"compare_to\": ${3:1}",
         ],
         "description": "Checks how many powers are embedded in the item."
@@ -150,7 +150,7 @@
         "scope": "json",
         "body": [
             "\"type\": \"origins:relative_durability\",",
-            "\"comparison\": {$1},",
+            "\"comparison\": \"${1}\",",
             "\"compare_to\": ${2:1.0}",
         ],
         "description": "Checks the current and the percentage durability value of the item."
