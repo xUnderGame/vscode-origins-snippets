@@ -1,6 +1,6 @@
 {
     "modify_air_speed": {
-        "prefix": "modify_air_speed",
+        "prefix": "power:modify_air_speed",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_air_speed\",",
@@ -10,7 +10,7 @@
         "description": "Modifies the air speed of the entity that has the power."
     },
     "modify_attribute": {
-        "prefix": "modify_attribute",
+        "prefix": "power:modify_attribute",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_attribute\",",
@@ -21,7 +21,7 @@
         "description": "Modifies an attribute using Attribute Modifiers."
     },
     "modify_block_render": {
-        "prefix": "modify_block_render",
+        "prefix": "power:modify_block_render",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_block_render\",",
@@ -31,7 +31,7 @@
         "description": "Modifies how a block would look like to the entity that has the power."
     },
     "modify_break_speed": {
-        "prefix": "modify_break_speed",
+        "prefix": "power:modify_break_speed",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_break_speed\",",
@@ -42,7 +42,7 @@
         "description": "Modifies how fast the player that has the power can break blocks."
     },
     "modify_camera_submersion": {
-        "prefix": "modify_camera_submersion",
+        "prefix": "power:modify_camera_submersion",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_camera_submersion\",",
@@ -52,7 +52,7 @@
         "description": "Modifies how the player perceives the world, similarly to when they're submerged in fluids like water or lava."
     },
     "modify_crafting": {
-        "prefix": "modify_crafting",
+        "prefix": "power:modify_crafting",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_crafting\",",
@@ -67,7 +67,7 @@
         "description": "Modifies the result item of a recipe that can be crafted via the player's inventory or the crafting table."
     },
     "modify_damage_dealt": {
-        "prefix": "modify_damage_dealt",
+        "prefix": "power:modify_damage_dealt",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_damage_dealt\",",
@@ -83,7 +83,7 @@
         "description": "Modifies how much melee damage the entity that has the power deals."
     },
     "modify_damage_taken": {
-        "prefix": "modify_damage_taken",
+        "prefix": "power:modify_damage_taken",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_damage_taken\",",
@@ -100,7 +100,7 @@
         "description": "Modifies how much damage the entity that has the power takes."
     },
     "modify_exhaustion": {
-        "prefix": "modify_exhaustion",
+        "prefix": "power:modify_exhaustion",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_exhaustion\",",
@@ -110,7 +110,7 @@
         "description": "Modifies the amount of exhaustion the player receives each time they receive exhaustion."
     },
     "modify_falling": {
-        "prefix": "modify_falling",
+        "prefix": "power:modify_falling",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_falling\",",
@@ -120,7 +120,7 @@
         "description": "Modifies the falling velocity of the entity that has the power; can determine whether the entity should take fall damage or not."
     },
     "modify_fluid_render": {
-        "prefix": "modify_fluid_render",
+        "prefix": "power:modify_fluid_render",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_fluid_render\",",
@@ -131,7 +131,7 @@
         "description": "Modifies how a fluid would look like to the player that has the power."
     },
     "modify_food": {
-        "prefix": "modify_food",
+        "prefix": "power:modify_food",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_food\",",
@@ -149,7 +149,7 @@
         "description": "Executes an Entity Action Type and modifies the food and saturation level gain of a food item when a player that has the power eats food item."
     },
     "modify_grindstone": {
-        "prefix": "modify_grindstone",
+        "prefix": "power:modify_grindstone",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_grindstone\",",
@@ -167,7 +167,7 @@
         "description": "Modifies the result of a certain item upon repairing/removing the enchantments of the said item using a Grindstone."
     },
     "modify_harvest": {
-        "prefix": "modify_harvest",
+        "prefix": "power:modify_harvest",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_harvest\",",
@@ -177,7 +177,7 @@
         "description": "Modifies whether a player is able to harvest a block or not (= receive the block drops)."
     },
     "modify_healing": {
-        "prefix": "modify_healing",
+        "prefix": "power:modify_healing",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_healing\",",
@@ -187,7 +187,7 @@
         "description": "Modifies the amount of health you get from all sources of healing (e.g natural regen, instant health effect, regeneration effect)"
     },
     "modify_insomnia_ticks": {
-        "prefix": "modify_insomnia_ticks",
+        "prefix": "power:modify_insomnia_ticks",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_insomnia_ticks\",",
@@ -197,7 +197,7 @@
         "description": "Modifies the value used for calculating when a Phantom will spawn for a player."
     },
     "modify_jump": {
-        "prefix": "modify_jump",
+        "prefix": "power:modify_jump",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_jump\",",
@@ -208,7 +208,7 @@
         "description": "Modifies how high the entity that has the power can jump."
     },
     "modify_lava_speed": {
-        "prefix": "modify_lava_speed",
+        "prefix": "power:modify_lava_speed",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_lava_speed\",",
@@ -218,7 +218,7 @@
         "description": "Modifies how fast the entity that has the power moves in lava."
     },
     "modify_player_spawn": {
-        "prefix": "modify_player_spawn",
+        "prefix": "power:modify_player_spawn",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_player_spawn\",",
@@ -231,7 +231,7 @@
         "description": "Modifies the location of the player's spawnpoint to the specified dimension, biome and/or structure."
     },
     "modify_projectile_damage": {
-        "prefix": "modify_projectile_damage",
+        "prefix": "power:modify_projectile_damage",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_projectile_damage\",",
@@ -245,7 +245,7 @@
         "description": "Modifies how much damage the projectile of the entity that has the power deals."
     },
     "modify_slipperiness": {
-        "prefix": "modify_slipperiness",
+        "prefix": "power:modify_slipperiness",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_slipperiness\",",
@@ -256,7 +256,7 @@
         "description": "Adjusts your friction, allowing you to emulate or counter the effects of ice blocks under certain conditions."
     },
     "modify_status_effect_amplifier": {
-        "prefix": "modify_status_effect_amplifier",
+        "prefix": "power:modify_status_effect_amplifier",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_status_effect_amplifier\",",
@@ -268,7 +268,7 @@
         "description": "Modifies the amplifier of the specified status effect upon receiving the specified status effect."
     },
     "modify_status_effect_duration": {
-        "prefix": "modify_status_effect_duration",
+        "prefix": "power:modify_status_effect_duration",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_status_effect_duration\",",
@@ -280,7 +280,7 @@
         "description": "Modifies the duration of the specified status effect(s) upon receiving the said status effect(s)."
     },
     "modify_swim_speed": {
-        "prefix": "modify_swim_speed",
+        "prefix": "power:modify_swim_speed",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_swim_speed\",",
@@ -290,7 +290,7 @@
         "description": "Modifies how fast the entity that has the power swims."
     },
     "modify_velocity": {
-        "prefix": "modify_velocity",
+        "prefix": "power:modify_velocity",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_velocity\",",
@@ -301,7 +301,7 @@
         "description": "Modifies all velocity in a specified axis."
     },
     "modify_xp_gain": {
-        "prefix": "modify_xp_gain",
+        "prefix": "power:modify_xp_gain",
         "scope": "json",
         "body": [
             "\"type\": \"origins:modify_xp_gain\",",

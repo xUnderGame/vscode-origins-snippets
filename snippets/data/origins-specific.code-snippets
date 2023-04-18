@@ -1,6 +1,6 @@
 {
     "attribute_modifier_operation": {
-        "prefix": "attribute_modifier_operation",
+        "prefix": "data:attribute_modifier_operation",
         "scope": "json",
 		"body": [
 			"\"type\": \"origins:attribute_modifier_operation\""
@@ -8,7 +8,7 @@
         "description": "A String used to specify the operation used by Attribute Modifiers."
     },
     "attribute_modifier": {
-        "prefix": "attribute_modifier",
+        "prefix": "data:attribute_modifier",
         "scope": "json",
         "body": [
             "\"type\": \"origins:attribute_modifier\",",
@@ -21,7 +21,7 @@
         "description": "An Object used to specify how a value should be modified."
     },
     "attributed_attribute_modifier_operation": {
-        "prefix": "attributed_attribute_modifier_operation",
+        "prefix": "data:attributed_attribute_modifier_operation",
         "scope": "json",
 		"body": [
 			"\"type\": \"origins:attributed_attribute_modifier_operation\""
@@ -29,7 +29,7 @@
         "description": "A String used to specify the operation used by Attributed Attribute Modifiers."
     },
     "attributed_attribute_modifier": {
-        "prefix": "attributed_attribute_modifier",
+        "prefix": "data:attributed_attribute_modifier",
         "scope": "json",
         "body": [
             "\"type\": \"origins:attributed_attribute_modifier\",",
@@ -41,7 +41,7 @@
         "description": "An Object used to specify how a specific attribute should be modified. Basically an Attribute Modifier with an additional attribute field."
     },
     "comparison": {
-        "prefix": "comparison",
+        "prefix": "data:comparison",
         "scope": "json",
 		"body": [
 			"\"type\": \"origins:comparison\""
@@ -49,7 +49,7 @@
         "description": "A String which specifies how two numbers should be compared. Usually the first number is provided by whatever condition you are in, and the second is specified in an accompanying compare_to field."
     },
     "damage_source": {
-        "prefix": "damage_source",
+        "prefix": "data:damage_source",
         "scope": "json",
         "body": [
             "\"type\": \"origins:damage_source\",",
@@ -63,7 +63,7 @@
         "description": "An Object used to specify how to deal damage to an entity."
     },
     "hud_render": {
-        "prefix": "hud_render",
+        "prefix": "data:hud_render",
         "scope": "json",
         "body": [
             "\"type\": \"origins:hud_render\",",
@@ -76,7 +76,7 @@
         "description": "An Object used to define how a resource or cooldown bar should be rendered."
     },
     "identifier": {
-        "prefix": "identifier",
+        "prefix": "data:identifier",
         "scope": "json",
 		"body": [
 			"\"type\": \"origins:identifier\""
@@ -84,7 +84,7 @@
         "description": "A String which specifies an identifier used in Minecraft. They are used to refer to items, blocks, status effects, locations in data or resource packs, and a lot of other things."
     },
     "ingredient": {
-        "prefix": "ingredient",
+        "prefix": "data:ingredient",
         "scope": "json",
         "body": [
             "\"type\": \"origins:ingredient\",",
@@ -94,7 +94,7 @@
         "description": "Either: an Object specifying a registered item or item tag."
     },
     "item_slot": {
-        "prefix": "item_slot",
+        "prefix": "data:item_slot",
         "scope": "json",
 		"body": [
 			"\"type\": \"origins:item_slot\""
@@ -102,7 +102,7 @@
         "description": "A String that represents a slot from an entity or container's inventory."
     },
     "item_stack": {
-        "prefix": "item_stack",
+        "prefix": "data:item_stack",
         "scope": "json",
         "body": [
             "\"type\": \"origins:item_stack\",",
@@ -113,7 +113,7 @@
         "description": "An Object which defines a new item stack."
     },
     "key": {
-        "prefix": "key",
+        "prefix": "data:key",
         "scope": "json",
         "body": [
             "\"type\": \"origins:key\",",
@@ -123,7 +123,7 @@
         "description": "An Object which defines a keybinding, used in active powers to define which key they react to."
     },
     "particle_effect": {
-        "prefix": "particle_effect",
+        "prefix": "data:particle_effect",
         "scope": "json",
         "body": [
             "\"type\": \"origins:particle_effect\",",
@@ -133,7 +133,7 @@
         "description": "A data type that's either a String which defines only the particle type or an Object which defines the particle type and its additional parameters."
     },
     "positioned_item_stack": {
-        "prefix": "positioned_item_stack",
+        "prefix": "data:positioned_item_stack",
         "scope": "json",
         "body": [
             "\"type\": \"origins:positioned_item_stack\",",
@@ -145,7 +145,7 @@
         "description": "An Object which defines a new item stack alongside a position in an inventory. Basically an Item Stack with a slot field."
     },
     "stat": {
-        "prefix": "stat",
+        "prefix": "data:stat",
         "scope": "json",
         "body": [
             "\"type\": \"origins:stat\",",
@@ -155,7 +155,7 @@
         "description": "An Object specifying a statistic via a statistic type and an Identifier."
     },
     "status_effect_instance": {
-        "prefix": "status_effect_instance",
+        "prefix": "data:status_effect_instance",
         "scope": "json",
         "body": [
             "\"type\": \"origins:status_effect_instance\",",
@@ -169,7 +169,7 @@
         "description": "An Object used to define a status effect with duration, amplifier, etc."
     },
     "text_component": {
-        "prefix": "text_component",
+        "prefix": "data:text_component",
         "scope": "json",
 		"body": [
 			"\"type\": \"origins:text_component\""
@@ -177,7 +177,7 @@
         "description": "A String or Object used for displaying text with fancy formatting."
     },
     "vector": {
-        "prefix": "vector",
+        "prefix": "data:vector",
         "scope": "json",
         "body": [
             "\"type\": \"origins:vector\",",

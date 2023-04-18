@@ -1,6 +1,6 @@
 {
     "action_on_being_used": {
-        "prefix": "action_on_being_used",
+        "prefix": "power:action_on_being_used",
         "scope": "json",
         "body": [
             "\"type\": \"origins:action_on_being_used\",",
@@ -16,7 +16,7 @@
         "description": "Executes an action when a player \"uses\" (right-clicks) the entity that has the power."
     },
     "action_on_block_break": {
-        "prefix": "action_on_block_break",
+        "prefix": "power:action_on_block_break",
         "scope": "json",
         "body": [
             "\"type\": \"origins:action_on_block_break\",",
@@ -28,7 +28,7 @@
         "description": "Executes an Entity Action Type or a Block Action Type when the player breaks a block."
     },
     "action_on_block_use": {
-        "prefix": "action_on_block_use",
+        "prefix": "power:action_on_block_use",
         "scope": "json",
         "body": [
             "\"type\": \"origins:action_on_block_use\",",
@@ -45,7 +45,7 @@
         "description": "Executes a Block Action Type and/or Item Action Types when the player that has the power \"uses\" (right-clicks) a block."
     },
     "action_on_callback": {
-        "prefix": "action_on_callback",
+        "prefix": "power:action_on_callback",
         "scope": "json",
         "body": [
             "\"type\": \"origins:action_on_callback\",",
@@ -60,7 +60,7 @@
         "description": "Execute Entity Action Types depending on the context."
     },
     "action_on_entity_use": {
-        "prefix": "action_on_entity_use",
+        "prefix": "power:action_on_entity_use",
         "scope": "json",
         "body": [
             "\"type\": \"origins:action_on_entity_use\",",
@@ -76,7 +76,7 @@
         "description": "Executes an action when the player that has the power \"uses\" (right-clicks) an entity."
     },
     "action_on_hit": {
-        "prefix": "action_on_hit",
+        "prefix": "power:action_on_hit",
         "scope": "json",
         "body": [
             "\"type\": \"origins:action_on_hit\",",
@@ -89,7 +89,7 @@
         "description": "Executes an action when the entity that has the power has hit another entity."
     },
     "action_on_item_use": {
-        "prefix": "action_on_item_use",
+        "prefix": "power:action_on_item_use",
         "scope": "json",
         "body": [
             "\"type\": \"origins:action_on_item_use\",",
@@ -100,7 +100,7 @@
         "description": "Executes an Entity Action Type or an Item Action Type when the player finishes using an item (e.g: eating food or drinking a potion)."
     },
     "action_on_land": {
-        "prefix": "action_on_land",
+        "prefix": "power:action_on_land",
         "scope": "json",
         "body": [
             "\"type\": \"origins:action_on_land\",",
@@ -109,7 +109,7 @@
         "description": "Executes an Entity Action Type when the player lands on the ground after being airborne."
     },
     "action_on_wake_up": {
-        "prefix": "action_on_wake_up",
+        "prefix": "power:action_on_wake_up",
         "scope": "json",
         "body": [
             "\"type\": \"origins:action_on_wake_up\",",
@@ -120,7 +120,7 @@
         "description": "Executes an Entity Action Type or a Block Action type when the player wakes up after sleeping."
     },
     "action_over_time": {
-        "prefix": "action_over_time",
+        "prefix": "power:action_over_time",
         "scope": "json",
         "body": [
             "\"type\": \"origins:action_over_time\",",
@@ -132,7 +132,7 @@
         "description": "Executes an Entity Action Type on the entity that has the power within the specified interval."
     },
     "action_when_damage_taken": {
-        "prefix": "action_when_damage_taken",
+        "prefix": "power:action_when_damage_taken",
         "scope": "json",
         "body": [
             "\"type\": \"origins:action_when_damage_taken\",",
@@ -144,7 +144,7 @@
         "description": "Executes an Entity Action Type on the entity that has the power if the entity has taken damage."
     },
     "action_when_hit": {
-        "prefix": "action_when_hit",
+        "prefix": "power:action_when_hit",
         "scope": "json",
         "body": [
             "\"type\": \"origins:action_when_hit\",",
@@ -157,7 +157,7 @@
         "description": "Executes an action if the entity that has the power has been hit by another entity."
     },
     "active_self": {
-        "prefix": "active_self",
+        "prefix": "power:active_self",
         "scope": "json",
         "body": [
             "\"type\": \"origins:active_self\",",
@@ -169,7 +169,7 @@
         "description": "Executes an Entity Action Type on the entity that has the power upon pressing the specified Key."
     },
     "attacker_action_when_hit": {
-        "prefix": "attacker_action_when_hit",
+        "prefix": "power:attacker_action_when_hit",
         "scope": "json",
         "body": [
             "\"type\": \"origins:attacker_action_when_hit\",",
@@ -181,7 +181,7 @@
         "description": "Executes an entity action on the attacker entity when the entity that has the power is hit by another entity."
     },
     "self_action_on_hit": {
-        "prefix": "self_action_on_hit",
+        "prefix": "power:self_action_on_hit",
         "scope": "json",
         "body": [
             "\"type\": \"origins:self_action_on_hit\",",
@@ -194,7 +194,7 @@
         "description": "Executes an Entity Action Type on the entity that has the power when the entity hits another entity."
     },
     "self_action_on_kill": {
-        "prefix": "self_action_on_kill",
+        "prefix": "power:self_action_on_kill",
         "scope": "json",
         "body": [
             "\"type\": \"origins:self_action_on_kill\",",
@@ -207,7 +207,7 @@
         "description": "Executes an Entity Action Type on the entity that has the power when the entity kills another entity."
     },
     "self_action_when_hit": {
-        "prefix": "self_action_when_hit",
+        "prefix": "power:self_action_when_hit",
         "scope": "json",
         "body": [
             "\"type\": \"origins:self_action_when_hit\",",
@@ -219,7 +219,7 @@
         "description": "Executes an Entity Action Type on the entity that has the power when the entity takes damage."
     },
     "target_action_on_hit": {
-        "prefix": "target_action_on_hit",
+        "prefix": "power:target_action_on_hit",
         "scope": "json",
         "body": [
             "\"type\": \"origins:target_action_on_hit\",",

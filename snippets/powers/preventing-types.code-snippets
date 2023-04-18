@@ -1,6 +1,6 @@
 {
     "prevent_being_used": {
-        "prefix": "prevent_being_used",
+        "prefix": "power:prevent_being_used",
         "scope": "json",
         "body": [
             "\"type\": \"origins:prevent_being_used\",",
@@ -15,7 +15,7 @@
         "description": "Prevents other players from being able to \"use\" (right-click) the entity that has the power and executes a bi-entity action, item action and/or give an item upon being prevented."
     },
     "prevent_block_selection": {
-        "prefix": "prevent_block_selection",
+        "prefix": "power:prevent_block_selection",
         "scope": "json",
         "body": [
             "\"type\": \"origins:prevent_block_selection\",",
@@ -24,7 +24,7 @@
         "description": "Prevents the selection of blocks for the player that has the power."
     },
     "prevent_block_use": {
-        "prefix": "prevent_block_use",
+        "prefix": "power:prevent_block_use",
         "scope": "json",
         "body": [
             "\"type\": \"origins:prevent_block_use\",",
@@ -33,7 +33,7 @@
         "description": "Prevents the usage of blocks for the player that has the power."
     },
     "prevent_death": {
-        "prefix": "prevent_death",
+        "prefix": "power:prevent_death",
         "scope": "json",
         "body": [
             "\"type\": \"origins:prevent_death\",",
@@ -43,7 +43,7 @@
         "description": "Prevents death; any damage which would kill the entity that has the power will instead reduce their health to half a heart."
     },
     "prevent_elytra_flight": {
-        "prefix": "prevent_elytra_flight",
+        "prefix": "power:prevent_elytra_flight",
         "scope": "json",
         "body": [
             "\"type\": \"origins:prevent_elytra_flight\",",
@@ -52,7 +52,7 @@
         "description": "Prevents the entity that has the power from flying with either an Elytra item or a power that uses the Elytra Flight (Power Type)."
     },
     "prevent_entity_collision": {
-        "prefix": "prevent_entity_collision",
+        "prefix": "power:prevent_entity_collision",
         "scope": "json",
         "body": [
             "\"type\": \"origins:prevent_entity_collision\",",
@@ -61,7 +61,7 @@
         "description": "Prevents the entity that has the power from colliding with other entities."
     },
     "prevent_entity_render": {
-        "prefix": "prevent_entity_render",
+        "prefix": "power:prevent_entity_render",
         "scope": "json",
         "body": [
             "\"type\": \"origins:prevent_entity_render\",",
@@ -71,7 +71,7 @@
         "description": "Prevents an entity from being rendered to the entity that has the power, including their armor, shadow, and hitboxes."
     },
     "prevent_entity_use": {
-        "prefix": "prevent_entity_use",
+        "prefix": "power:prevent_entity_use",
         "scope": "json",
         "body": [
             "\"type\": \"origins:prevent_entity_use\",",
@@ -86,7 +86,7 @@
         "description": "Prevents the player that has the power from \"using\" (right-clicking) an entity and executes a bi-entity action, item action and/or give an item upon being prevented."
     },
     "prevent_feature_render": {
-        "prefix": "prevent_feature_render",
+        "prefix": "power:prevent_feature_render",
         "scope": "json",
 		"body": [
 			"\"type\": \"origins:prevent_feature_render\""
@@ -94,7 +94,7 @@
         "description": "Prevents certain Feature Renderers (like the wool coat of a Sheep, the worn armor of a mob, etc.) from rendering on the entity that has the power."
     },
     "prevent_game_event": {
-        "prefix": "prevent_game_event",
+        "prefix": "power:prevent_game_event",
         "scope": "json",
         "body": [
             "\"type\": \"origins:prevent_game_event\",",
@@ -106,7 +106,7 @@
         "description": "Prevents specified game event(s) from being emitted by the entity that has the power."
     },
     "prevent_item_use": {
-        "prefix": "prevent_item_use",
+        "prefix": "power:prevent_item_use",
         "scope": "json",
         "body": [
             "\"type\": \"origins:prevent_item_use\",",
@@ -115,7 +115,7 @@
         "description": "Prevents the player from using items (right-click action such as eating food or using a shield, placing them as blocks will still work)."
     },
     "prevent_sleep": {
-        "prefix": "prevent_sleep",
+        "prefix": "power:prevent_sleep",
         "scope": "json",
         "body": [
             "\"type\": \"origins:prevent_sleep\",",
@@ -126,7 +126,7 @@
         "description": "Prevents sleeping and sends the player a message about why they can't sleep."
     },
     "prevent_sprinting": {
-        "prefix": "prevent_sprinting",
+        "prefix": "power:prevent_sprinting",
         "scope": "json",
 		"body": [
 			"\"type\": \"origins:prevent_sprinting\""
