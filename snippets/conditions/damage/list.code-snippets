@@ -24,7 +24,7 @@
 		"body": [
 			"\"type\": \"origins:bypasses_armor\""
 		],
-        "description": "Checks whether the damage source bypasses armor."
+        "description": "(DEPRECATED) Checks whether the damage source bypasses armor."
     },
     "explosive": {
         "prefix": "damage:explosive",
@@ -32,7 +32,7 @@
 		"body": [
 			"\"type\": \"origins:explosive\""
 		],
-        "description": "Checks whether the damage source is an explosive."
+        "description": "(DEPRECATED) Checks whether the damage source is an explosive."
     },
     "fire": {
         "prefix": "damage:fire",
@@ -40,7 +40,7 @@
 		"body": [
 			"\"type\": \"origins:fire\""
 		],
-        "description": "Checks whether the damage is fire damage (this includes lava damage!)."
+        "description": "(DEPRECATED) Checks whether the damage is fire damage (this includes lava damage!)."
     },
     "from_falling": {
         "prefix": "damage:from_falling",
@@ -48,7 +48,7 @@
 		"body": [
 			"\"type\": \"origins:from_falling\""
 		],
-        "description": "Checks whether the damage source is from falling."
+        "description": "(DEPRECATED) Checks whether the damage source is from falling."
     },
     "name": {
         "prefix": "damage:name",
@@ -65,7 +65,7 @@
 		"body": [
 			"\"type\": \"origins:out_of_world\""
 		],
-        "description": "Checks whether the damage source is out of world."
+        "description": "(DEPRECATED) Checks whether the damage source is out of world."
     },
     "projectile": {
         "prefix": "damage:projectile",
@@ -73,6 +73,7 @@
         "body": [
             "\"type\": \"origins:projectile\",",
             "\"projectile\": \"${1}\"",
+            "\"projectile_condition\": {$2}",
         ],
         "description": "Checks whether the damage source was projectile damage, and optionally the type of projectile it was (if specified)."
     },
@@ -82,6 +83,15 @@
 		"body": [
 			"\"type\": \"origins:unblockable\""
 		],
-        "description": "Checks whether the damage source is unblockable."
+        "description": "(DEPRECATED) Checks whether the damage source is unblockable."
+    },
+    "in_tag": {
+        "prefix": "damage:in_tag",
+        "scope": "json",
+		"body": [
+			"\"type\": \"origins:in_tag\",",
+            "\"tag\": \"${1}\"",
+		],
+        "description": "Checks whether the type of this damage is in a specified tag."
     }
 }

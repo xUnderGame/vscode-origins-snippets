@@ -35,3 +35,14 @@ All notable changes to the extension will be documented in this file.
 - Fixed a comma in power:action_over_time and entity:modify_inventory.
 - Fixed entity:drop_inventory.
 - Changed meta:delay key positions for brevity.
+
+## [v1.0.8] - 2023-06-18
+- Updated snippets to [Origins 1.9.0](https://www.curseforge.com/minecraft/mc-mods/origins/files/4546792)
+    - New power type: `grounded`.
+    - New entity actions: `grant_advancement`, `revoke_advancement`, `selector_action`.
+    - New block action: `area_of_effect`.
+    - New damage condition: `in_tag`.
+    - `action_on_item_use` has two new fields: `trigger` and `priority`.
+    - `projectile` damage condition has a new field: `projectile_condition`.
+
+- Damage sources have been deprecated in favor of damage types, so a deprecated "warning" was added to affected snippets.

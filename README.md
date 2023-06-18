@@ -11,7 +11,7 @@
 [![GitHub](https://img.shields.io/github/stars/xUnderGame/vscode-origins-snippets.svg?style=flat-square)](https://github.com/xUnderGame/vscode-origins-snippets)
 </div>
 
-### **Latest release: 1.0.7**
+### **Latest release: 1.0.8, Origins Version 1.9.0**
 
 This extension for Visual Studio Code adds snippets from the Minecraft Origins mod. Check out the [Origins wiki](https://origins.readthedocs.io/en/latest) for more information. You can obtain the extension by clicking [here](https://marketplace.visualstudio.com/items?itemName=UnderGame.vscode-origins-snippets) or searching it up in VS Code.
 
@@ -19,11 +19,11 @@ This extension for Visual Studio Code adds snippets from the Minecraft Origins m
 
 Type part of a snippet, press enter, and the snippet gets sent. You can also press `Ctrl`+`Space` to activate snippets.
 
-> Right now this extension is only covering the latest version of the Origins wiki (1.8.1). Some snippets might be different depending on the version you are coding your origin for, so backwards compatibility isn't guaranteed.
+> This extension is only covering the latest version of the Origins wiki (1.9.0). Some snippets might be different depending on the version you are coding your origin for, so backwards compatibility isn't guaranteed.
 
-> If you'd like to port this to another version, you can use 'generator.py' and manually edit the files.
+> If you'd like to port this to another version, you can use 'generator.py' and manually edit the files. (As seen in the repo, not recommended)
 
-![Demo](demo.gif)
+![Demo](/src/demo.gif)
 
 ## Origins Snippets
 

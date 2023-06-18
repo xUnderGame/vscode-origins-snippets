@@ -94,8 +94,10 @@
         "body": [
             "\"type\": \"origins:action_on_item_use\",",
             "\"entity_action\": {$1},",
-            "\"item_action\": {$2},",
-            "\"item_condition\": {$3}",
+            "\"trigger\": \"${2}\",",
+            "\"priority\": ${3:1},",
+            "\"item_action\": {$4},",
+            "\"item_condition\": {$5}",
         ],
         "description": "Executes an Entity Action Type or an Item Action Type when the player finishes using an item (e.g: eating food or drinking a potion)."
     },

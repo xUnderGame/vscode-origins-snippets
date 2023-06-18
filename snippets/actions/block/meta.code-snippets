@@ -10,5 +10,17 @@
             "\"z\": ${4:1}",
         ],
         "description": "Executes the provided Block Action Type at the position offset from the current position."
+    },
+    "area_of_effect": {
+        "prefix": "block:area_of_effect",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:area_of_effect\",",
+            "\"block_action\": {$1},",
+            "\"radius\": ${2:1},",
+            "\"shape\": \"${3}\",",
+            "\"block_condition\": {${4}}",
+        ],
+        "description": "Executes the provided Block Action Type on all blocks within the specified radius and shape."
     }
 }

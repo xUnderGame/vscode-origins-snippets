@@ -438,4 +438,33 @@
         ],
         "description": "Starts the cooldown of a power that uses a Power Type that has a built-in cooldown, as if that power has just been used."
     },
+    "grant_advancement": {
+        "prefix": "entity:grant_advancement",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:grant_advancement\",",
+            "\"advancement\": \"${1}\"",
+        ],
+        "description": "Grants an advancement to the player."
+    },
+    "revoke_advancement": {
+        "prefix": "entity:revoke_advancement",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:revoke_advancement\",",
+            "\"advancement\": \"${1}\"",
+        ],
+        "description": "Revokes an advancement from the player."
+    },
+    "selector_action": {
+        "prefix": "entity:selector_action",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:selector_action\",",
+            "\"selector\": \"${1}\",",
+            "\"bientity_action\": {${2}},",
+            "\"bientity_condition\": {${3}}",
+        ],
+        "description": "Executes an action on entities selected by a target selector."
+    }
 }

@@ -525,5 +525,13 @@
             "\"fluid\": \"${1}\"",
         ],
         "description": "Allows the entity that has the power to walk on fluid."
+    },
+    "grounded": {
+        "prefix": "power:grounded",
+        "scope": "json",
+        "body": [
+            "\"type\": \"origins:grounded\""
+        ],
+        "description": "An entity with this power counts as being \"on ground\", meaning regular walking mechanics can occur even if the entity isn't physically on a block."
     }
 }
