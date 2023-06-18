@@ -1,7 +1,7 @@
 # VS Code Origins Snippets
 
 <div align=center>
-    <img src="icon.webp" style="width: 150px">
+    <img src="/src/icon.webp" style="width: 150px">
     <br><br>
     
 ![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/v/UnderGame.vscode-origins-snippets.svg?style=flat-square)
